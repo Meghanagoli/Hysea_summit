@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar.js";
 import Home from './Components/Home.js';
 import Expo from './Components/Expo.js';
 import Speakers from "./Components/Speakers.js";
-import Awards from "./Components/Awards.js";
+import Awards from "./Components/Awards1.js";
 function App() {
   return (
   <BrowserRouter>
@@ -14,7 +14,7 @@ function App() {
 
       
       
-<main className="mt-10"> 
+<main > 
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/exhibition" element={<Expo/>} />       
