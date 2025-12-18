@@ -1,13 +1,13 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.webp";
-
+import footerBg from "../assets/bg.webp"
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#14328D] shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#14328D] shadow-md"
+            style={{ backgroundImage: `url(${footerBg})` }}>
       <div className="w-full ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 h-16 md:h-20 flex items-center justify-between">
           <div className="flex items-center">
@@ -28,8 +28,7 @@ const Navbar = () => {
   href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
   target="_blank"
   rel="noopener noreferrer"
-  className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100"
->
+  className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100">
   Register Now
 </a>
           </div>

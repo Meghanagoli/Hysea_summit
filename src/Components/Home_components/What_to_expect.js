@@ -4,12 +4,9 @@ import heroImg from "../../assets/expect_img.webp";
 const What_to_expect = () => {
   return (
     
-    <section className="w-full bg-white">
  
-    <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 md:px-12 ">
+    <div className="w-full mx-auto max-w-7xl  bg-white overflow-hidden">
       
-        <div className="bg-white overflow-hidden shadow-md rounded-md">
-
         <div className=" flex flex-col md:flex-row h-full">
           <div className="w-full  md:w-3/4 px-8 md:px-12 py-8 text-[#222] border-[6px] border-[rgb(5,48,168)]">
             <h2 className="text-3xl md:text-6xl font-semibold tracking-wide text-[#0530A8] mb-6">
@@ -71,8 +68,6 @@ const What_to_expect = () => {
           </div>
           </div>
           </div>
-          </div>
-          </section>
   )
 }
 

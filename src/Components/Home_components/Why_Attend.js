@@ -49,7 +49,6 @@ const Card = ({ ribbonSrc, title, subtitle, statValue, statLabel }) => {
       <div className="absolute left-0 right-0 top-0 h-[96px] rounded-t-[12px] overflow-hidden">
         <img src={ribbonSrc} alt="Card ribbon" className="w-full h-full object-cover" loading="lazy" />
       </div>
-
       <h3
         className="whitespace-pre-line"
         style={{

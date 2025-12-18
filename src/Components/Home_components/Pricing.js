@@ -3,13 +3,12 @@ import React from "react";
 const Pricing = () => {
   return (
     <section id="register" className="bg-white">
-<div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 py-16 md:py-28">      
-        <h2 className="text-[#0530A8] text-[40px] sm:text-[48px] md:text-[52px] lg:text-[58px] font-semibold tracking-tight uppercase leading-tight">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 py-16 md:py-28">      
+        <h2 className="text-[#0530A8] text-[40px] sm:text-[48px] md:text-[52px] lg:text-[58px] font-semibold">
           EVENT SIGNUP
         </h2>
-
         
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start px-2">
           
           <div className="order-1 lg:order-1">
             <div aria-hidden={true}>
@@ -100,7 +99,7 @@ const Pricing = () => {
   href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
   target="_blank"
   rel="noopener noreferrer"
-className="mt-6 inline-flex items-center rounded-md bg-[#1E60D9] px-4 py-2 text-white text-[14px] sm:text-[15px] md:text-[16px] font-semibold hover:bg-[#154abd] transition">
+className="mt-6 inline-flex items-center rounded-md bg-[#1E60D9] px-4 md:px-5 py-2 text-white text-[14px] sm:text-[15px] md:text-[16px] font-semibold hover:bg-[#154abd] transition">
   Register Now
 </a>
                 

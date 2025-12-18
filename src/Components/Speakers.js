@@ -187,7 +187,7 @@ export default function Speakers() {
       <div className="block lg:hidden pb-[0%] pt-[0%]" aria-hidden="false" />
     </main>
 
-      <div className="max-w-6xl mx-auto px-4 py-12 bg-white">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 md:px-12 py-12 bg-white">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10">
           PAST SPEAKERS
         </h2>
@@ -212,7 +212,7 @@ export default function Speakers() {
         </div>
         
       </div>
-       <div className="max-w-6xl mx-auto px-4 py-14 bg-white">
+       <div className="max-w-7xl mx-auto x-4 sm:px-6 md:px-12 py-14 bg-white">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
           PAST CHIEF GUESTS & DIGNATARIES
         </h2>

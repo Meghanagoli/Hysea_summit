@@ -113,8 +113,8 @@ const Expo = () => {
     
 
       <div className="block lg:hidden "/>
-  <section className="w-full bg-white px-4 md:px-6 py-16 md:py-28 ">
-      <div className="mx-auto max-w-7xl px-6">
+  <section className="w-full bg-white px-4 sm:px-6 md:px-12 py-16 md:py-28 ">
+      <div className="mx-auto max-w-7xl ">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#0530A8] tracking-tight">
           EXHIBITION OPPORTUNITIES
         </h2>
@@ -125,15 +125,15 @@ const Expo = () => {
           global business and technology.
         </p>
 
-        <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 flex flex-col md:flex-row justify-center gap-6 ">
           {cards.map((c, idx) => (
             <Card key={idx} title={c.title} image={c.img} waveImg={waveImg} />
           ))}
         </div>
       </div>
     </section>
-      <div className="w-full bg-[#002F76] px-4 md:px-6 py-16 md:py-28">
-        <div className="max-w-6xl mx-auto text-center relative">
+      <div className="w-full bg-[#002F76] px-4 sm:px-6 md:px-12 py-16 md:py-28">
+        <div className="max-w-7xl mx-auto text-center relative">
          
 <p className="absolute inset-x-0 top-0 text-4xl md:text-5xl lg:text-6xl font-semibold text-white uppercase tracking-wide text-center mb-8 md:mb-0">
   BOOK YOUR SPACE

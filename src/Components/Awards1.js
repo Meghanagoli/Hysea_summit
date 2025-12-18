@@ -76,11 +76,10 @@ const Awards = () => {
             
                       <p className="text-white mt-5 text-[15px] sm:text-[16px] lg:text-[18px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] lg:max-w-[640px] mb-6">
            Over the years, the HYSEA Awards have become a hallmark of excellence,
-
-spotlighting some of the most innovative ventures in the tech space. Products recognized through these awards have achieved remarkable success, gaining invaluable exposure to investors, industry leaders, and strategic partners.    
+           spotlighting some of the most innovative ventures in the tech space. Products recognized through these awards have achieved remarkable success, gaining invaluable exposure to investors, industry leaders, and strategic partners.    
             </p>
             
-                        <a
+    <a
   href="https://hysea.accubate.app/ext/form/12107/1/apply"
   target="_blank"
   rel="noopener noreferrer"
@@ -109,63 +108,40 @@ spotlighting some of the most innovative ventures in the tech space. Products re
             
                   <div className="block lg:hidden pb-[0%] pt-[0%]" aria-hidden="false" />
                 </main>
-  <div className="mx-auto w-full">
+  <div className="mx-auto max-w-7xl w-full">
 
     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center">
-
-      {/* LEFT IMAGE */}
-      <div className="block md:block">
-        <img
-          src={awards1}
-          alt="Event scene - left"
-          className="w-full h-[220px] sm:h-[280px] md:h-full object-cover object-top md:object-right"
-        />
+      <div className="block md:block w-full h-full object-cover bg-no-repeat  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
       </div>
-
-      {/* CENTER WHITE CONTENT */}
       <div className="bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-16 text-center">
         <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
           About the Awards
         </h2>
-
         <p className="text-black text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
           The awards process involves several rounds of shortlisting based on key
           evaluation parameters that assess the strength of the product and its
           potential in the market.
         </p>
-
         <p className="text-black text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
           The shortlisting process will be administered by industry experts such as
           technocrats, product leaders, business leaders, and investors. Evaluations
           also include product presentations and demos.
         </p>
       </div>
-
-      {/* RIGHT IMAGE */}
-      <div className="block md:block">
-        <img
-          src={awards2}
-          alt="Event scene - right"
-          className="w-full h-[220px] sm:h-[280px] md:h-full object-cover object-top md:object-left"
-        />
+       <div className="block md:block w-full h-full object-cover bg-no-repeat md:object-center" style={{ backgroundImage: `url(${awards2})` }}>
       </div>
-
     </div>
   </div>
-
       
-      <div className=" h-[4px] w-full bg-[#0A3AA8]" />
+    <div className=" h-[4px] w-full  bg-[#0A3AA8]" />
 
-
-
-    <section className="w-full bg-[#f2f2f2]">
-  <div className="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px]">
+    <section className="w-full bg-white">
+  <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px]">
 
     <div className="bg-white px-6 sm:px-10 md:px-14 py-24 md:py-30">
       <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
         Why Nominate
       </h2>
-
       <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
         In the past ten-plus years, Product owners have found the opportunity to gain:
       </p>
