@@ -3,7 +3,7 @@ import heroImg from "../../assets/about_img.webp";
 
 const About = () => {
   return (
-    <div className="w-full mx-auto  bg-white overflow-hidden">
+    <div className="w-full mx-auto max-w-7xl  px-4 sm:px-6 md:px-12 bg-white overflow-hidden">
 
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">

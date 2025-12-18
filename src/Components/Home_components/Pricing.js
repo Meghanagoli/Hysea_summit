@@ -3,7 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <section id="register" className="bg-white">
-<div className="mx-auto max-w-6xl px-4 md:px-6 py-16 md:py-28">      
+<div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12 py-16 md:py-28">      
         <h2 className="text-[#0530A8] text-[40px] sm:text-[48px] md:text-[52px] lg:text-[58px] font-semibold tracking-tight uppercase leading-tight">
           EVENT SIGNUP
         </h2>

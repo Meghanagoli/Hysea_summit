@@ -33,12 +33,11 @@ const HeroPage = () => {
           backgroundSize: "cover",
           backgroundPosition: "top center",
           minHeight: "260px",
-        }}
-      >
+        }}>
         <div className="absolute inset-0 -z-10 min-h-[240px] sm:min-h-[300px] md:min-h-[380px] lg:min-h-[480px]" />
         <div className="absolute inset-0 bg-black/8 md:bg-black/10" />
 
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-12 py-6 sm:py-10 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-6 sm:py-10 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
             
             <div className="mt-8 sm:mt-12 md:mt-20 max-w-[60ch] md:max-w-none">
