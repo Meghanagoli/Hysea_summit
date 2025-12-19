@@ -5,7 +5,7 @@ const What_to_expect = () => {
   return (
     
  
-    <div className="w-full mx-auto max-w-7xl  bg-white overflow-hidden">
+    <div className="w-full mx-auto max-w-9xl  bg-white overflow-hidden">
       
         <div className=" flex flex-col md:flex-row h-full">
           <div className="w-full  md:w-3/4 px-8 md:px-12 py-8 text-[#222] border-[6px] border-[rgb(5,48,168)]">

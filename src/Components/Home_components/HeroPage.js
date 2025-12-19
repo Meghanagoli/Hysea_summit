@@ -5,26 +5,16 @@ import rectBg from "../../assets/wavy-bg.webp";
 
 const HeroPage = () => {
   return (
-    <section className="w-full">
-      <div className="relative w-full overflow-visible">
-        <img
-          src={heroImg}
-          alt="HYSEA Summit"
-          className="
-            w-full
-            h-[220px] sm:h-[260px] md:h-[340px] lg:h-[420px]
-            object-cover object-top
-            block
-            relative
-            z-30
-          "
-        />
-      </div>
+    <section className="w-full " style={{height:"100vh",position:"relative",backgroundImage:`url(${heroImg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center center"}}>
+      
 
       <div
         className="
           relative z-30
-          -mt-[56px] sm:-mt-[96px] md:-mt-[128px] lg:-mt-[160px]
+         -mt-[56px] sm:-mt-[96px] md:-mt-[128px] lg:-mt-[160px] 
           flex items-center w-full
         "
         style={{
@@ -33,11 +23,13 @@ const HeroPage = () => {
           backgroundSize: "cover",
           backgroundPosition: "top center",
           minHeight: "260px",
+          position: "absolute",
+          bottom: "0px",
         }}>
         <div className="absolute inset-0 -z-10 min-h-[220px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[320px]" />
         <div className="absolute inset-0 bg-black/8 md:bg-black/10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-2 sm:py-4 md:py-10">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 md:px-12 py-2 sm:py-4 md:py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
             
             <div className="mt-2 sm:mt-4 md:mt-6 max-w-[60ch] md:max-w-none">

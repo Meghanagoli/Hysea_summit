@@ -85,7 +85,7 @@ const speakers = [
 { name: "U. B. Pravin Rao, Infosys", img: s26 },
 { name: "Dr. Uday B. Desai, IITH", img: s27 },
 { name: "Venkat Jasti, Suven Lifesciences", img: s28 },
-{ name: "Vikram Vuppala,", img: s29 },
+{ name: "Vikram Vuppala NephroPlus", img: s29 },
 { name: "Vineet Nayar, HCL", img: s30 },
 
 ];
@@ -103,7 +103,7 @@ const chief_guests=[
 { name: "Ayodhya Rami Reddy, Ramky Group", img: g11 },
 { name: "Ponnala Lakshmaiah", img: g12 },
 { name: "Katherine B. Hadda US", img: g13 },
-{ name: "Dr. T Hanuman", img: g14 },
+{ name: "Dr. T Hanuman Chowdary", img: g14 },
 { name: "J. Satyanarayana, IAS", img: g15 },
 { name: "S. K. Joshi, IAS", img: g16 },
 { name: "Jayesh Ranjan, IAS", img: g17 },
@@ -177,7 +177,6 @@ export default function Speakers() {
           
         </div>
       </div>
-
       <div
         className="absolute right-0 top-0 -z-10 w-full lg:w-1/2 pb-6 h-full bg-no-repeat bg-cover bg-left"
         style={{ backgroundImage: `url(${rightImage})` }}
@@ -186,10 +185,34 @@ export default function Speakers() {
 
       <div className="block lg:hidden pb-[0%] pt-[0%]" aria-hidden="false" />
     </main>
+      
+     
+       <div className="max-w-6xl mx-auto px-0 py-28 bg-white">
+        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
+          CHIEF GUESTS & DIGNITARIES OVER THE YEARS
+        </h2>
 
-      <div className="max-w-7xl  mx-auto px-4 sm:px-6 md:px-12 py-12 bg-white">
-        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10">
-          PAST SPEAKERS
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {chief_guests.map((guest, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 bg-gradient-to-b from-blue-600 to-blue-800 rounded-md overflow-hidden ">
+                <img
+                  src={guest.img}
+                  alt={guest.name}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium">
+                {guest.name}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="max-w-6xl mx-auto px-4 py-28 bg-white">
+        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10  max-w-[900px] mx-auto">
+          MARQUEE SPEAKERS FROM PAST EDITIONS
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -212,31 +235,12 @@ export default function Speakers() {
         </div>
         
       </div>
-       <div className="max-w-7xl mx-auto x-4 sm:px-6 md:px-12 py-14 bg-white">
-        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
-          PAST CHIEF GUESTS & DIGNATARIES
-        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {chief_guests.map((guest, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 bg-gradient-to-b from-blue-600 to-blue-800 rounded-md overflow-hidden ">
-                <img
-                  src={guest.img}
-                  alt={guest.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium">
-                {guest.name}
-              </p>
-            </div>
-          ))}
-        </div>
         
       </div>
+       
+
+      
       <Footer/>
     </section>
   );

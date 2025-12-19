@@ -17,7 +17,7 @@ const tags = [
 const Attend = () => {
   return (
     <section
-      className="w-full  px-4 md:px-6 py-16 md:py-28 bg-cover bg-center bg-no-repeat"
+      className="w-full max-w-9xl px-4 md:px-6 py-16 md:py-28 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${attendBg})` }}
     >
       <div className="max-w-[1100px] mx-auto text-center px-6 text-white">

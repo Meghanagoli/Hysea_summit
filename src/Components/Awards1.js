@@ -108,12 +108,12 @@ const Awards = () => {
             
                   <div className="block lg:hidden pb-[0%] pt-[0%]" aria-hidden="false" />
                 </main>
-  <div className="mx-auto max-w-7xl w-full">
+  <div className="mx-auto max-w-9xl w-full">
 
     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center">
       <div className="block md:block w-full h-full object-cover bg-no-repeat  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
       </div>
-      <div className="bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-12 md:py-16 text-center">
+      <div className="bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-28 md:py-32 text-center">
         <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
           About the Awards
         </h2>
@@ -135,8 +135,8 @@ const Awards = () => {
       
     <div className=" h-[4px] w-full  bg-[#0A3AA8]" />
 
-    <section className="w-full bg-white">
-  <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px]">
+    <section className="w-full max-w-9xl bg-white">
+  <div className=" w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px]">
 
     <div className="bg-white px-6 sm:px-10 md:px-14 py-24 md:py-30">
       <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
@@ -160,7 +160,6 @@ const Awards = () => {
     </p>
     </div>
   </div>
-
 <div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
   <div className="flex items-start gap-4">
     <img
@@ -190,7 +189,7 @@ const Awards = () => {
   </div>
       </div>
     </div>
-<div className="bg-white block px-14 py-6 h-[360px] sm:h-[420px] md:h-[520px] lg:h-[800px] overflow-hidden">
+<div className="bg-white block px-12 py-6 h-[360px] sm:h-[420px] md:h-[520px] lg:h-[800px] overflow-hidden">
   <div className="flex flex-col gap-4 animate-vertical-scroll hover:[animation-play-state:paused]">
     <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c1} className="h-full w-full object-cover rounded-md"/></div>
     <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c2} className="h-full w-full object-cover rounded-md"/></div>
@@ -211,18 +210,17 @@ const Awards = () => {
 </section>
 
 
-<section className="w-full bg-[#002F76] text-white">
-  <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
+<section className="w-full max-w-9xl bg-[#002F76] text-white">
+  <div className="mx-auto max-w-[1260px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
     <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide">
       AWARD CATEGORIES
     </h2>
- <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="rounded-md border border-white/90 p-8 ">
+ <div className="mt-8 max-w-9xl flex flex-col md:flex-row justify-between gap-6">
+      <div className="flex-1 rounded-md border border-white/90 p-8 ">
         <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">10x STARTUP AWARDS</h3>
         <p className="text-sm sm:text-base mb-4">
           Is your startup building market confidence? <br/>This is your moment to shine, scale, and stand out.
         </p>
-
         <h4 className="font-bold mb-2">Why Nominate Your Product?</h4>
         <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
           <li>High-value press visibility</li>
@@ -238,7 +236,7 @@ const Awards = () => {
         </p>
       </div>
 
-      <div className="rounded-md border border-white/90 bg- p-8 ">
+      <div className="flex-1 rounded-md border border-white/90 bg- p-8 ">
         <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">TECH PRODUCT AND INNOVATION AWARDS</h3>
         <p className="text-sm sm:text-base mb-4">
           It’s time to spotlight the most impactful products and breakthrough innovations built in Telangana’s thriving tech ecosystem.
