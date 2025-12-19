@@ -8,10 +8,10 @@ const tags = [
   "GCCs",
   "Academicians",
   "Startups",
-  "Board Members",
+ 
   "Center Heads",
   "Decision Makers",
-  "IT/ITEs Professionals",
+  "IT/ITES Professionals",
 ];
 
 const Attend = () => {
@@ -27,14 +27,14 @@ const Attend = () => {
         </h2>
 
         <p className="text-sm md:text-[17px] leading-relaxed max-w-[900px] mx-auto opacity-95">
-          Be part of the HYSEA Annual Summit, where Intelligence Everywhere shapes the future.
-          Connect with your technology community and industry visionaries. Build and diversify
+          Be part of the HYSEA Annual Summit, where Intelligence Everywhere shapes the future. The Summit attracts a broad cross-section of the technology ecosystem, enabling multi-faceted networking.
+         Build and diversify
           your network by engaging with forward-thinking senior IT executives who are leading the
           new era of transformation.
         </p>
 
-        <h3 className="text-3xl md:text-4xl font-semibold mt-12 mb-10">
-          Organizations and Individuals
+        <h3 className="text-3xl md:text-4xl font-semibold mt-2 mb-10">
+          
         </h3>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-4 max-w-[900px] mx-auto">

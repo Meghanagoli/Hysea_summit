@@ -34,7 +34,7 @@ const HeroPage = () => {
             
             <div className="mt-2 sm:mt-4 md:mt-6 max-w-[60ch] md:max-w-none">
               <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-semibold px-4 py-1 rounded-full text-xs md:text-sm">
-                33rd Edition | March, Hyderabad
+                33rd Edition | March 5, 2026 | Hyderabad
               </span>
 
               <h1 className="font-semibold mt-4 sm:mt-5 text-2xl md:text-3xl lg:text-4xl leading-tight">
@@ -43,8 +43,8 @@ const HeroPage = () => {
               </h1>
 
               <p className="mt-4 sm:mt-5 font-semibold text-base sm:text-xl md:text-3xl">
-                Intelligence Everywhere: <br />
-                Leading the New Era of Transformation
+                Intelligence Everywhere : <br />
+                Leading the New Era 
               </p>
             </div>
             <div className="text-sm sm:text-base leading-relaxed mt-4 sm:mt-6 md:mt-16 max-w-[70ch] md:max-w-none ml-0 ">
@@ -57,7 +57,7 @@ const HeroPage = () => {
               </p>
 
               <p className="mt-3 sm:mt-4">
-                Across two action-packed days, the Summit features masterclasses,
+                The Summit features masterclasses,
                 keynote sessions, power talks, panel conversations, industry
                 awards, product + tech showcases, an expo, and unmatched networking
                 opportunities.

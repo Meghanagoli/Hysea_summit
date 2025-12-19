@@ -58,17 +58,18 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 const speakers = [
   { name: "Prof. Ashok Jhunjhunwala, IITM", img: s1 },
-  { name: "Dr. B.V.R. Mohan Reddy", img: s2 },
+  { name: "Ayodhya Rami Reddy, Ramky Group", img: g11 },
+  { name: "Dr. B.V.R. Mohan Reddy, Cyient", img: s2 },
   { name: "C.P. Gurnani, TechM", img: s3 },
   { name: "Chaitanya Peddi, DarwinBox", img: s4 },
   { name: "Dr. D. Nageshwar Reddy, AIG", img: s5 },
   { name: "Debashis Chatterjee, LTIMT", img: s6 },
-  { name: "Faquir Chand Kohli", img: s7 },
+  { name: "Late F. C. Kohli, TCS", img: s7 },
   { name: "G. V. Prasad, Dr. Reddy", img: s8 },
 { name: "Dr. Gullapalli N. Rao, LVPEI", img: s9 },
 { name: "Jan Baan, Baan Corporation, Vannenburg IT Park", img: s10 },
 { name: "K.V. Kamath, ICICI", img: s11 },
-{ name: "Kamlesh (Daaji) Patel", img: s12 },
+{ name: "Kamlesh (Daaji) Patel, Heartfulness Institute", img: s12 },
 { name: "Dr. Krishna Ella, Bharat Biotech", img: s13 },
 { name: "Lalit Ahuja, ANSR", img: s14 },
 { name: "N. G. Subramaniam, TCS", img: s15 },
@@ -76,7 +77,7 @@ const speakers = [
 { name: "Nag Ashwin Reddy, Film Director & Screenwriter", img: s17 },
 { name: "Pawan Kumar Chandana, Skyroot Aerospace", img: s18 },
 { name: "Phil Fersht, HFS", img: s19 },
-{ name: "Rana Daggubati", img: s20 },
+{ name: "Rana Daggubati,  Actor & Film Producer", img: s20 },
 { name: "S. Ravi Kumar, Cognizant", img: s21 },
 { name: "Dr. Sangita Reddy, Apollo", img: s22 },
 { name: "Sanjay Nekkanti, Dhruva Space", img: s23 },
@@ -84,8 +85,7 @@ const speakers = [
 { name: "Subramanian Ramadorai, TCS", img: s25 },
 { name: "U. B. Pravin Rao, Infosys", img: s26 },
 { name: "Dr. Uday B. Desai, IITH", img: s27 },
-{ name: "Venkat Jasti, Suven Lifesciences", img: s28 },
-{ name: "Vikram Vuppala NephroPlus", img: s29 },
+{ name: "Vikram Vuppala, NephroPlus", img: s28},
 { name: "Vineet Nayar, HCL", img: s30 },
 
 ];
@@ -93,15 +93,15 @@ const chief_guests=[
 { name: "M. Venkaiah Naidu", img: g1 },
 { name: "Jishnu Dev Varma", img: g2 },
 { name: "E. S. L. Narasimhan", img: g3 },
-{ name: "C. Rangarajan", img: g4 },
+{ name: "Dr. C. Rangarajan", img: g4 },
 { name: "N. Chandrababu Naidu", img: g5 },
-{ name: "Dr. Y. S. Rajasekhara Reddy", img: g6 },
+{ name: "Late Y. S. Rajasekhara Reddy", img: g6 },
 { name: "N. Kiran Kumar Reddy", img: g7 },
 { name: "Sachin Pilot", img: g8 },
 { name: "D. Sridhar Babu", img: g9 },
 { name: "K. T. Rama Rao", img: g10 },
-{ name: "Ayodhya Rami Reddy, Ramky Group", img: g11 },
 { name: "Ponnala Lakshmaiah", img: g12 },
+{ name: "Pullela Gopichand",img:s29 },
 { name: "Katherine B. Hadda US", img: g13 },
 { name: "Dr. T Hanuman Chowdary", img: g14 },
 { name: "J. Satyanarayana, IAS", img: g15 },
@@ -118,73 +118,113 @@ export default function Speakers() {
   return (
     <section className="w-full">
         <Navbar/>
-        <main className="relative w-full py-[px]  overflow-clip bg-transparent">
-      <div
-        className="
-    w-[400px] lg:w-[65%]
-    min-h-[440px] lg:min-h-[544px]
-    px-0 lg:px-5          
-    bg-no-repeat bg-cover bg-right-top
-  "
-        style={{ backgroundImage: `url(${heroLeftBg})` }}
-      >
+         <main className="relative w-full overflow-clip bg-transparent">
 
-
-        <div className="lg:hidden relative w-[600px] h-[300px] sm:h-[330px]">
-          <img
-            src={rightImage}
-            alt="Speakers"
-            className="h-full w-full object-cover object-left"  
-          />
-        </div>
-
-
-
+        {/* ====================== DESKTOP (lg+) ====================== */}
         <div
           className="
-    lg:hidden absolute inset-0 z-0
-    bg-no-repeat bg-cover
-    bg-[position:center_220px]  
-  "
-          style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
-          aria-hidden="true"
-        />
-
-
-        <div
-          className="
-            relative z-10
-            /* Mobile placement adjustments to sit under curve */
-            -mt-[100px] px-5 pt-8 pb-12 
-            /* Keep your desktop paddings untouched */
-            lg:mt-22 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+            hidden lg:block
+            relative w-full
           "
         >
-          <div className="inline-flex mt-24   lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
-            <h3 className="text-[#0A2A73] text-sm font-semibold">
-              HYSEA Annual Summit &amp; Awards 2026
-            </h3>
+          {/* Left desktop panel with background */}
+          <div
+            className="
+              w-[65%]
+              min-h-[544px]
+              lg:px-5
+              bg-no-repeat bg-cover bg-right-top
+            "
+            style={{ backgroundImage: `url(${heroLeftBg})` }}
+          >
+            <div
+              className="
+                relative z-10
+                lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+              "
+            >
+              <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
+                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                  HYSEA Annual Summit &amp; Awards 2026
+                </h3>
+              </div>
+
+              <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                Speakers
+              </h1>
+
+              <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                Join an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
+              </p>
+
+             
+            </div>
           </div>
 
-          <h1 className="text-white text-[40px] sm:text-[44px] lg:text-[72px] font-medium leading-[1.06] lg:leading-[0.92] tracking-[-0.72px] mb-3">
-            Speakers
-          </h1>
-
-          <p className="text-white mt-5 text-[15px] sm:text-[16px] lg:text-[18px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] lg:max-w-[640px] mb-6">
-            Join an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
-          </p>
-
-          
+          {/* RIGHT IMAGE (desktop only) */}
+          <div
+            className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
+            style={{ backgroundImage: `url(${rightImage})` }}
+            aria-hidden="true"
+          />
         </div>
-      </div>
-      <div
-        className="absolute right-0 top-0 -z-10 w-full lg:w-1/2 pb-6 h-full bg-no-repeat bg-cover bg-left"
-        style={{ backgroundImage: `url(${rightImage})` }}
-        aria-hidden="true"
-      />
+        {/* =================== END DESKTOP =================== */}
 
-      <div className="block lg:hidden pb-[0%] pt-[0%]" aria-hidden="false" />
-    </main>
+        {/* ====================== MOBILE/TABLET (< lg) ====================== */}
+        <div
+          className="
+            block lg:hidden
+            relative w-full
+            overflow-hidden
+          "
+        >
+          {/* MOBILE TOP PHOTO */}
+          <div className="relative w-full h-[300px] sm:h-[330px]">
+            <img
+              src={rightImage}
+              alt="Speakers"
+              className="h-full w-full object-cover object-right"
+            />
+          </div>
+
+          {/* MOBILE BACKGROUND LAYER (under content) */}
+          <div
+            className="
+              absolute inset-0 z-0
+              bg-no-repeat bg-cover
+              bg-[position:center_220px]
+            "
+            style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
+            aria-hidden="true"
+          />
+
+          {/* CONTENT (above backgrounds) */}
+          <div
+            className="
+              relative z-10
+              -mt-[100px] px-5 pt-8 pb-12
+            "
+          >
+            <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
+              <h3 className="text-[#0A2A73] text-sm font-semibold">
+                HYSEA Annual Summit &amp; Awards 2026
+              </h3>
+            </div>
+
+            <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+              Speakers
+            </h1>
+
+            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+              Join an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
+            </p>
+
+            
+           
+          </div>
+        </div>
+
+      </main>
       
      
        <div className="max-w-6xl mx-auto px-0 py-28 bg-white">

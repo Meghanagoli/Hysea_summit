@@ -17,101 +17,162 @@ import c8 from "../assets/c8.webp"
 import c9 from "../assets/c9.webp"
 import c10 from "../assets/c10.webp"
 import c11 from "../assets/c11.webp"
-import awards1 from "../assets/awards1.webp"
-import awards2 from "../assets/awards2.webp"
+import awards1 from "../assets/aw1.png"
+import awards2 from "../assets/aw2.png"
 
 const Awards = () => {
   return (
     <section className="w-full">
       
-           <main className="relative w-full py-[px]  overflow-clip bg-transparent">
-                  <div
-                    className="
-                w-[400px] lg:w-[65%]
-                min-h-[440px] lg:min-h-[544px]
-                px- lg:px-5          
-                bg-no-repeat bg-cover bg-right-top
-              "
-                    style={{ backgroundImage: `url(${heroLeftBg})` }}
-                  >
-                    <div className="lg:hidden relative w-[600px] h-[300px] sm:h-[330px]">
-                      <img
-                        src={rightImage}
-                        alt="Speakers"
-                        className="h-full w-full object-cover object-right"  
-                      />
-                    </div>
-            
-            
-            
-                    <div
-                      className="
-                lg:hidden absolute inset-0 z-0
-                bg-no-repeat bg-cover
-                bg-[position:center_220px]  
-              "
-                      style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
-                      aria-hidden="true"
-                    />
-            
-            
-                    <div
-                      className="
-                        relative z-10
-                        /* Mobile placement adjustments to sit under curve */
-                        -mt-[100px] px-5 pt-8 pb-12 
-                        /* Keep your desktop paddings untouched */
-                        lg:mt-22 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-                      "
-                    >
-                      <div className="inline-flex mt-24   lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
-                        <h3 className="text-[#0A2A73] text-sm font-semibold">
-                          HYSEA Annual Summit &amp; Awards 2026
-                        </h3>
-                      </div>
-            
-                      <h1 className="text-white text-[40px] sm:text-[44px] lg:text-[72px] font-medium leading-[1.06] lg:leading-[0.92] tracking-[-0.72px] mb-3">
-                        Awards
-                      </h1>
-            
-                      <p className="text-white mt-5 text-[15px] sm:text-[16px] lg:text-[18px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] lg:max-w-[640px] mb-6">
-           Over the years, the HYSEA Awards have become a hallmark of excellence,
-           spotlighting some of the most innovative ventures in the tech space. Products recognized through these awards have achieved remarkable success, gaining invaluable exposure to investors, industry leaders, and strategic partners.    
-            </p>
-            
-    <a
-  href="https://hysea.accubate.app/ext/form/12107/1/apply"
-  target="_blank"
-  rel="noopener noreferrer"
-                  className="
-                    w-[190px] h-[43px]
-                    border-[1.5px] border-white
-                    rounded-[4px]
-                    bg-transparent
-                    text-white
-                    font-medium text-[16px] leading-[34.13px]
-                    flex items-center justify-center
-                    px-[20px] py-[4px]
-                  "
-                >
-                  Apply now 
-                </a>
-                    </div>
-                    
-                  </div>
-            
-                  <div
-                    className="absolute right-0 top-0 -z-10 w-full lg:w-1/2 pb-6 h-full bg-no-repeat bg-cover bg-left"
-                    style={{ backgroundImage: `url(${rightImage})` }}
-                    aria-hidden="true"
-                  />
-            
-                  <div className="block lg:hidden pb-[0%] pt-[0%]" aria-hidden="false" />
-                </main>
+            <main className="relative w-full overflow-clip bg-transparent">
+           
+                   {/* ====================== DESKTOP (lg+) ====================== */}
+                   <div
+                     className="
+                       hidden lg:block
+                       relative w-full
+                     "
+                   >
+                     {/* Left desktop panel with background */}
+                     <div
+                       className="
+                         w-[65%]
+                         min-h-[544px]
+                         lg:px-5
+                         bg-no-repeat bg-cover bg-right-top
+                       "
+                       style={{ backgroundImage: `url(${heroLeftBg})` }}
+                     >
+                       <div
+                         className="
+                           relative z-10
+                           lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+                         "
+                       >
+                         <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
+                           <h3 className="text-[#0A2A73] text-sm font-semibold">
+                             HYSEA Annual Summit &amp; Awards 2026
+                           </h3>
+                         </div>
+           
+                         <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                           Awards
+                         </h1>
+           
+                         <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                           Over the years, the HYSEA Awards have become a hallmark of excellence,
+                           spotlighting some of the most innovative ventures in the tech space. Products
+                           recognized through these awards have achieved remarkable success, gaining
+                           invaluable exposure to investors, industry leaders, and strategic partners.
+                         </p>
+           
+                         <a
+                           href="https://hysea.accubate.app/ext/form/12107/1/apply"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="
+                             w-[190px] h-[43px]
+                             border-[1.5px] border-white
+                             rounded-[4px]
+                             bg-transparent
+                             text-white
+                             font-medium text-[16px] leading-[34.13px]
+                             flex items-center justify-center
+                             px-[20px] py-[4px]
+                           "
+                         >
+                           Apply now
+                         </a>
+                       </div>
+                     </div>
+           
+                     {/* RIGHT IMAGE (desktop only) */}
+                     <div
+                       className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
+                       style={{ backgroundImage: `url(${rightImage})` }}
+                       aria-hidden="true"
+                     />
+                   </div>
+                   {/* =================== END DESKTOP =================== */}
+           
+                   {/* ====================== MOBILE/TABLET (< lg) ====================== */}
+                   <div
+                     className="
+                       block lg:hidden
+                       relative w-full
+                       overflow-hidden
+                     "
+                   >
+                     {/* MOBILE TOP PHOTO */}
+                     <div className="relative w-full h-[300px] sm:h-[330px]">
+                       <img
+                         src={rightImage}
+                         alt="Speakers"
+                         className="h-full w-full object-cover object-right"
+                       />
+                     </div>
+           
+                     {/* MOBILE BACKGROUND LAYER (under content) */}
+                     <div
+                       className="
+                         absolute inset-0 z-0
+                         bg-no-repeat bg-cover
+                         bg-[position:center_220px]
+                       "
+                       style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
+                       aria-hidden="true"
+                     />
+           
+                     {/* CONTENT (above backgrounds) */}
+                     <div
+                       className="
+                         relative z-10
+                         -mt-[100px] px-5 pt-8 pb-12
+                       "
+                     >
+                       <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
+                         <h3 className="text-[#0A2A73] text-sm font-semibold">
+                           HYSEA Annual Summit &amp; Awards 2026
+                         </h3>
+                       </div>
+           
+                       <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+                         Awards
+                       </h1>
+           
+                       <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+                         Over the years, the HYSEA Awards have become a hallmark of excellence,
+                         spotlighting some of the most innovative ventures in the tech space. Products
+                         recognized through these awards have achieved remarkable success, gaining
+                         invaluable exposure to investors, industry leaders, and strategic partners.
+                       </p>
+           
+                       <a
+                         href="https://hysea.accubate.app/ext/form/12107/1/apply"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="
+                           w-[190px] h-[43px]
+                           border-[1.5px] border-white
+                           rounded-[4px]
+                           bg-transparent
+                           text-white
+                           font-medium text-[16px] leading-[34.13px]
+                           flex items-center justify-center
+                           px-[20px] py-[4px]
+                         "
+                       >
+                         Apply now
+                       </a>
+                     </div>
+                   </div>
+                   {/* =================== END MOBILE/TABLET =================== */}
+           
+                 </main>
   <div className="mx-auto max-w-9xl w-full">
 
     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center">
-      <div className="block md:block w-full h-full object-cover bg-no-repeat  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
+      <div className="block md:block w-full h-full object-cover bg-no-repeat bg-center  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
       </div>
       <div className="bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-28 md:py-32 text-center">
         <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
@@ -128,7 +189,7 @@ const Awards = () => {
           also include product presentations and demos.
         </p>
       </div>
-       <div className="block md:block w-full h-full object-cover bg-no-repeat md:object-center" style={{ backgroundImage: `url(${awards2})` }}>
+       <div className="block md:block w-full h-full object-cover bg-no-repeat bg-center md:object-center" style={{ backgroundImage: `url(${awards2})` }}>
       </div>
     </div>
   </div>
@@ -143,7 +204,7 @@ const Awards = () => {
         Why Nominate
       </h2>
       <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
-        In the past ten-plus years, Product owners have found the opportunity to gain:
+        In the past 10+ years, Organizations have found the opportunity to gain:
       </p>
 
       <div className="space-y-10 max-w-3xl mt-12 sm:mt-14">
@@ -160,21 +221,7 @@ const Awards = () => {
     </p>
     </div>
   </div>
-<div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
-  <div className="flex items-start gap-4">
-    <img
-      src={a2}         
-      alt=""                      
-      aria-hidden="true"
-    />
-    <p className="text-neutral-800 leading-relaxed text-left">
-      Access to      Access to HYSEA programs at T-Hub, IIIT-H, and other incubators
-    </p>
-    </div>
-  </div>
-
-      
-  <div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
+   <div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
   <div className="flex items-start gap-4">
     <img
       src={a3}         
@@ -187,6 +234,21 @@ const Awards = () => {
     </p>
     </div>
   </div>
+<div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
+  <div className="flex items-start gap-4">
+    <img
+      src={a2}         
+      alt=""                      
+      aria-hidden="true"
+    />
+    <p className="text-neutral-800 leading-relaxed text-left">
+      Access to HYSEA programs at T-Hub, IIIT-H, and other incubators
+    </p>
+    </div>
+  </div>
+
+      
+ 
       </div>
     </div>
 <div className="bg-white block px-12 py-6 h-[360px] sm:h-[420px] md:h-[520px] lg:h-[800px] overflow-hidden">
@@ -225,14 +287,14 @@ const Awards = () => {
         <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
           <li>High-value press visibility</li>
           <li>Access to top enterprise leaders and catalyst programs (T-Hub, IIIT-H, etc.)</li>
-          <li>HYSEA &amp; TiE Hyderabad memberships</li>
+          <li>1 year HYSEA membership</li>
           <li>Referrals to VCs &amp; angel networks</li>
           <li>A free showcase slot for finalists at the HYSEA Annual Summit and so much more!</li>
         </ul>
 
         <h4 className="font-semibold mt-4 mb-2">Who Can Apply?</h4>
         <p className="text-sm sm:text-base">
-          Startups incorporated in Telangana with a market-ready product and customer traction.
+          Startups incorporated in Telangana with a Market-ready Product / Customer Traction.
         </p>
       </div>
 
@@ -242,7 +304,7 @@ const Awards = () => {
           It’s time to spotlight the most impactful products and breakthrough innovations built in Telangana’s thriving tech ecosystem.
         </p>
 
-        <h4 className="font-semibold mb-2">Why Nominate Your Product?</h4>
+        <h4 className="font-bold mb-2">Why Nominate Your Product?</h4>
         <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
           <li>Visibility across the innovation ecosystem with researchers, corporates &amp; tech leaders</li>
           <li>Access to HYSEA programs in partnership with T-Hub, IIIT-H &amp; leading incubators</li>
@@ -251,7 +313,7 @@ const Awards = () => {
 
         <h4 className="font-semibold mt-4 mb-2">Who Can Apply?</h4>
         <p className="text-sm sm:text-base">
-          Products/platforms that are already in the market and built by established companies.<br/> (Idea-stage tech is eligible only with a granted patent.)
+          Products/Platforms that are already in the market and built by established companies.<br/> (Idea-stage tech is eligible only with a granted patent.)
         </p>
       </div>
     </div>
