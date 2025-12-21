@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "./Footer.js"
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
-import rightImage from "../assets/awards_img.webp"
+import rightImage from "../assets/awards_img.png"
 import a1 from "../assets/a1.svg"
 import a2 from "../assets/a2.svg"
 import a3 from "../assets/a3.svg"
+import a4 from "../assets/a4.svg"
 import c1 from "../assets/c1.webp"
 import c2 from "../assets/c2.webp"
 import c3 from "../assets/c3.webp"
@@ -74,14 +75,11 @@ const Awards = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                             w-[190px] h-[43px]
                              border-[1.5px] border-white
-                             rounded-[4px]
+                             rounded-md
                              bg-transparent
-                             text-white
-                             font-medium text-[16px] leading-[34.13px]
-                             flex items-center justify-center
-                             px-[20px] py-[4px]
+                             text-white text-sm font-semibold                             
+                             px-4 md:px-5 py-2
                            "
               >
                 Apply now
@@ -91,7 +89,7 @@ const Awards = () => {
 
           {/* RIGHT IMAGE (desktop only) */}
           <div
-            className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
+            className="absolute right-0 top-8 md:top-12 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-center"
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
@@ -158,14 +156,12 @@ const Awards = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="
-                           w-[190px] h-[43px]
                            border-[1.5px] border-white
-                           rounded-[4px]
+                           rounded-md
                            bg-transparent
                            text-white
-                           font-medium text-[16px] leading-[34.13px]
-                           flex items-center justify-center
-                           px-[20px] py-[4px]
+                          text-sm font-semibold
+                            px-4 md:px-5 py-2
                          "
             >
               Apply now
@@ -178,9 +174,9 @@ const Awards = () => {
       <div className="mx-auto max-w-9xl w-full">
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center">
-          <div className="block md:block w-full h-full object-cover bg-no-repeat bg-center  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
+          <div className="block md:block w-full h-full object-cover bg-no-repeat bg-[position:65%_center]  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
           </div>
-          <div className="bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-28 md:py-32 text-center">
+          <div className=" border-[6px] border-[#0530A8] bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-28 md:py-32 text-center">
             <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
               About the Awards
             </h2>
@@ -207,7 +203,7 @@ const Awards = () => {
 
           <div className="bg-white px-6 sm:px-10 md:px-14 py-24 md:py-30">
             <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
-              Why Nominate
+              AWARD CATERGORIES
             </h2>
             <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
               In the past 10+ years, Organizations have found the opportunity to gain:
@@ -215,49 +211,108 @@ const Awards = () => {
 
             <div className="space-y-10 max-w-3xl mt-12 sm:mt-14">
 
-              <div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
-                <div className="flex items-start gap-4">
+              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+                <div className="flex items-stretch">
+
                   <img
                     src={a1}
                     alt=""
                     aria-hidden="true"
+                    className="block h-full"
                   />
-                  <p className="text-neutral-800 leading-relaxed text-left">
-                    Press coverage and exposure to innovation and tech ecosystem of researchers and corporations
-                  </p>
+
+                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+
+                    <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
+                      Startup 10x Awards
+                    </h3>
+
+                    <p className="text-black-900 text-base sm:text-lg text-left">
+                      The Startup Awards serve as a trusted benchmark for identifying and recognizing some of the most promising, scale-ready startups emerging from Hyderabad and Telangana. Startups incorporated in Telangana with a Market-ready Product / Customer Traction are considered.                    </p>
+
+                  </div>
+
                 </div>
               </div>
-              <div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
-                <div className="flex items-start gap-4">
+
+
+
+              <div className="border border-gray-300 rounded-xl shadow-md w-full">                <div className="flex items-stretch">
+
+                <img
+                  src={a2}
+                  alt=""
+                  aria-hidden="true"
+                  className="block h-full"
+                />
+
+                <div className="px-6 sm:px-8 flex flex-col justify-center">
+
+                  <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
+                    Product Innovation Awards
+                  </h3>
+
+                  <p className="text-black-900 text-base sm:text-lg text-left">
+                    The Product Innovation Awards recognize the most impactful products and breakthrough innovations built in Telangana's thriving tech ecosystem.
+                    Products or platforms that are already in the market and built by established companies are considered for this recognition.</p>
+                </div>
+
+              </div>
+              </div>
+
+              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+                <div className="flex items-stretch">
+
                   <img
                     src={a3}
                     alt=""
                     aria-hidden="true"
+                    className="block h-full"
                   />
 
-                  <p className="text-neutral-800 leading-relaxed text-left">
-                    At the Annual Summit, an opportunity for the finalists to showcase their product/solution to a wider audience at no cost
-                  </p>
+                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+
+                    <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
+                      Industry Service Awards
+                    </h3>
+
+                    <p className="text-black-900 text-base sm:text-lg text-left">
+                      The Industry Service awards recognize the performance and contribution of IT and ITES companies operating out of Telangana. These awards are based on export earnings for the relevant financial year, verified through STPΙ Hyderabad and SEZ records.</p>
+                  </div>
+
                 </div>
               </div>
-              <div className="border border-gray-300 rounded-xl px-6 sm:px-8 py-6 sm:py-8 shadow-md">
-                <div className="flex items-start gap-4">
+
+              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+                <div className="flex items-stretch">
+
                   <img
-                    src={a2}
+                    src={a4}
                     alt=""
                     aria-hidden="true"
+                    className="block h-full"
                   />
-                  <p className="text-neutral-800 leading-relaxed text-left">
-                    Access to HYSEA programs at T-Hub, IIIT-H, and other incubators
-                  </p>
+
+                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+
+                    <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
+                      Lifetime Achievement Awards
+                    </h3>
+
+                    <p className="text-black-900 text-base sm:text-lg text-left">
+                      The Lifetime Achievement awards are a special honor conferred on exceptional leaders in recognition of immense and sustained contributions.
+                      This award celebrates visionary leadership, long-term impact, and a legacy of service to the industry and society.</p>
+                  </div>
+
                 </div>
               </div>
+
 
 
 
             </div>
           </div>
-          <div className="bg-white block px-12 py-6 h-[360px] sm:h-[420px] md:h-[520px] lg:h-[800px] overflow-hidden">
+          <div className="bg-white block px-12 py-6 h-[600px] sm:h-[900px] md:h-[1000px] lg:h-[1300px] overflow-hidden">
             <div className="flex flex-col gap-4 animate-vertical-scroll hover:[animation-play-state:paused]">
               <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c1} className="h-full w-full object-cover rounded-md" /></div>
               <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c2} className="h-full w-full object-cover rounded-md" /></div>
@@ -281,7 +336,7 @@ const Awards = () => {
       <section className="w-full max-w-9xl bg-[#002F76] text-white">
         <div className="mx-auto max-w-[1260px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
           <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide">
-            AWARD CATEGORIES
+            AWARD NOMINATIONS
           </h2>
           <div className="mt-8 max-w-9xl flex flex-col md:flex-row justify-between gap-6">
             <div className="flex-1 rounded-md border border-white/90 p-8 ">
@@ -328,7 +383,7 @@ const Awards = () => {
 
 
           <p className="mt-20 text-center text-m sm:text-lg text-white/80">
-            Sign up for the 10x Startup and Tech Product &amp; Innovation Awards below.
+            Nominate your company for the 10x Startup and Tech Product &amp; Innovation Awards below.
           </p>
 
           <div className="mt-8 text-center">
@@ -339,7 +394,7 @@ const Awards = () => {
               rel="noopener noreferrer"
               className="
       inline-flex items-center justify-center
-      px-8 py-3
+      px-4 md:px-5 py-2
       border border-white/80
       text-white font-medium
       rounded-md

@@ -8,10 +8,11 @@ const tags = [
   "GCCs",
   "Academicians",
   "Startups",
-  "GSIs & SMEs",
+  "GSIs",
+  "SMEs",
   "Center Heads",
   "Decision Makers",
-  "IT/IT Professionals",
+  "IT Professionals",
 ];
 
 const Attend = () => {

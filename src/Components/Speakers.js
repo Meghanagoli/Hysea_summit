@@ -1,7 +1,7 @@
 import React from "react";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
-import rightImage from "../assets/speakers_img.webp"
+import rightImage from "../assets/speakers_img.png"
 import s1 from "../assets/s1.png"
 import s2 from "../assets/s2.png";
 import s3 from "../assets/s3.png";
@@ -79,7 +79,7 @@ const speakers = [
   { name: "Phil Fersht, HFS", img: s19 },
   { name: "Rana Daggubati,  Actor & Film Producer", img: s20 },
   { name: "S. Ravi Kumar, Cognizant", img: s21 },
-  { name: "Dr. Sangitha, Apollo Hospital", img: s22 },
+  { name: "Dr. Sangitha, Apollo Hospitals", img: s22 },
   { name: "Sanjay Nekkanti, Dhruva Space", img: s23 },
   { name: "Sridhar Vembu, Zoho", img: s24 },
   { name: "Subramanian Ramadorai, TCS", img: s25 },
@@ -163,7 +163,7 @@ export default function Speakers() {
 
           {/* RIGHT IMAGE (desktop only) */}
           <div
-            className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
+            className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-center"
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
@@ -227,7 +227,7 @@ export default function Speakers() {
       </main>
 
 
-      <div className="max-w-6xl mx-auto px-0 py-28 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
         </h2>
@@ -250,7 +250,7 @@ export default function Speakers() {
             </div>
           ))}
         </div>
-        <div className="max-w-6xl mx-auto px-4 py-28 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
           <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10  max-w-[900px] mx-auto">
             MARQUEE SPEAKERS FROM PAST EDITIONS
           </h2>
@@ -284,4 +284,4 @@ export default function Speakers() {
       <Footer />
     </section>
   );
-}                                  
+}
