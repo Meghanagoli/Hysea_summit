@@ -12,7 +12,7 @@ const Footer = () => {
       className="w-full bg-cover bg-center bg-no-repeat py-3 md:py-4"
       style={{ backgroundImage: `url(${footerBg})` }}
     >
-                <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-12 ">
+      <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-12 ">
 
         <div className="flex items-center justify-between md:hidden">
           <img
@@ -22,21 +22,21 @@ const Footer = () => {
           />
           <div className="flex flex-col items-end gap-1">
 
-          <div className="flex items-center gap-3">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={iconFacebook} className="w-6 h-6" alt="fb" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={iconInstagram} className="w-6 h-6" alt="ig" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={iconLinkedIn} className="w-6 h-6" alt="li" />
+            <div className="flex items-center gap-3">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={iconFacebook} className="w-6 h-6" alt="fb" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={iconInstagram} className="w-6 h-6" alt="ig" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={iconLinkedIn} className="w-6 h-6" alt="li" />
+              </a>
+            </div>
+            <a href="https://www.hysea.in" target="_blank" rel="noopener noreferrer" className="text-xs text-white/90 hover:text-white">
+              www.hysea.in
             </a>
           </div>
-          <a href="https://www.hysea.in" target="_blank" rel="noopener noreferrer" className="text-xs text-white/90 hover:text-white">
-            www.hysea.in
-          </a>
-        </div>
         </div>
 
         <div className="hidden md:flex items-center justify-between">
@@ -48,13 +48,13 @@ const Footer = () => {
 
           <div className="flex flex-col items-end gap-2">
             <div className="flex gap-4">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/Official.HYSEA/" target="_blank" rel="noopener noreferrer">
                 <img src={iconFacebook} className="w-6 h-6" alt="fb" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/official.hysea/?hl=en" target="_blank" rel="noopener noreferrer">
                 <img src={iconInstagram} className="w-6 h-6" alt="ig" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/hysea/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
                 <img src={iconLinkedIn} className="w-6 h-6" alt="li" />
               </a>
             </div>
@@ -75,4 +75,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; 

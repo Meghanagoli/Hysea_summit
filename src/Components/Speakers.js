@@ -66,50 +66,50 @@ const speakers = [
   { name: "Debashis Chatterjee, LTIMT", img: s6 },
   { name: "Late F. C. Kohli, TCS", img: s7 },
   { name: "G. V. Prasad, Dr. Reddy", img: s8 },
-{ name: "Dr. Gullapalli N. Rao, LVPEI", img: s9 },
-{ name: "Jan Baan, Baan Corporation, Vannenburg IT Park", img: s10 },
-{ name: "K.V. Kamath, ICICI", img: s11 },
-{ name: "Kamlesh (Daaji) Patel, Heartfulness Institute", img: s12 },
-{ name: "Dr. Krishna Ella, Bharat Biotech", img: s13 },
-{ name: "Lalit Ahuja, ANSR", img: s14 },
-{ name: "N. G. Subramaniam, TCS", img: s15 },
-{ name: "N. Lakshmi Narayanan, CTS", img: s16 },
-{ name: "Nag Ashwin Reddy, Film Director & Screenwriter", img: s17 },
-{ name: "Pawan Kumar Chandana, Skyroot Aerospace", img: s18 },
-{ name: "Phil Fersht, HFS", img: s19 },
-{ name: "Rana Daggubati,  Actor & Film Producer", img: s20 },
-{ name: "S. Ravi Kumar, Cognizant", img: s21 },
-{ name: "Dr. Sangita Reddy, Apollo", img: s22 },
-{ name: "Sanjay Nekkanti, Dhruva Space", img: s23 },
-{ name: "Sridhar Vembu, Zoho", img: s24},
-{ name: "Subramanian Ramadorai, TCS", img: s25 },
-{ name: "U. B. Pravin Rao, Infosys", img: s26 },
-{ name: "Dr. Uday B. Desai, IITH", img: s27 },
-{ name: "Vikram Vuppala, NephroPlus", img: s28},
-{ name: "Vineet Nayar, HCL", img: s30 },
+  { name: "Dr. Gullapalli N. Rao, LVPEI", img: s9 },
+  { name: "Jan Baan, Baan Corporation, Vannenburg IT Park", img: s10 },
+  { name: "KV Kamath, ICICI, Infosys", img: s11 },
+  { name: "Kamlesh (Daaji) Patel, Heartfulness Institute", img: s12 },
+  { name: "Dr. Krishna Ella, Bharat Biotech", img: s13 },
+  { name: "Lalit Ahuja, ANSR", img: s14 },
+  { name: "N. G. Subramaniam, TCS", img: s15 },
+  { name: "N. Lakshmi Narayanan, CTS", img: s16 },
+  { name: "Nag Ashwin Reddy, Film Director & Screenwriter", img: s17 },
+  { name: "Pawan Kumar Chandana, Skyroot Aerospace", img: s18 },
+  { name: "Phil Fersht, HFS", img: s19 },
+  { name: "Rana Daggubati,  Actor & Film Producer", img: s20 },
+  { name: "S. Ravi Kumar, Cognizant", img: s21 },
+  { name: "Dr. Sangitha, Apollo Hospital", img: s22 },
+  { name: "Sanjay Nekkanti, Dhruva Space", img: s23 },
+  { name: "Sridhar Vembu, Zoho", img: s24 },
+  { name: "Subramanian Ramadorai, TCS", img: s25 },
+  { name: "U. B. Pravin Rao, Infosys", img: s26 },
+  { name: "Dr. Uday B. Desai, IITH", img: s27 },
+  { name: "Vikram Vuppala, NephroPlus", img: s28 },
+  { name: "Vineet Nayar, HCL", img: s30 },
 
 ];
-const chief_guests=[
-{ name: "M. Venkaiah Naidu", img: g1 },
-{ name: "Jishnu Dev Varma", img: g2 },
-{ name: "E. S. L. Narasimhan", img: g3 },
-{ name: "Dr. C. Rangarajan", img: g4 },
-{ name: "N. Chandrababu Naidu", img: g5 },
-{ name: "Late Y. S. Rajasekhara Reddy", img: g6 },
-{ name: "N. Kiran Kumar Reddy", img: g7 },
-{ name: "Sachin Pilot", img: g8 },
-{ name: "D. Sridhar Babu", img: g9 },
-{ name: "K. T. Rama Rao", img: g10 },
-{ name: "Ponnala Lakshmaiah", img: g12 },
-{ name: "Pullela Gopichand",img:s29 },
-{ name: "Katherine B. Hadda US", img: g13 },
-{ name: "Dr. T Hanuman Chowdary", img: g14 },
-{ name: "J. Satyanarayana, IAS", img: g15 },
-{ name: "S. K. Joshi, IAS", img: g16 },
-{ name: "Jayesh Ranjan, IAS", img: g17 },
-{ name: "Sanjay Kumar, IAS", img: g18 },
-{ name: "V.C. Sajjanar, IPS", img: g19 },
-{ name: "Shikha Goel, IPS", img: g20 },
+const chief_guests = [
+  { name: "M. Venkaiah Naidu", img: g1 },
+  { name: "Jishnu Dev Varma", img: g2 },
+  { name: "E. S. L. Narasimhan", img: g3 },
+  { name: "Dr. C. Rangarajan", img: g4 },
+  { name: "N. Chandrababu Naidu", img: g5 },
+  { name: "Late Y. S. Rajasekhara Reddy", img: g6 },
+  { name: "N. Kiran Kumar Reddy", img: g7 },
+  { name: "Sachin Pilot", img: g8 },
+  { name: "D. Sridhar Babu", img: g9 },
+  { name: "K. T. Rama Rao", img: g10 },
+  { name: "Ponnala Lakshmaiah", img: g12 },
+  { name: "Pullela Gopichand", img: s29 },
+  { name: "Katherine B. Hadda US", img: g13 },
+  { name: "Dr. T Hanuman Chowdary", img: g14 },
+  { name: "J. Satyanarayana, IAS", img: g15 },
+  { name: "S. K. Joshi, IAS", img: g16 },
+  { name: "Jayesh Ranjan, IAS", img: g17 },
+  { name: "Sanjay Kumar, IAS", img: g18 },
+  { name: "V.C. Sajjanar, IPS", img: g19 },
+  { name: "Shikha Goel, IPS", img: g20 },
 
 
 ]
@@ -117,8 +117,8 @@ const chief_guests=[
 export default function Speakers() {
   return (
     <section className="w-full">
-        <Navbar/>
-         <main className="relative w-full overflow-clip bg-transparent">
+      <Navbar />
+      <main className="relative w-full overflow-clip bg-transparent">
 
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
@@ -154,10 +154,10 @@ export default function Speakers() {
               </h1>
 
               <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
-                Join an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
+                Experience an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
               </p>
 
-             
+
             </div>
           </div>
 
@@ -216,23 +216,23 @@ export default function Speakers() {
             </h1>
 
             <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-              Join an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
+              Experience an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
             </p>
 
-            
-           
+
+
           </div>
         </div>
 
       </main>
-      
-     
-       <div className="max-w-6xl mx-auto px-0 py-28 bg-white">
+
+
+      <div className="max-w-6xl mx-auto px-0 py-28 bg-white">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid justify-center gap-x-6 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
           {chief_guests.map((guest, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 bg-gradient-to-b from-blue-600 to-blue-800 rounded-md overflow-hidden ">
@@ -251,37 +251,37 @@ export default function Speakers() {
           ))}
         </div>
         <div className="max-w-6xl mx-auto px-4 py-28 bg-white">
-        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10  max-w-[900px] mx-auto">
-          MARQUEE SPEAKERS FROM PAST EDITIONS
-        </h2>
+          <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10  max-w-[900px] mx-auto">
+            MARQUEE SPEAKERS FROM PAST EDITIONS
+          </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {speakers.map((spk, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 bg-gradient-to-b from-blue-600 to-blue-800 rounded-md overflow-hidden ">
-                <img
-                  src={spk.img}
-                  alt={spk.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
+          <div className="grid justify-center gap-x-6 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
+            {speakers.map((spk, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 bg-gradient-to-b from-blue-600 to-blue-800 rounded-md overflow-hidden ">
+                  <img
+                    src={spk.img}
+                    alt={spk.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium">
+                  {spk.name}
+                </p>
               </div>
+            ))}
+          </div>
 
-              <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium">
-                {spk.name}
-              </p>
-            </div>
-          ))}
         </div>
-        
+
+
       </div>
 
-        
-      </div>
-       
 
-      
-      <Footer/>
+
+      <Footer />
     </section>
   );
-}
+}                                  

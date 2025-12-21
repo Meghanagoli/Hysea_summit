@@ -1,15 +1,16 @@
-
 import React from "react";
-import heroImg from "../../assets/hero-img.webp";    
-import rectBg from "../../assets/wavy-bg.webp"; 
+import heroImg from "../../assets/hero-img.webp";
+import rectBg from "../../assets/wavy-bg.webp";
 
 const HeroPage = () => {
   return (
-    <section className="w-full " style={{height:"100vh",position:"relative",backgroundImage:`url(${heroImg})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center center"}}>
-      
+    <section className="w-full " style={{
+      height: "100vh", position: "relative", backgroundImage: `url(${heroImg})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center center"
+    }}>
+
 
       <div
         className="
@@ -31,7 +32,7 @@ const HeroPage = () => {
 
         <div className="max-w-9xl mx-auto px-4 sm:px-6 md:px-12 py-2 sm:py-4 md:py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
-            
+
             <div className="mt-2 sm:mt-4 md:mt-6 max-w-[60ch] md:max-w-none">
               <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-semibold px-4 py-1 rounded-full text-xs md:text-sm">
                 33rd Edition | March 5, 2026 | Hyderabad
@@ -44,7 +45,7 @@ const HeroPage = () => {
 
               <p className="mt-4 sm:mt-5 font-semibold text-base sm:text-xl md:text-3xl">
                 Intelligence Everywhere : <br />
-                Leading the New Era 
+                Leading the New Era of Transformation
               </p>
             </div>
             <div className="text-sm sm:text-base leading-relaxed mt-4 sm:mt-6 md:mt-16 max-w-[70ch] md:max-w-none ml-0 ">
