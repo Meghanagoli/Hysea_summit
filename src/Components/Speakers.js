@@ -2,8 +2,8 @@ import React from "react";
 import { useSEO } from "./useSEO";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
-import rightImage from "../assets/speakers_img.png"
-import s1 from "../assets/s1.png"
+import rightImage from "../assets/speakers_img.png";
+import s1 from "../assets/s1.png";
 import s2 from "../assets/s2.png";
 import s3 from "../assets/s3.png";
 import s4 from "../assets/s4.png";
@@ -66,7 +66,7 @@ const speakers = [
   { name: "Dr. D. Nageshwar Reddy, AIG", img: s5 },
   { name: "Debashis Chatterjee, LTIMT", img: s6 },
   { name: "Late F. C. Kohli, TCS", img: s7 },
-  { name: "G. V. Prasad, Dr. Reddy", img: s8 },
+  { name: "G. V. Prasad, Dr. Reddy's", img: s8 },
   { name: "Dr. Gullapalli N. Rao, LVPEI", img: s9 },
   { name: "Jan Baan, Baan Corporation, Vannenburg IT Park", img: s10 },
   { name: "K. V. Kamath, ICICI Bank", img: s11 },
@@ -102,7 +102,7 @@ const chief_guests = [
   { name: "K. T. Rama Rao", img: g10 },
   { name: "Ponnala Lakshmaiah", img: g12 },
   { name: "Pullela Gopichand", img: s29 },
-  { name: "Katherine B. Hadda US", img: g13 },
+  { name: "Katherine B. Hadda, USCG", img: g13 },
   { name: "Dr. T. Hanuman Chowdary", img: g14 },
   { name: "J. Satyanarayana, IAS", img: g15 },
   { name: "S. K. Joshi, IAS", img: g16 },
@@ -123,7 +123,6 @@ export default function Speakers() {
     <section className="w-full">
       <Navbar />
       <main className="relative w-full overflow-clip bg-transparent">
-
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
           className="
@@ -158,10 +157,10 @@ export default function Speakers() {
               </h1>
 
               <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
-                Experience an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
+                Experience an exceptional lineup of distinguished experts and
+                dignitaries as they explore the trends, breakthroughs, and bold
+                ideas shaping the future.
               </p>
-
-
             </div>
           </div>
 
@@ -220,16 +219,13 @@ export default function Speakers() {
             </h1>
 
             <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-              Experience an exceptional lineup of distinguished experts and dignitaries as they explore the trends, breakthroughs, and bold ideas shaping the future.
+              Experience an exceptional lineup of distinguished experts and
+              dignitaries as they explore the trends, breakthroughs, and bold
+              ideas shaping the future.
             </p>
-
-
-
           </div>
         </div>
-
       </main>
-
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
@@ -277,13 +273,8 @@ export default function Speakers() {
               </div>
             ))}
           </div>
-
         </div>
-
-
       </div>
-
-
 
       <Footer />
     </section>
