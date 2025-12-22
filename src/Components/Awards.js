@@ -21,7 +21,6 @@ import c10 from "../assets/c10.webp";
 import c11 from "../assets/c11.webp";
 import awards1 from "../assets/aw1.png";
 import awards2 from "../assets/aw2.png";
-console.log("testing");
 
 const Awards = () => {
   useSEO({
