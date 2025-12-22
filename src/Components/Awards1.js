@@ -176,19 +176,16 @@ const Awards = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center">
           <div className="block md:block w-full h-full object-cover bg-no-repeat bg-[position:65%_center]  md:object-center" style={{ backgroundImage: `url(${awards1})` }}>
           </div>
-          <div className=" border-[6px] border-[#0530A8] bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-16 py-28 md:py-32 text-center">
+          <div className=" border-[6px]  border-b-0  border-[#0530A8] bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-10 py-16 md:py-20 text-center">
             <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
               About the Awards
             </h2>
             <p className="text-black text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
-              The awards process involves several rounds of shortlisting based on key
-              evaluation parameters that assess the strength of the product and its
-              potential in the market.
+              Designed to highlight outstanding achievements across diverse areas, the HYSEA Awards bring together established enterprises, dynamic startups, and purpose-led organizations. Winners are selected through a rigorous evaluation process, reflecting excellence, measurable impact, and future potential.
             </p>
             <p className="text-black text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-              The shortlisting process will be administered by industry experts such as
-              technocrats, product leaders, business leaders, and investors. Evaluations
-              also include product presentations and demos.
+              Presented during an evening awards ceremony at the Summit, these accolades not only recognize individual and organizational success but also spotlight the collective energy driving Hyderabad's transformation as a global technology and innovation hub. The awards have also honored lifetime contributions and scale-setting achievements that inspire the broader community year after year.
+
             </p>
           </div>
           <div className="block md:block w-full h-full object-cover bg-no-repeat bg-center md:object-center" style={{ backgroundImage: `url(${awards2})` }}>
@@ -312,8 +309,32 @@ const Awards = () => {
 
             </div>
           </div>
-          <div className="bg-white block px-12 py-6 h-[600px] sm:h-[900px] md:h-[1000px] lg:h-[1300px] overflow-hidden">
+          <div className="bg-white block max-w-[1200px] px-8 py-6 h-[600px] sm:h-[900px] md:h-[1000px] lg:h-[1300px] overflow-hidden">
             <div className="flex flex-col gap-4 animate-vertical-scroll hover:[animation-play-state:paused]">
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full "><img src={c1} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full "><img src={c2} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c3} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c4} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full "><img src={c5} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full "><img src={c6} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c7} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c8} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c9} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c10} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c11} className="h-full w-full object-cover rounded-md" /></div>
+
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c1} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c2} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c3} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c4} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c5} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c6} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c7} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c8} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c9} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c10} className="h-full w-full object-cover rounded-md" /></div>
+              <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c11} className="h-full w-full object-cover rounded-md" /></div>
+
               <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c1} className="h-full w-full object-cover rounded-md" /></div>
               <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c2} className="h-full w-full object-cover rounded-md" /></div>
               <div className="bg-[#d6d6d6] rounded-md h-48 w-full"><img src={c3} className="h-full w-full object-cover rounded-md" /></div>

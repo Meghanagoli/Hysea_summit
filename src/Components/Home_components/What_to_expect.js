@@ -8,7 +8,7 @@ const What_to_expect = () => {
     <div className="w-full mx-auto max-w-9xl  bg-white overflow-hidden">
 
       <div className=" flex flex-col md:flex-row ">
-        <div className="w-full  md:w-2/3 px-8 md:px-12 py-10 text-[#222] border-[6px] border-[#0530A8]">
+        <div className="w-full  md:w-3/5 px-8 md:px-12 py-10 text-[#222] border-[6px] border-[#0530A8]">
           <h2 className="text-3xl md:text-6xl font-semibold text-[#0530A8] mb-6">
             WHAT TO EXPECT
           </h2>
@@ -59,13 +59,9 @@ const What_to_expect = () => {
             </span>
           </p>
         </div>
-        <div className="w-full md:w-1/3">
-          <img
-            src={heroImg}
-            alt="Audience at HYSEA summit"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div className="w-full md:w-2/5 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImg})` }} />
+
       </div>
     </div>
   )
