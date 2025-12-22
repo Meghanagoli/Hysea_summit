@@ -88,7 +88,17 @@ const Awards = () => {
           </div>
 
           {/* RIGHT IMAGE (desktop only) */}
-          <div className="absolute right-0 top-8 md:top-12 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${rightImage})` }} aria-hidden="true" />
+          <div
+            className="
+    absolute right-0 top-4 md:top-10 -z-10
+    w-1/2 h-full
+    bg-no-repeat
+   bg-[position:25%_center]
+    bg-[length:120%_auto]
+  "
+            style={{ backgroundImage: `url(${rightImage})` }}
+            aria-hidden="true"
+          />
         </div>
         {/* =================== END DESKTOP =================== */}
 
