@@ -88,20 +88,7 @@ const Awards = () => {
           </div>
 
           {/* RIGHT IMAGE (desktop only) */}
-          <div
-            className="
-    absolute right-0 top-8 md:top-12 -z-10
-    w-[60%] 
-    h-full
-    bg-no-repeat
-    bg-cover
-    bg-left
-    lg:bg-[length:115%_auto]
-  "
-            style={{ backgroundImage: `url(${rightImage})` }}
-            aria-hidden="true"
-          />
-
+          <div className="absolute right-0 top-8 md:top-12 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${rightImage})` }} aria-hidden="true" />
         </div>
         {/* =================== END DESKTOP =================== */}
 
@@ -114,12 +101,7 @@ const Awards = () => {
                      "
         >
           {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[380px] sm:h-[420px]">
-            <img
-              src={rightImage}
-              alt="Awards"
-              className="h-full w-full object-cover object-center"
-            />
+          <div className="relative w-full h-[300px] sm:h-[330px]"> <img src={rightImage} alt="Speakers" className="h-full w-full object-cover object-right" />
           </div>
 
 
