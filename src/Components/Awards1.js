@@ -200,7 +200,7 @@ const Awards = () => {
 
           <div className="bg-white px-6 sm:px-10 md:px-14 py-24 md:py-30">
             <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
-              AWARD CATERGORIES
+              AWARD CATEGORIES
             </h2>
             <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
               In the past 10+ years, Organizations have found the opportunity to gain:
