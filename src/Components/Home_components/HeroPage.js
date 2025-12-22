@@ -44,7 +44,7 @@ const HeroPage = () => {
               </h1>
 
               <p className="mt-4 sm:mt-5 font-semibold text-base sm:text-xl md:text-3xl">
-                Intelligence Everywhere : <br />
+                Intelligence Everywhere: <br />
                 Leading the New Era of Transformation
               </p>
             </div>

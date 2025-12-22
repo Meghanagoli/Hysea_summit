@@ -77,7 +77,7 @@ const Expo = () => {
               px-[20px] py-[4px]
             "
               >
-                Reserve your space
+                Reserve your Space
               </a>
 
             </div>
@@ -155,7 +155,7 @@ const Expo = () => {
               px-4 md:px-5 py-2
             "
             >
-              Reserve your space
+              Reserve your Space
             </a>
 
           </div>
