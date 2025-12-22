@@ -145,7 +145,7 @@ export default function Speakers() {
             >
               <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                 <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  HYSEA Annual Summit &amp; Awards 2026
+                  33rd HYSEA Annual Summit &amp; Awards 2026
                 </h3>
               </div>
 
@@ -163,7 +163,7 @@ export default function Speakers() {
 
           {/* RIGHT IMAGE (desktop only) */}
           <div
-            className="absolute -right-12 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-center"
+            className="absolute -right-12 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-[length:90%_auto] bg-top "
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
@@ -183,7 +183,7 @@ export default function Speakers() {
             <img
               src={rightImage}
               alt="Speakers"
-              className="h-full w-full object-cover object-right"
+              className="h-full w-full object-cover object-top"
             />
           </div>
 
@@ -207,7 +207,7 @@ export default function Speakers() {
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
-                HYSEA Annual Summit &amp; Awards 2026
+                33rd HYSEA Annual Summit &amp; Awards 2026
               </h3>
             </div>
 

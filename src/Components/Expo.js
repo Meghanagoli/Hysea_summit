@@ -50,7 +50,7 @@ const Expo = () => {
             >
               <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                 <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  HYSEA Annual Summit &amp; Awards 2026
+                  33rd HYSEA Annual Summit &amp; Awards 2026
                 </h3>
               </div>
 
@@ -129,7 +129,7 @@ const Expo = () => {
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
-                HYSEA Annual Summit &amp; Awards 2026
+                33rd HYSEA Annual Summit &amp; Awards 2026
               </h3>
             </div>
 
@@ -197,7 +197,7 @@ const Expo = () => {
         <div className="max-w-9xl mx-auto text-center relative">
 
           <p className="absolute inset-x-0 top-0 text-4xl md:text-5xl lg:text-6xl font-semibold text-white uppercase tracking-wide text-center mb-8 md:mb-0">
-            BOOK YOUR SPACE
+            Available Stalls
           </p>
 
           <div className="max-w-9xl pt-28 sm:pt-32 md:pt-28 ">

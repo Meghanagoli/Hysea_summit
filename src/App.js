@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar.js";
 import Home from './Components/Home.js';
 import Expo from './Components/Expo.js';
 import Speakers from "./Components/Speakers.js";
-import Awards from "./Components/Awards1.js";
+import Awards from "./Components/Awards.js";
 import ScrollToTop from "./Components/ScrollToTop.js";
 function App() {
   return (
