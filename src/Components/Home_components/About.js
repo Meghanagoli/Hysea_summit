@@ -5,14 +5,32 @@ const About = () => {
   return (
     <div className="w-full mx-auto max-w-9xl bg-white overflow-hidden">
 
-      <div className="flex flex-col md:flex-row items-stretch">
+
+      <div className="flex flex-col md:flex-col lg:flex-row items-stretch">
+
         <div
-          className="w-full md:w-2/5 bg-cover bg-center"
+          className="
+            w-full md:w-full lg:w-2/5
+            bg-no-repeat bg-cover bg-center
+            md:order-1 lg:order-1
+
+            /* Ensure image is visible across breakpoints */
+            h-[220px] sm:h-[280px] md:h-[360px] lg:h-auto
+          "
           style={{ backgroundImage: `url(${heroImg})` }}
         />
 
-        <div className="w-full md:w-3/5 px-8 md:px-12 py-10 text-[#222] border-[6px] border-[#0530A8]">
+        <div
+          className="
+            w-full md:w-full lg:w-3/5
+            px-8 md:px-12 py-10 text-[#222]
+            border-[6px] border-[#0530A8]
+            md:order-2 lg:order-2
 
+            /* Ensure horizontal text flow on tablet just in case */
+            md:[writing-mode:horizontal-tb] md:whitespace-normal md:break-normal md:text-left
+          "
+        >
           <h2 className="text-3xl md:text-6xl font-semibold text-[#0530A8] tracking-wide mb-6">
             ABOUT HYSEA
           </h2>
@@ -39,7 +57,6 @@ const About = () => {
             with emerging technologies, and curates a year-round calendar of roundtables and thought
             leadership seminars on key industry topics.
           </p>
-
         </div>
       </div>
 
@@ -47,4 +64,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

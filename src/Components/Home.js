@@ -7,20 +7,20 @@ import Attend from "./Home_components/Attend";
 import WhyAttend from "./Home_components/Why_Attend"
 import RegistrationSection from "./Home_components/Pricing";
 import Footer from "./Footer";
-const Home= () => { 
+const Home = () => {
   return (
     <section >
-        <Navbar/>
-        <HeroPage/>
-        <What_to_expect/>
-        <About/>
-        <WhyAttend/>
-        <Attend/>
-       
-        <RegistrationSection/>
-        <Footer/>
-      
-      
+      <Navbar />
+      <HeroPage />
+      <What_to_expect />
+      <About />
+      <WhyAttend />
+      <Attend />
+
+      <RegistrationSection />
+      <Footer />
+
+
     </section>
   );
 };

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import network from '../../assets/network.webp';
 import leaders from '../../assets/leaders.webp';
@@ -6,8 +5,8 @@ import innovation from '../../assets/innovation.webp';
 import attendBg from "../../assets/attend_bg.webp"
 const Why_Attend = () => {
   return (
-   
- <section
+
+    <section
       className="relative  px-4 md:px-6 py-16 md:py-28 bg-cover bg-center"
       style={{ backgroundImage: `url(${attendBg})` }}
     >
@@ -16,7 +15,14 @@ const Why_Attend = () => {
         WHY ATTEND
       </h1>
 
-      <div className="relative z-10 flex flex-col md:flex-row items-stretch md:items-start justify-center md:justify-between gap-6 md:gap-[24px] max-w-[1200px] mx-auto">
+
+      <div className="relative z-10
+  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+  items-stretch md:items-start
+  justify-center
+  gap-6 md:gap-[24px]
+  max-w-[1200px] mx-auto"
+      >
         <Card
           ribbonSrc={network}
           title={`Expand Your\nNetwork`}
@@ -39,10 +45,11 @@ const Why_Attend = () => {
           statLabel="Startups"
         />
       </div>
+
     </section>
   );
 };
- 
+
 const Card = ({ ribbonSrc, title, subtitle, statValue, statLabel }) => {
   return (
     <article className="relative w-full md:w-[340px] h-[448px] rounded-[12px] bg-white shadow-[0_8px_30px_rgba(15,23,42,0.10)] overflow-hidden">
@@ -92,7 +99,7 @@ const Card = ({ ribbonSrc, title, subtitle, statValue, statLabel }) => {
         {subtitle}
       </p>
 
-     <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[215px] h-[137px] overflow-hidden">
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[215px] h-[137px] overflow-hidden">
         <div className="absolute left-0 bottom-[-78px] w-[215px] h-[215px]  flex flex-col items-center justify-center shadow-[0_6px_18px_rgba(16,24,40,0.06)]">
           <div className="text-[#155BE8]  text-[40px] font-bold leading-[1] -translate-y-[20px]">
             {statValue}

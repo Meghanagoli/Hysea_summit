@@ -31,10 +31,11 @@ const HeroPage = () => {
         <div className="absolute inset-0 bg-black/8 md:bg-black/10" />
 
         <div className="max-w-9xl mx-auto px-4 sm:px-6 md:px-12 py-2 sm:py-4 md:py-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
+          {/* ⬇ Only change here: tablet stays single column */}
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
 
             <div className="mt-2 sm:mt-4 md:mt-6 max-w-[60ch] md:max-w-none">
-              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-semibold px-4 py-1 rounded-full text-xs md:text-sm">
+              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-semibold px-4 py-1 mt-6 rounded-full text-xs md:text-sm">
                 33rd Edition | March 5, 2026 | Hyderabad
               </span>
 
@@ -48,7 +49,7 @@ const HeroPage = () => {
                 Leading the New Era of Transformation
               </p>
             </div>
-            <div className="text-sm sm:text-base leading-relaxed mt-4 sm:mt-6 md:mt-16 max-w-[70ch] md:max-w-none ml-0 ">
+            <div className="text-sm sm:text-base leading-relaxed mt-4 sm:mt-6 md:mt-28 max-w-[70ch] md:max-w-none ml-0 ">
               <p>
                 HYSEA’s Annual Summit is India’s premier technology leadership
                 event, bringing together over 1,200+ delegates and 75+ speakers
