@@ -1,4 +1,5 @@
 import React from "react";
+import { useSEO } from "./useSEO";
 import Footer from "./Footer.js"
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
@@ -22,6 +23,11 @@ import awards1 from "../assets/aw1.png"
 import awards2 from "../assets/aw2.png"
 
 const Awards = () => {
+  useSEO({
+    title: "Awards | HYSEA Annual Summit & Awards 2026",
+    description:
+      "Gain industry recognition and spotlight your success at the 33rd HYSEA Annual Summit & Awards 2026. Whether you are a scale-ready startup or an established enterprise, the HYSEA Awards offer a platform to showcase your innovation and impact.",
+  });
   return (
     <section className="w-full">
 
@@ -75,11 +81,15 @@ const Awards = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                             border-[1.5px] border-white
-                             rounded-md
-                             bg-transparent
-                             text-white text-sm font-semibold                             
-                             px-4 md:px-5 py-2
+                              w-[fit-content] h-[43px]
+              border-[1.5px] border-white
+              rounded-[4px]
+              min-w-40
+              bg-transparent
+              text-white
+              font-medium text-[16px] leading-[34.13px]
+              flex items-center justify-center
+              px-[20px] py-[4px]
                            "
               >
                 Apply now
@@ -258,10 +268,8 @@ const Awards = () => {
 
               </div>
               </div>
-
               <div className="border border-gray-300 rounded-xl shadow-md w-full">
                 <div className="flex items-stretch">
-
                   <img
                     src={a3}
                     alt=""
@@ -270,15 +278,18 @@ const Awards = () => {
                   />
 
                   <div className="px-6 sm:px-8 flex flex-col justify-center">
-
                     <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
-                      Industry Service Awards
+                      Industry Excellence Awards
                     </h3>
 
                     <p className="text-black-900 text-base sm:text-lg text-left">
-                      The Industry Service awards recognize the performance and contribution of IT and ITES companies operating out of Telangana. These awards are based on export earnings for the relevant financial year, verified through STPΙ Hyderabad and SEZ records.</p>
+                      The Industry Excellence Awards honor the performance and
+                      contribution of IT companies operating out of Telangana.
+                      These accolades recognize excellence in revenue growth,
+                      employment generation, gender diversity, and impact from
+                      Tier-2 cities.
+                    </p>
                   </div>
-
                 </div>
               </div>
 
@@ -404,9 +415,9 @@ const Awards = () => {
  */}
 
 
-
-          <p className="mt-20 text-center text-m sm:text-lg text-white/80">
-            Nominate your company for the 10x Startup and Product &amp; Innovation Awards below.
+          <p className="mt-8 text-center text-m sm:text-lg text-white/80">
+            Nominate your company for the 10x Startup and Product Innovation
+            Awards below.
           </p>
 
           <div className="mt-8 text-center">

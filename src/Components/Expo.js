@@ -1,4 +1,5 @@
 import React from "react";
+import { useSEO } from "./useSEO";
 import smallPod from "../assets/small_pod.svg"
 import largeStall from "../assets/large-stall.svg"
 import medBooth from "../assets/medium-booth.svg"
@@ -19,6 +20,11 @@ const cards = [
 
 
 const Expo = () => {
+  useSEO({
+    title: "Exhibition | HYSEA Annual Summit & Awards 2026",
+    description:
+      "Showcase your innovation at the 33rd HYSEA Annual Summit 2026. Engage with industry leaders, founders, and tech experts. Reserve your exhibition stall today.",
+  });
 
 
   return (
@@ -61,13 +67,12 @@ const Expo = () => {
               <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
                 Generate leads, progress your pipeline and build brand awareness. Become an exhibitor at HYSEA Annual Summit and get in front of industry leaders.
               </p>
-
               <a
                 href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-              w-[190px] h-[43px]
+              w-[fit-content] h-[43px]
               border-[1.5px] border-white
               rounded-[4px]
               bg-transparent
@@ -239,7 +244,7 @@ const Expo = () => {
 
               </div>
 
-              <a href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets" target="_blank" rel="noopener noreferrer" class="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold">Reserve Your Space</a>
+              <a href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets" target="_blank" rel="noopener noreferrer" className="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold">Reserve Your Space</a>
 
             </div>
 

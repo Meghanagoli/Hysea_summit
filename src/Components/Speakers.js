@@ -1,4 +1,5 @@
 import React from "react";
+import { useSEO } from "./useSEO";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
 import rightImage from "../assets/speakers_img.png"
@@ -59,8 +60,8 @@ import Footer from "./Footer";
 const speakers = [
   { name: "Prof. Ashok Jhunjhunwala, IITM", img: s1 },
   { name: "Ayodhya Rami Reddy, Ramky Group", img: g11 },
-  { name: "Dr. B.V.R. Mohan Reddy, Cyient", img: s2 },
-  { name: "C.P. Gurnani, TechM", img: s3 },
+  { name: "Dr. B. V. R. Mohan Reddy, Cyient", img: s2 },
+  { name: "C. P. Gurnani, TechM", img: s3 },
   { name: "Chaitanya Peddi, DarwinBox", img: s4 },
   { name: "Dr. D. Nageshwar Reddy, AIG", img: s5 },
   { name: "Debashis Chatterjee, LTIMT", img: s6 },
@@ -68,7 +69,7 @@ const speakers = [
   { name: "G. V. Prasad, Dr. Reddy", img: s8 },
   { name: "Dr. Gullapalli N. Rao, LVPEI", img: s9 },
   { name: "Jan Baan, Baan Corporation, Vannenburg IT Park", img: s10 },
-  { name: "KV Kamath, ICICI, Infosys", img: s11 },
+  { name: "K. V. Kamath, ICICI Bank", img: s11 },
   { name: "Kamlesh (Daaji) Patel, Heartfulness Institute", img: s12 },
   { name: "Dr. Krishna Ella, Bharat Biotech", img: s13 },
   { name: "Lalit Ahuja, ANSR", img: s14 },
@@ -87,7 +88,6 @@ const speakers = [
   { name: "Dr. Uday B. Desai, IITH", img: s27 },
   { name: "Vikram Vuppala, NephroPlus", img: s28 },
   { name: "Vineet Nayar, HCL", img: s30 },
-
 ];
 const chief_guests = [
   { name: "M. Venkaiah Naidu", img: g1 },
@@ -103,18 +103,22 @@ const chief_guests = [
   { name: "Ponnala Lakshmaiah", img: g12 },
   { name: "Pullela Gopichand", img: s29 },
   { name: "Katherine B. Hadda US", img: g13 },
-  { name: "Dr. T Hanuman Chowdary", img: g14 },
+  { name: "Dr. T. Hanuman Chowdary", img: g14 },
   { name: "J. Satyanarayana, IAS", img: g15 },
   { name: "S. K. Joshi, IAS", img: g16 },
   { name: "Jayesh Ranjan, IAS", img: g17 },
   { name: "Sanjay Kumar, IAS", img: g18 },
   { name: "V.C. Sajjanar, IPS", img: g19 },
   { name: "Shikha Goel, IPS", img: g20 },
-
-
-]
+];
 
 export default function Speakers() {
+  useSEO({
+    title: "Speakers | HYSEA Annual Summit & Awards 2026",
+    description:
+      "Meet the visionaries at the 33rd HYSEA Annual Summit 2026. Featuring an elite lineup of chief guests, dignitaries, and marquee speakers. Join the conversation shaping the future of global technology.",
+  });
+
   return (
     <section className="w-full">
       <Navbar />
