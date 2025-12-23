@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 shadow-md"
-            style={{ backgroundImage: `url(${footerBg})` }}>
+      style={{ backgroundImage: `url(${footerBg})` }}>
       <div className="w-full ">
         <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-12 h-16 md:h-20 flex items-center justify-between">
           <div className="flex items-center">
@@ -22,15 +22,16 @@ const Navbar = () => {
               <Link to="/exhibition" className="hover:underline">Exhibition</Link>
               <Link to="/speakers" className="hover:underline">Speakers</Link>
               <Link to="/awards" className="hover:underline">Awards</Link>
+              <Link to="/partners" className="hover:underline">Partners</Link>
             </nav>
 
             <a
-  href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100">
-  Register Now
-</a>
+              href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100">
+              Register Now
+            </a>
           </div>
 
           <button
@@ -70,20 +71,23 @@ const Navbar = () => {
               <Link to="/awards" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Awards
               </Link>
+              <Link to="/partners" onClick={() => setOpen(false)} className="py-2 hover:underline">
+                Partners
+              </Link>
 
               <div className="pt-2">
-            <a
-  href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100"
->
-  Register Now
-</a>
+                <a
+                  href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100"
+                >
+                  Register Now
+                </a>
               </div>
             </nav>
           </div>
-        )} 
+        )}
       </div>
     </header>
   );

@@ -46,7 +46,7 @@ const Expo = () => {
                            lg:px-5
                            bg-no-repeat bg-cover bg-right-top
                          "
-            style={{ backgroundImage: `url(${heroLeftBg})` }}
+            style={{ backgroundImage: url(${ heroLeftBg }) }}
           >
             <div
               className="
@@ -54,7 +54,7 @@ const Expo = () => {
                              lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
                            "
             >
-              <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
+              <div className="inline-flex mt-10 sm:mt-14 md:mt-16 lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                 <h3 className="text-[#0A2A73] text-sm font-semibold">
                   33rd HYSEA Annual Summit &amp; Awards 2026
                 </h3>
@@ -91,7 +91,7 @@ const Expo = () => {
           {/* RIGHT IMAGE (desktop only) */}
           <div
             className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
-            style={{ backgroundImage: `url(${rightImage})` }}
+            style={{ backgroundImage: url(${ rightImage }) }}
             aria-hidden="true"
           />
         </div>
@@ -106,7 +106,7 @@ const Expo = () => {
                        "
         >
           {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[300px] sm:h-[330px]">
+          <div className="relative w-full h-[300px] sm:h-[350px] md:h-[380px]">
             <img
               src={rightImage}
               alt="Speakers"
@@ -121,7 +121,7 @@ const Expo = () => {
                            bg-no-repeat bg-cover
                            bg-[position:center_220px]
                          "
-            style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
+            style={{ backgroundImage: url(${ heroLeftBgMobile }) }}
             aria-hidden="true"
           />
 
@@ -129,7 +129,7 @@ const Expo = () => {
           <div
             className="
                            relative z-10
-                           -mt-[100px] px-5 pt-8 pb-12
+                           -mt-[60px] sm:-mt-[80px] md:-mt-[40px] px-5 pt-8 pb-12
                          "
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
@@ -138,7 +138,7 @@ const Expo = () => {
               </h3>
             </div>
 
-            <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+            <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">
               Exhibitors
             </h1>
 
@@ -151,11 +151,12 @@ const Expo = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="
+              inline-flex
+              max-w-[220px]
               border-[1.5px] border-white
               rounded-[4px]
               bg-transparent
               text-white
-              flex items-center justify-center
               text-sm font-semibold
               px-4 md:px-5 py-2
             "
@@ -173,8 +174,8 @@ const Expo = () => {
 
 
       <div className="block lg:hidden " />
-      <section className="w-full bg-white px-4 sm:px-6 md:px-12 py-16 md:py-28 ">
-        <div className="mx-auto max-w-9xl ">
+      <section className="w-full bg-white px-4 sm:px-6 md:px-12 py-12 md:py-16 ">
+        <div className="mx-auto max-w-9xl flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#0530A8] ">
             EXHIBITION OPPORTUNITIES
           </h2>
@@ -185,7 +186,7 @@ const Expo = () => {
             global business and technology.
           </p>
 
-          <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
+          <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row items-start justify-center gap-8 md:gap-6">
             {cards.map((c, idx) => (
               <Card
                 key={idx}
@@ -198,19 +199,19 @@ const Expo = () => {
 
         </div>
       </section>
-      <div className="w-full bg-[#002F76] px-4 sm:px-6 md:px-12 py-16 md:py-28">
+      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-12 md:py-16">
         <div className="max-w-9xl mx-auto text-center relative">
 
-          <p className="absolute inset-x-0 top-0 text-4xl md:text-5xl lg:text-6xl font-semibold text-white uppercase tracking-wide text-center mb-8 md:mb-0">
+          <p className="text-3xl md:text-5xl font-semibold text-white uppercase tracking-wide text-center mb-10">
             Available Stalls
           </p>
 
-          <div className="max-w-9xl pt-28 sm:pt-32 md:pt-28 ">
+          <div className="max-w-9xl">
 
 
             <div className="bg-white rounded-3xl px-6 md:px-10 lg:px-14 py-16 md:py-20 shadow-md">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-10">
-                <div className="flex flex-col items-center text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mb-10">
+                <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
                   <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
                     Large Stall
                   </h3>
@@ -221,7 +222,7 @@ const Expo = () => {
                 </div>
 
 
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
                   <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
                     Small Stall
                   </h3>
@@ -230,7 +231,7 @@ const Expo = () => {
                   <p className="text-sm md:text-base font-semibold mb-2">2M x 2M</p>
                   <p className="text-xl md:text-2xl font-semibold">₹30,000</p>
                 </div>
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
                   <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
                     Demo Pod
                   </h3>
@@ -257,27 +258,28 @@ const Expo = () => {
 };
 const Card = ({ title, image, waveImg }) => {
   return (
-    <article className="relative rounded-xl shadow-xl overflow-hidden bg-white">
+    <article className="relative w-full max-w-[360px] rounded-xl overflow-hidden bg-white shadow-xl">
 
       {/* IMAGE */}
-      <div className="w-full h-[260px] md:h-[300px] lg:h-[360px] overflow-hidden">
+      <div className="relative w-full h-[220px] md:h-[260px] lg:h-[360px] overflow-hidden">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* WAVY OVERLAY OVER IMAGE BOTTOM */}
-      <div className="relative -mt-14 z-10">
-        <img
-          src={waveImg}
-          alt="wave"
-          className="w-full object-cover pointer-events-none select-none"
+          className="block w-full h-full object-cover"
         />
 
-        <div className="absolute bottom-7 left-0 w-full px-6">
-          <h3 className="text-white text-xl md:text-3xl font-semibold">
+        {/* WAVY BLUE OVERLAY */}
+        <div className="absolute bottom-0 left-0 w-full h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px]">
+          <img
+            src={waveImg}
+            alt="wave"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* TEXT ON WAVE */}
+        <div className="absolute bottom-0 left-0 w-full h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px] flex items-center px-4">
+          <h3 className="text-white text-base sm:text-lg md:text-xl font-semibold">
             {title}
           </h3>
         </div>
@@ -287,7 +289,3 @@ const Card = ({ title, image, waveImg }) => {
   );
 };
 export default Expo;
-
-
-
-
