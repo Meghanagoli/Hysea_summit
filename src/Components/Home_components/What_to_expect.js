@@ -9,7 +9,7 @@ const What_to_expect = () => {
         <div
           className="
             w-full md:w-full lg:w-3/5
-            px-8 md:px-12 py-10 text-[#222]
+            px-8 md:px-12 py-16 lg:py-20 text-[#222]
             border-[6px] border-[#0530A8]
             order-2 md:order-2 lg:order-1
             md:[writing-mode:horizontal-tb]
@@ -21,7 +21,7 @@ const What_to_expect = () => {
           <h2
             className="
           text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0530A8]
-          mb-3 md:mb-4
+          mb-3 md:mb-5
 
           "
           >
@@ -83,7 +83,10 @@ const What_to_expect = () => {
             /* Increased height for mobile and tablet */
             h-[360px] sm:h-[420px] md:h-[480px] lg:h-auto
           "
-          style={{ backgroundImage: `url(${heroImg})` }}
+          style={{
+            backgroundImage: `url(${heroImg})`,
+            boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset",
+          }}
         />
       </div>
     </div>

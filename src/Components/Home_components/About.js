@@ -15,14 +15,17 @@ const About = () => {
             /* Increased height for mobile & tablet to ensure visibility */
             h-[360px] sm:h-[520px] md:h-[680px] lg:h-auto
           "
-          style={{ backgroundImage: `url(${heroImg})` }}
+          style={{
+            backgroundImage: `url(${heroImg})`,
+            boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset",
+          }}
         />
 
         {/* TEXT BLOCK (unchanged) */}
         <div
           className="
             w-full md:w-full lg:w-3/5
-            px-8 md:px-12 py-10 text-[#222]
+            px-8 md:px-12 py-16 lg:py-20 text-[#222]
             border-[6px] border-[#0530A8]
             md:order-2 lg:order-2
 
@@ -33,14 +36,14 @@ const About = () => {
           <h2
             className="
           text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0530A8]
-          mb-3 md:mb-4
+          mb-3 md:mb-5
 
           "
           >
             ABOUT HYSEA
           </h2>
 
-          <p className="text-sm md:text-lg leading-relaxed mb-4">
+          <p className="text-sm md:text-base leading-relaxed mb-4">
             Established in 1991, HYSEA (Hyderabad Software Enterprises
             Association) is the premier industry association for Telangana’s IT
             sector, representing over 90% of the export revenues and workforce
