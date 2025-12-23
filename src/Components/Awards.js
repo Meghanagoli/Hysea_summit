@@ -64,13 +64,9 @@ const Awards = () => {
               </h1>
 
               <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
-                The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
-                celebrating excellence, innovation, leadership, and social
-                impact across the IT/ITES and technology ecosystem. As one of
-                Hyderabad's most prestigious industry recognitions, these awards
-                honor Organizations and initiatives that have demonstrated
-                exceptional contributions to business growth, technology
-                innovation, sustainable development, and societal progress.
+                The HYSEA Awards are a cornerstone of the Summit, celebrating
+                excellence, innovation, leadership, and social impact across the
+                technology ecosystem.
               </p>
 
               <a
