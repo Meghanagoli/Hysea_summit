@@ -40,7 +40,7 @@ const About = () => {
             ABOUT HYSEA
           </h2>
 
-          <p className="text-sm md:text-base leading-relaxed mb-4">
+          <p className="text-sm md:text-lg leading-relaxed mb-4">
             Established in 1991, HYSEA (Hyderabad Software Enterprises
             Association) is the premier industry association for Telangana’s IT
             sector, representing over 90% of the export revenues and workforce

@@ -59,7 +59,7 @@ const Card = ({
 }) => {
   return (
     <article
-      className={`relative w-full min-w-[340px] w-[60%] md:w-[340px] h-[448px] rounded-[12px] bg-white shadow-[0_8px_30px_rgba(15,23,42,0.10)] overflow-hidden ${className}`}
+      className={`relative w-full min-w-[340px] w-[60%] md:w-[340px] h-[460px] rounded-[12px] bg-white shadow-[0_8px_30px_rgba(15,23,42,0.10)] overflow-hidden ${className}`}
     >
       <img
         src={ribbonSrc}
@@ -69,34 +69,18 @@ const Card = ({
       />
 
       <h3
-        className=" text-[#0f4fb3] px-5 mt-6 text-center"
+        className=" text-[#0f4fb3] px-6 mt-6 text-left text-4xl font-medium"
         style={{
           fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-          fontWeight: 500,
-          fontStyle: "normal",
-          fontSize: "40px",
-          lineHeight: "120%",
-          letterSpacing: "0",
-          verticalAlign: "middle",
-          opacity: 1,
-          color: "",
         }}
       >
         {title}
       </h3>
 
       <p
-        className="  px-5 mt-6"
+        className="text-left px-6 mt-6 text-lg font-regular"
         style={{
           fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-          fontWeight: 500,
-          fontStyle: "normal",
-          fontSize: "18px",
-          lineHeight: "150%",
-          letterSpacing: "0",
-          verticalAlign: "middle",
-          opacity: 1,
-          color: "#475569",
         }}
       >
         {subtitle}
