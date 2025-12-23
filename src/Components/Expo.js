@@ -46,7 +46,7 @@ const Expo = () => {
                            lg:px-5
                            bg-no-repeat bg-cover bg-right-top
                          "
-            style={{ backgroundImage: url(${ heroLeftBg }) }}
+            style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
             <div
               className="
@@ -91,7 +91,7 @@ const Expo = () => {
           {/* RIGHT IMAGE (desktop only) */}
           <div
             className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
-            style={{ backgroundImage: url(${ rightImage }) }}
+            style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
         </div>
@@ -121,7 +121,7 @@ const Expo = () => {
                            bg-no-repeat bg-cover
                            bg-[position:center_220px]
                          "
-            style={{ backgroundImage: url(${ heroLeftBgMobile }) }}
+            style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
           />
 
