@@ -36,7 +36,7 @@ const Pricing = () => {
                 </p>
               </div>
 
-
+              {/* Register Button */}
               <div className="mt-6 md:flex md:justify-center lg:justify-start flex justify-center">
                 <a
                   href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
@@ -50,14 +50,16 @@ const Pricing = () => {
             </div>
           </div>
 
-
+          {/* Map Section */}
           <div className="order-2 lg:order-2 -mt-6 md:mt-12 md:flex md:justify-center mt-5">
-            <div className="border-2 border-[#0530A8] overflow-hidden w-full sm:w-[420px] md:w-[450px] h-[200px] sm:h-[280px] md:h-[320px] ml-auto md:ml-0 lg:max-w-none bg-gray-50">
+            <div className="border-2 border-[#0530A8] overflow-hidden w-full sm:w-[420px] md:w-[550px] h-[200px] sm:h-[280px] md:h-[320px] ml-auto md:ml-0 lg:max-w-none bg-gray-50">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7611.463719863719!2d78.37104772412594!3d17.47254345034845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb922dedfac813%3A0xe3675c0e78567be0!2sHYDERABAD%20INTERNATIONAL%20CONVENTION%20CENTRE-HICC%2C%20Izzathnagar%2C%20Hyderabad%2C%20Kothaguda%2C%20Telangana%20500084%2C%20India!5e0!3m2!1sen!2sus!4v1765862010707!5m2!1sen!2sus"
-                className="w-[460px] h-[420px] border-0 rounded-lg shadow-lg"
+                className="w-full sm:w-[550px] md:w-[550px] h-[200px] sm:h-[280px] md:h-[320px] border-0 rounded-lg shadow-lg"
                 allowFullScreen=""
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="HYSEA Venue Map"
               />
             </div>
           </div>
