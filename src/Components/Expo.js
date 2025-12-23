@@ -139,7 +139,7 @@ const Expo = () => {
             </div>
 
             <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">
-              Exhibitors
+              Exhibition
             </h1>
 
             <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
@@ -174,7 +174,7 @@ const Expo = () => {
 
 
       <div className="block lg:hidden " />
-      <section className="w-full bg-white px-4 sm:px-6 md:px-12 py-12 md:py-16 ">
+      <section className="w-full bg-white px-4 sm:px-6 md:px-12 py-16 lg:py-32">
         <div className="mx-auto max-w-9xl flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#0530A8] ">
             EXHIBITION OPPORTUNITIES
@@ -199,17 +199,17 @@ const Expo = () => {
 
         </div>
       </section>
-      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-12 md:py-16">
-        <div className="max-w-9xl mx-auto text-center relative">
+      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-16 lg:py-20">
+        <div className="max-w-9xl mx-auto text-center relative -mt-12 lg:-mt-10">
 
-          <p className="text-3xl md:text-5xl font-semibold text-white uppercase tracking-wide text-center mb-10">
-            Available Stalls
+          <p className="text-3xl md:text-5xl font-semibold text-white uppercase tracking-wide text-center mb-2">
+            Stall Options
           </p>
 
           <div className="max-w-9xl">
 
 
-            <div className="bg-white rounded-3xl px-6 md:px-10 lg:px-14 py-16 md:py-20 shadow-md">
+            <div className="bg-white rounded-3xl mt-8 lg:mt-12 px-6 md:px-10 lg:px-14 py-16 md:py-20 shadow-md">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mb-10">
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
                   <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
@@ -279,7 +279,7 @@ const Card = ({ title, image, waveImg }) => {
 
         {/* TEXT ON WAVE */}
         <div className="absolute bottom-0 left-0 w-full h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px] flex items-center px-4">
-          <h3 className="text-white text-base sm:text-lg md:text-xl font-semibold">
+          <h3 className="text-white text-lg sm:text-xl md:text-[22px] font-semibold loading-tight">
             {title}
           </h3>
         </div>

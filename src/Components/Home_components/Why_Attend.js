@@ -94,18 +94,14 @@ const Card = ({
 
       <h3
         className=" text-[#0f4fb3] px-6 mt-6 text-left text-4xl font-medium"
-        style={{
-          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-        }}
+
       >
         {title}
       </h3>
 
       <p
         className="text-left px-6 mt-6 text-lg font-regular"
-        style={{
-          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-        }}
+
       >
         {subtitle}
       </p>

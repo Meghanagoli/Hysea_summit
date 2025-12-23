@@ -52,10 +52,10 @@ const Partners = () => {
                         src={logo}
                         alt="partner logo"
                         className={`
-            object-contain
             w-[160px] h-[80px]
-            sm:w-[180px] sm:h-[80px]
-            md:w-[300px] md:h-[180px]
+    sm:w-[180px] sm:h-[80px]
+    md:w-[260px] md:h-[120px]
+    lg:w-[220px] lg:h-[220px] logo-shadow
             ${isLast ? "col-span-2 sm:col-span-1 justify-self-center" : ""}
           `}
                     />
@@ -63,6 +63,7 @@ const Partners = () => {
             })}
         </div>
     );
+
 
 
 
@@ -183,10 +184,10 @@ const Partners = () => {
 
 
             </main>
-            <section className="bg-white py-16 sm:py-20">
-                <div className="max-w-7xl mx-auto px-5">
+            <section className="bg-white ">
+                <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8 py-28">
 
-                    <h2 className="text-center text-[#0A2A73] font-semibold text-2xl md:text-5xl mb-10">
+                    <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
                         INDUSTRY PATRONS
                     </h2>
 
@@ -194,9 +195,9 @@ const Partners = () => {
                         logos={industryPatrons}
                         cols="grid-cols-2 sm:grid-cols-4"
                     />
+                    <div className="mt-24" />
 
-
-                    <h2 className="text-center text-[#0A2A73] font-semibold text-2xl md:text-5xl mt-20 mb-10">
+                    <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
                         ECOSYSTEM PATRONS
                     </h2>
 
@@ -205,9 +206,9 @@ const Partners = () => {
                         cols="grid-cols-2 sm:grid-cols-3"
                         centerLastOnMobile
                     />
+                    <div className="mt-24" />
 
-
-                    <h2 className="text-center text-[#0A2A73] font-semibold text-2xl md:text-5xl mt-20 mb-10">
+                    <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
                         OUTREACH PARTNERS
                     </h2>
                     {/*MOBILE */}
@@ -222,16 +223,25 @@ const Partners = () => {
                     {/* DESKTOP */}
                     <div className="hidden md:grid grid-cols-10 gap-x-16 gap-y-16 place-items-center">
 
-                        <img src={tHub} className="col-span-2 col-start-1 object-contain w-[300px] h-[180px]" />
-                        <img src={tie} className="col-span-2 col-start-3 object-contain w-[300px] h-[180px]" />
-                        <img src={ce} className="col-span-2 col-start-5 object-contain w-[300px] h-[180px]" />
-                        <img src={tgic} className="col-span-2 col-start-7 object-contain w-[300px] h-[180px]" />
-                        <img src={t10x} className="col-span-2 col-start-9 object-contain w-[300px] h-[180px]" />
+                        <img src={tHub} className="col-span-2 col-start-1 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px] logo-shadow" />
+                        <img src={tie} className="col-span-2 col-start-3 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px]  logo-shadow" />
+                        <img src={ce} className="col-span-2 col-start-5 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px]  logo-shadow" />
+                        <img src={tgic} className="col-span-2 col-start-7 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px]  logo-shadow" />
+                        <img src={t10x} className="col-span-2 col-start-9 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px]  logo-shadow" />
 
-                        <img src={math} className="col-span-2 col-start-2 object-contain w-[300px] h-[180px]" />
-                        <img src={haa} className="col-span-2 col-start-4 object-contain w-[300px] h-[180px]" />
-                        <img src={succeed} className="col-span-2 col-start-6 object-contain w-[300px] h-[180px]" />
-                        <img src={silverneedle} className="col-span-2 col-start-8 object-contain w-[300px] h-[180px]" />
+                        <img src={math} className="col-span-2 col-start-2 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px] logo-shadow" />
+                        <img src={haa} className="col-span-2 col-start-4 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px]  logo-shadow" />
+                        <img src={succeed} className="col-span-2 col-start-6 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px]  logo-shadow" />
+                        <img src={silverneedle} className="col-span-2 col-start-8 object-contain  w-[220px] h-[120px]
+    lg:w-[220px] lg:h-[180px] logo-shadow" />
 
                     </div>
 
