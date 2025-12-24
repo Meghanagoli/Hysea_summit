@@ -7,6 +7,7 @@ import Expo from './Components/Expo.js';
 import Speakers from "./Components/Speakers.js";
 import Awards from "./Components/Awards.js";
 import Partners from "./Components/Partners.js";
+import Sessions from "./Components/Sessions.js";
 import ScrollToTop from "./Components/ScrollToTop.js";
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/sessions" element={<Sessions />} />
         </Routes>
       </main>
     </BrowserRouter>

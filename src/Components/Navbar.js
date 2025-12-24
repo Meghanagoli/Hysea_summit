@@ -16,13 +16,14 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-6">
             <nav className="flex items-center gap-6 text-white text-sm md:text-base">
               <Link to="/" className="hover:underline">Overview</Link>
               <Link to="/exhibition" className="hover:underline">Exhibition</Link>
               <Link to="/speakers" className="hover:underline">Speakers</Link>
               <Link to="/awards" className="hover:underline">Awards</Link>
               <Link to="/partners" className="hover:underline">Partners</Link>
+              <Link to="/sessions" className="hover:underline">Sessions</Link>
             </nav>
 
             <a
@@ -35,7 +36,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-white"
+            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-white"
             onClick={() => setOpen((s) => !s)}
             aria-expanded={open}
             aria-label="Toggle navigation menu"
@@ -57,7 +58,7 @@ const Navbar = () => {
         </div>
 
         {open && (
-          <div className="md:hidden bg-[#14328D] w-full px-4 pb-4">
+          <div className="lg:hidden bg-[#14328D] w-full px-4 pb-4">
             <nav className="flex flex-col gap-3 text-white text-base">
               <Link to="/" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Overview
@@ -73,6 +74,9 @@ const Navbar = () => {
               </Link>
               <Link to="/partners" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Partners
+              </Link>
+              <Link to="/sessions" onClick={() => setOpen(false)} className="py-2 hover:underline">
+                Sessions
               </Link>
 
               <div className="pt-2">

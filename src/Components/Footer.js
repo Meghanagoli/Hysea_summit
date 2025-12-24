@@ -20,16 +20,16 @@ const Footer = () => {
             alt="HYSEA"
             className="h-10 object-contain"
           />
-          <div className="flex flex-col items-end gap-1">
+          <div className="flex flex-col items-end gap-2">
 
             <div className="flex items-center gap-3">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/Official.HYSEA/" target="_blank" rel="noopener noreferrer">
                 <img src={iconFacebook} className="w-6 h-6" alt="fb" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/official.hysea/" target="_blank" rel="noopener noreferrer">
                 <img src={iconInstagram} className="w-6 h-6" alt="ig" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/hysea/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
                 <img src={iconLinkedIn} className="w-6 h-6" alt="li" />
               </a>
             </div>
@@ -51,7 +51,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/Official.HYSEA/" target="_blank" rel="noopener noreferrer">
                 <img src={iconFacebook} className="w-6 h-6" alt="fb" />
               </a>
-              <a href="https://www.instagram.com/official.hysea/?hl=en" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/official.hysea/" target="_blank" rel="noopener noreferrer">
                 <img src={iconInstagram} className="w-6 h-6" alt="ig" />
               </a>
               <a href="https://www.linkedin.com/company/hysea/posts/?feedView=all" target="_blank" rel="noopener noreferrer">

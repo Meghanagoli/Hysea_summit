@@ -38,8 +38,10 @@ const Partners = () => {
     const LogoGridPlain = ({ logos, cols, centerLastOnMobile = false }) => (
         <div
             className={`
-      grid ${cols}
-      gap-y-12 gap-x-16
+      grid ${cols} justify-items-center
+
+      gap-y-10 gap-x-6 sm:gap-x-10
+
       place-items-center
     `}
         >
@@ -52,10 +54,12 @@ const Partners = () => {
                         src={logo}
                         alt="partner logo"
                         className={`
-            w-[160px] h-[80px]
-    sm:w-[180px] sm:h-[80px]
-    md:w-[260px] md:h-[120px]
-    lg:w-[220px] lg:h-[220px] logo-shadow
+         w-[140px] h-[70px]
+sm:w-[160px] sm:h-[80px]
+md:w-[260px] md:h-[120px]
+lg:w-[180px] lg:h-[180px]
+object-contain
+ logo-shadow
             ${isLast ? "col-span-2 sm:col-span-1 justify-self-center" : ""}
           `}
                     />
@@ -223,25 +227,15 @@ const Partners = () => {
                     {/* DESKTOP */}
                     <div className="hidden md:grid grid-cols-10 gap-x-16 gap-y-16 place-items-center">
 
-                        <img src={tHub} className="col-span-2 col-start-1 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px] logo-shadow" />
-                        <img src={tie} className="col-span-2 col-start-3 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px]  logo-shadow" />
-                        <img src={ce} className="col-span-2 col-start-5 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px]  logo-shadow" />
-                        <img src={tgic} className="col-span-2 col-start-7 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px]  logo-shadow" />
-                        <img src={t10x} className="col-span-2 col-start-9 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px]  logo-shadow" />
-
-                        <img src={math} className="col-span-2 col-start-2 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px] logo-shadow" />
-                        <img src={haa} className="col-span-2 col-start-4 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px]  logo-shadow" />
-                        <img src={succeed} className="col-span-2 col-start-6 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px]  logo-shadow" />
-                        <img src={silverneedle} className="col-span-2 col-start-8 object-contain  w-[220px] h-[120px]
-    lg:w-[220px] lg:h-[180px] logo-shadow" />
+                        <img src={tHub} className="col-span-2 col-start-1 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={tie} className="col-span-2 col-start-3 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={ce} className="col-span-2 col-start-5 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={tgic} className="col-span-2 col-start-7 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={t10x} className="col-span-2 col-start-9 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={math} className="col-span-2 col-start-2 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={haa} className="col-span-2 col-start-4 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={succeed} className="col-span-2 col-start-6 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                        <img src={silverneedle} className="col-span-2 col-start-8 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
 
                     </div>
 
