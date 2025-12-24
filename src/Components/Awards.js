@@ -181,10 +181,10 @@ const Awards = () => {
         {/* =================== END MOBILE/TABLET =================== */}
       </main>
       <div className="mx-auto max-w-9xl w-full">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] items-center">
           <div
-            className="block md:block w-full h-full object-cover bg-no-repeat bg-[position:65%_center]  md:object-center"
-            style={{ backgroundImage: `url(${awards1})` }}
+            className="block w-full h-[220px] md:h-[280px] lg:h-full
+             bg-no-repeat bg-cover bg-top"            style={{ backgroundImage: `url(${awards1})` }}
           ></div>
           <div className=" border-[6px]  border-b-0  border-[#0530A8] bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-10 py-16 md:py-20 text-center">
             <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
@@ -207,17 +207,17 @@ const Awards = () => {
             </p>
           </div>
           <div
-            className="block md:block w-full h-full object-cover bg-no-repeat bg-center md:object-center"
-            style={{ backgroundImage: `url(${awards2})` }}
+            className="block w-full h-[220px] md:h-[280px] lg:h-full
+             bg-no-repeat bg-cover bg-top"            style={{ backgroundImage: `url(${awards2})` }}
           ></div>
         </div>
       </div>
 
       <div className=" h-[4px] w-full  bg-[#0A3AA8]" />
 
-      <section className="w-full max-w-9xl bg-white">
+      <section className="w-full  bg-white">
         <div className=" w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px]">
-          <div className="bg-white px-6 sm:px-10 md:px-14 py-24 md:py-30">
+          <div className="bg-white px-4 sm:px-6 md:px-8 py-24 md:py-30">
             <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
               AWARD CATEGORIES
             </h2>
@@ -253,7 +253,7 @@ const Awards = () => {
               </div>
 
               <div className="border border-gray-300 rounded-xl shadow-md w-full">
-                {" "}
+
                 <div className="flex items-stretch">
                   <img
                     src={a2}
@@ -582,7 +582,7 @@ const Awards = () => {
           </div>
  */}
 
-          <p className="mt-8 text-center text-m sm:text-lg text-white/80">
+          <p className="mt-4 text-center text-m sm:text-lg text-white/80">
             Nominate your company for the 10x Startup and Product Innovation
             Awards below.
           </p>

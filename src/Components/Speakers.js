@@ -235,7 +235,7 @@ export default function Speakers() {
         <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
           {chief_guests.map((guest, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52  rounded-md p-6">
+              <div className="  w-56 h-56 sm:w-60 sm:h-60 md:w-64 md:h-64  lg:w-52 lg:h-52 rounded-md p-6">
                 <img
                   src={guest.img}
                   alt={guest.name}
@@ -258,7 +258,7 @@ export default function Speakers() {
           <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
             {speakers.map((spk, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52  rounded-md p-6">
+                <div className="  w-56 h-56 sm:w-60 sm:h-60 md:w-64 md:h-64  lg:w-52 lg:h-52 rounded-md p-6">
                   <img
                     src={spk.img}
                     alt={spk.name}

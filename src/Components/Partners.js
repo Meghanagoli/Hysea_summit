@@ -49,20 +49,22 @@ const Partners = () => {
                 const isLast = centerLastOnMobile && i === logos.length - 1;
 
                 return (
-                    <img
-                        key={i}
-                        src={logo}
-                        alt="partner logo"
+                    <div
                         className={`
-         w-[140px] h-[70px]
-sm:w-[160px] sm:h-[80px]
-md:w-[260px] md:h-[120px]
-lg:w-[180px] lg:h-[180px]
-object-contain
- logo-shadow
-            ${isLast ? "col-span-2 sm:col-span-1 justify-self-center" : ""}
-          `}
-                    />
+    w-40 sm:w-44 md:w-48 lg:w-44
+    aspect-square
+    flex items-center justify-center
+    logo-shadow
+    ${isLast ? "col-span-2 sm:col-span-1 justify-self-center" : ""}
+  `}
+                    >
+                        <img
+                            src={logo}
+                            alt="partner logo"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+
                 );
             })}
         </div>
@@ -189,55 +191,72 @@ object-contain
 
             </main>
             <section className="bg-white ">
-                <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8 py-28">
+                <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8 py-16">
 
-                    <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
-                        INDUSTRY PATRONS
-                    </h2>
 
-                    <LogoGridPlain
-                        logos={industryPatrons}
-                        cols="grid-cols-2 sm:grid-cols-4"
-                    />
-                    <div className="mt-24" />
 
-                    <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
-                        ECOSYSTEM PATRONS
-                    </h2>
+                    <section className="py-10 lg:py-12">
+                        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                            INDUSTRY PATRONS
+                        </h2>
 
-                    <LogoGridPlain
-                        logos={ecosystemPatrons}
-                        cols="grid-cols-2 sm:grid-cols-3"
-                        centerLastOnMobile
-                    />
-                    <div className="mt-24" />
-
-                    <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
-                        OUTREACH PARTNERS
-                    </h2>
-                    {/*MOBILE */}
-
-                    <div className="block md:hidden">
                         <LogoGridPlain
-                            logos={[...outreachRow1, ...outreachRow2]}
-                            cols="grid-cols-2"
-                            centerLastOnMobile
+                            logos={industryPatrons}
+                            cols="grid-cols-2 lg:grid-cols-4"
                         />
-                    </div>
-                    {/* DESKTOP */}
-                    <div className="hidden md:grid grid-cols-10 gap-x-16 gap-y-16 place-items-center">
 
-                        <img src={tHub} className="col-span-2 col-start-1 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={tie} className="col-span-2 col-start-3 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={ce} className="col-span-2 col-start-5 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={tgic} className="col-span-2 col-start-7 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={t10x} className="col-span-2 col-start-9 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={math} className="col-span-2 col-start-2 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={haa} className="col-span-2 col-start-4 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={succeed} className="col-span-2 col-start-6 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
-                        <img src={silverneedle} className="col-span-2 col-start-8 w-[140px] h-[70px] sm:w-[160px] sm:h-[80px] md:w-[260px] md:h-[120px]lg:w-[180px] lg:h-[180px] object-contain logo-shadow" />
+                    </section>
 
-                    </div>
+
+                    <section className="py-10 lg:py-12">
+                        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                            ECOSYSTEM PATRONS
+                        </h2>
+
+                        <LogoGridPlain logos={ecosystemPatrons} cols="grid-cols-2 sm:grid-cols-3" centerLastOnMobile />
+                    </section>
+
+                    <section className="py-10 lg:py-12">
+                        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                            OUTREACH PARTNERS
+                        </h2>
+
+
+                        <div className="block md:hidden">
+                            <LogoGridPlain
+                                logos={[...outreachRow1, ...outreachRow2]}
+                                cols="grid-cols-2"
+                                centerLastOnMobile
+                            />
+                        </div>
+                        {/* DESKTOP */}
+                        <div className="hidden md:grid grid-cols-10 gap-x-16 gap-y-16 place-items-center">
+
+                            <img src={tHub} className="col-span-2 col-start-1 w-56 md:w-64 lg:w-44
+
+ object-contain logo-shadow" />
+                            <img src={tie} className="col-span-2 col-start-3 w-40 sm:w-44 md:w-56 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={ce} className="col-span-2 col-start-5 w-40 sm:w-44 md:w-56 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={tgic} className="col-span-2 col-start-7 w-40 sm:w-44 md:w-56 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={t10x} className="col-span-2 col-start-9 w-40 sm:w-44 md:w-48 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={math} className="col-span-2 col-start-2 w-40 sm:w-44 md:w-48 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={haa} className="col-span-2 col-start-4 w-40 sm:w-44 md:w-48 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={succeed} className="col-span-2 col-start-6 w-40 sm:w-44 md:w-48 lg:w-44
+ object-contain logo-shadow" />
+                            <img src={silverneedle} className="col-span-2 col-start-8 w-40 sm:w-44 md:w-48 lg:w-44
+ object-contain logo-shadow" />
+
+                        </div>
+
+
+                    </section>
+
 
 
                 </div>
