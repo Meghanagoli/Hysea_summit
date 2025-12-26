@@ -35,16 +35,15 @@ const HeroPage = () => {
       ></div>
       <div
         className="
-          relative z-30 sm:-mt-[96px] md:-mt-[128px] lg:-mt-[160px] mt-[-56px]
+          relative z-30 sm:mt-[-60px] md:mt-[-80px] lg:mt-[0px] mt-[-240px]
           flex items-center w-full
+          lg:absolute lg:bottom-0
         "
         style={{
           backgroundImage: `url(${rectBg})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "top center",
-          position: "absolute",
-          bottom: "0",
           minHeight: "260px",
         }}
       >
