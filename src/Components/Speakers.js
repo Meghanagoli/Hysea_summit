@@ -228,7 +228,7 @@ export default function Speakers() {
       </main>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
-        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16 max-w-[900px] mx-auto">
+        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-4 md:mb-14 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
         </h2>
 
@@ -251,7 +251,7 @@ export default function Speakers() {
           ))}
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
-          <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10  max-w-[900px] mx-auto">
+          <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-4 md:mb-14 max-w-[900px] mx-auto">
             MARQUEE SPEAKERS FROM PAST EDITIONS
           </h2>
 

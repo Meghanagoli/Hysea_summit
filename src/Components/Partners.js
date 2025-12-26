@@ -38,9 +38,10 @@ const Partners = () => {
     const LogoGridPlain = ({ logos, cols, centerLastOnMobile = false }) => (
         <div
             className={`
-      grid ${cols} justify-items-center
+      grid ${cols} 
+gap-y-6 md:gap-y-12 lg:gap-y-18
+gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
 
-      gap-y-10 gap-x-6 sm:gap-x-10
 
       place-items-center
     `}
@@ -195,7 +196,7 @@ const Partners = () => {
 
 
 
-                    <section className="py-10 lg:py-12">
+                    <section className="py-20 lg:py-24">
                         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
                             INDUSTRY PATRONS
                         </h2>
@@ -208,7 +209,7 @@ const Partners = () => {
                     </section>
 
 
-                    <section className="py-10 lg:py-12">
+                    <section className="py-20 lg:py-24">
                         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
                             ECOSYSTEM PATRONS
                         </h2>
@@ -216,7 +217,7 @@ const Partners = () => {
                         <LogoGridPlain logos={ecosystemPatrons} cols="grid-cols-2 sm:grid-cols-3" centerLastOnMobile />
                     </section>
 
-                    <section className="py-10 lg:py-12">
+                    <section className="py-20 lg:py-24">
                         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
                             OUTREACH PARTNERS
                         </h2>
