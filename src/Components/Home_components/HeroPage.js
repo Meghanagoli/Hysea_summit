@@ -37,7 +37,7 @@ const HeroPage = () => {
         className="
           relative z-30 sm:mt-[-60px] md:mt-[-80px] lg:mt-[0px] mt-[-240px]
           flex items-center w-full
-          lg:absolute lg:bottom-0
+          md:absolute md:bottom-0
         "
         style={{
           backgroundImage: `url(${rectBg})`,

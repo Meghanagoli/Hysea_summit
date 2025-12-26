@@ -83,7 +83,7 @@ const Card = ({
 }) => {
   return (
     <article
-      className={`relative w-full min-w-[340px] w-[60vw] md:w-[340px] h-[450px] rounded-[12px] bg-white shadow-[0_8px_30px_rgba(15,23,42,0.10)] overflow-hidden ${className}`}
+      className={`relative min-w-[340px] w-[60vw] md:w-[340px] h-[450px] rounded-[12px] bg-white shadow-[0_8px_30px_rgba(15,23,42,0.10)] overflow-hidden ${className}`}
     >
       <img
         src={ribbonSrc}
@@ -92,19 +92,11 @@ const Card = ({
         loading="lazy"
       />
 
-      <h3
-        className=" text-[#0f4fb3] px-6 mt-6 text-left text-4xl font-medium"
-
-      >
+      <h3 className=" text-[#0f4fb3] px-6 mt-6 text-left text-4xl font-medium">
         {title}
       </h3>
 
-      <p
-        className="text-left px-6 mt-6 text-lg font-regular"
-
-      >
-        {subtitle}
-      </p>
+      <p className="text-left px-6 mt-6 text-lg font-regular">{subtitle}</p>
 
       <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[215px] h-[137px] overflow-hidden">
         <div className="absolute left-0 bottom-[-78px] w-[215px] h-[215px]  flex flex-col items-center justify-center shadow-[0_6px_18px_rgba(16,24,40,0.06)]">
