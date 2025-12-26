@@ -186,7 +186,7 @@ const Expo = () => {
             global business and technology.
           </p>
 
-          <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row items-start justify-center gap-8 md:gap-6">
+          <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row flex-wrap items-start justify-center gap-12 md:gap-10">
             {cards.map((c, idx) => (
               <Card
                 key={idx}
@@ -199,7 +199,7 @@ const Expo = () => {
 
         </div>
       </section>
-      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-16 lg:py-20">
+      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-16 lg:py-32">
         <div className="max-w-9xl mx-auto text-center relative -mt-12 lg:-mt-10">
 
           <p className="text-3xl md:text-5xl font-semibold text-white uppercase tracking-wide text-center mb-2">
@@ -209,10 +209,10 @@ const Expo = () => {
           <div className="max-w-9xl">
 
 
-            <div className="bg-white rounded-3xl mt-8 lg:mt-12 px-6 md:px-10 lg:px-14 py-16 md:py-20 shadow-md">
+            <div className="bg-white rounded-3xl mt-8 lg:mt-12 px-6 md:px-10 lg:px-14 py-16 lg:py-24 shadow-md">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mb-10">
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
-                  <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
+                  <h3 className="text-[21px] md:text-[33px] font-semibold text-[#0050c9] mb-4">
                     Large Stall
                   </h3>
                   <div className="w-60 h-60 mb-4 flex items-center justify-center">
@@ -223,7 +223,7 @@ const Expo = () => {
 
 
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
-                  <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
+                  <h3 className="text-[21px] md:text-[33px] font-semibold text-[#0050c9] mb-4">
                     Small Stall
                   </h3>
                   <div className="w-60 h-60 mb-4 flex items-center justify-center">
@@ -232,7 +232,7 @@ const Expo = () => {
                   <p className="text-xl md:text-2xl font-semibold">₹30,000</p>
                 </div>
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
-                  <h3 className="text-xl md:text-2xl font-semibold text-[#0050c9] mb-4">
+                  <h3 className="text-[21px] md:text-[33px] font-semibold text-[#0050c9] mb-4">
                     Demo Pod
                   </h3>
                   <div className="w-60 h-60 mb-4 flex items-center justify-center">
@@ -258,7 +258,7 @@ const Expo = () => {
 };
 const Card = ({ title, image, waveImg }) => {
   return (
-    <article className="relative w-full max-w-[360px] rounded-xl overflow-hidden bg-white shadow-xl">
+    <article className="relative w-full max-w-[300px] flex-shrink-0 rounded-xl overflow-hidden bg-white shadow-xl">
 
       {/* IMAGE */}
       <div className="relative w-full h-[220px] md:h-[260px] lg:h-[360px] overflow-hidden">
