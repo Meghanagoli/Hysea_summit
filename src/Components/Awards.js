@@ -22,6 +22,24 @@ import c11 from "../assets/c11.webp";
 import awards1 from "../assets/aw1.png";
 import awards2 from "../assets/aw2.png";
 const Awards = () => {
+  const cardImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11];
+
+  const cards = (
+    <>
+      {[c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11].map((img, i) => (
+        <div
+          key={i}
+          className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 lg:w-[520px] flex-shrink-0"
+        >
+          <img
+            src={img}
+            className="h-full w-full object-cover rounded-md"
+          />
+        </div>
+      ))}
+    </>
+  );
+
   useSEO({
     title: "Awards | HYSEA Annual Summit & Awards 2026",
     description:
@@ -55,8 +73,7 @@ const Awards = () => {
             >
               <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                 <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd HYSEA Annual Summit &amp; Awards 2026
-                </h3>
+                  33rd Edition | March 5, 2026 | Hyderabad                </h3>
               </div>
 
               <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -143,8 +160,7 @@ const Awards = () => {
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
-                33rd HYSEA Annual Summit &amp; Awards 2026
-              </h3>
+                33rd Edition | March 5, 2026 | Hyderabad              </h3>
             </div>
 
             <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
@@ -216,27 +232,29 @@ const Awards = () => {
       <div className=" h-[4px] w-full  bg-[#0A3AA8]" />
 
       <section className="w-full max-w-9xl bg-white">
-        <div className=" w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px]">
+        <div className=" w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px] items-stretch">
           <div className="bg-white px-4 sm:px-6 md:px-12 py-24 md:py-30">
             <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
               AWARD CATEGORIES
             </h2>
-            <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
+            {/* <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
               In the past 10+ years, Organizations have found the opportunity to
               gain:
-            </p>
+            </p> */}
 
             <div className="space-y-10 max-w-4xl mt-12 sm:mt-14">
-              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+              <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex ">
                 <div className="flex items-stretch">
-                  <img
-                    src={a1}
-                    alt=""
-                    aria-hidden="true"
-                    className="block h-full"
-                  />
+                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                    <img
+                      src={a1}
+                      alt=""
+                      aria-hidden="true"
+                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                    />
+                  </div>
 
-                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+                  <div className="px-6 sm:px-8 py-6 sm:py-8 flex flex-col justify-center">
                     <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
                       10x Startup Awards
                     </h3>
@@ -252,17 +270,19 @@ const Awards = () => {
                 </div>
               </div>
 
-              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+              <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
 
                 <div className="flex items-stretch">
-                  <img
-                    src={a2}
-                    alt=""
-                    aria-hidden="true"
-                    className="block h-full"
-                  />
+                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                    <img
+                      src={a2}
+                      alt=""
+                      aria-hidden="true"
+                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                    />
+                  </div>
 
-                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+                  <div className="px-6 sm:px-8 py-6 sm:py-8 flex flex-col justify-center">
                     <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
                       Product Innovation Awards
                     </h3>
@@ -277,16 +297,18 @@ const Awards = () => {
                   </div>
                 </div>
               </div>
-              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+              <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
                 <div className="flex items-stretch">
-                  <img
-                    src={a3}
-                    alt=""
-                    aria-hidden="true"
-                    className="block h-full"
-                  />
+                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                    <img
+                      src={a3}
+                      alt=""
+                      aria-hidden="true"
+                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                    />
+                  </div>
 
-                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+                  <div className="px-6 sm:px-8  py-6 sm:py-8flex flex-col justify-center">
                     <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
                       Industry Excellence Awards
                     </h3>
@@ -302,16 +324,18 @@ const Awards = () => {
                 </div>
               </div>
 
-              <div className="border border-gray-300 rounded-xl shadow-md w-full">
+              <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
                 <div className="flex items-stretch">
-                  <img
-                    src={a4}
-                    alt=""
-                    aria-hidden="true"
-                    className="block h-full"
-                  />
+                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                    <img
+                      src={a4}
+                      alt=""
+                      aria-hidden="true"
+                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                    />
+                  </div>
 
-                  <div className="px-6 sm:px-8 flex flex-col justify-center">
+                  <div className="px-6 sm:px-8 py-6 sm:py-8 flex flex-col justify-center">
                     <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
                       Lifetime Achievement Awards
                     </h3>
@@ -328,209 +352,55 @@ const Awards = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white block max-w-[1600px] px-12 py-6 h-[600px] sm:h-[900px] md:h-[1000px] lg:h-[1300px] overflow-hidden">
-            <div className="flex flex-col gap-4 animate-vertical-scroll hover:[animation-play-state:paused]">
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full ">
-                <img
-                  src={c1}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full ">
-                <img
-                  src={c2}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c3}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c4}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full ">
-                <img
-                  src={c5}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full ">
-                <img
-                  src={c6}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c7}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c8}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c9}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c10}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c11}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
+          <div className="bg-white block max-w-[1600px] px-12 py-6  overflow-hidden ">
+            <div className="hidden lg:block relative overflow-hidden h-full">
+              <div className="absolute inset-0 flex flex-col gap-4 animate-vertical-scroll">
+                {cardImages.map((img, i) => (
+                  <div key={`a-${i}`} className="bg-[#d6d6d6] rounded-md h-48 w-[520px]">
+                    <img src={img} className="h-full w-full object-cover rounded-md" />
+                  </div>
+                ))}
 
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c1}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c2}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c3}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c4}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c5}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c6}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c7}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c8}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c9}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c10}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c11}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c1}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c2}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c3}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c4}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c5}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c6}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c7}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c8}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c9}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c10}
-                  className="h-full w-full object-cover rounded-md"
-                />
-              </div>
-              <div className="bg-[#d6d6d6] rounded-md h-48 w-full">
-                <img
-                  src={c11}
-                  className="h-full w-full object-cover rounded-md"
-                />
+                {cardImages.map((img, i) => (
+                  <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-48 w-[520px]">
+                    <img src={img} className="h-full w-full object-cover rounded-md" />
+                  </div>
+                ))}
               </div>
             </div>
+
+            <div className="block lg:hidden relative overflow-hidden h-[220px] sm:h-[240px]">
+              <div className="absolute left-0 top-0 flex gap-4 animate-horizontal-scroll hover:[animation-play-state:paused]">
+
+                {/* first set */}
+                {cardImages.map((img, i) => (
+                  <div
+                    key={`m-a-${i}`}
+                    className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
+                  >
+                    <img
+                      src={img}
+                      className="h-full w-full object-cover rounded-md"
+                    />
+                  </div>
+                ))}
+
+                {/* duplicated set */}
+                {cardImages.map((img, i) => (
+                  <div
+                    key={`m-b-${i}`}
+                    className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
+                  >
+                    <img
+                      src={img}
+                      className="h-full w-full object-cover rounded-md"
+                    />
+                  </div>
+                ))}
+
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

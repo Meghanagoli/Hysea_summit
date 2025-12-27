@@ -148,8 +148,7 @@ export default function Speakers() {
             >
               <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                 <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd HYSEA Annual Summit &amp; Awards 2026
-                </h3>
+                  33rd Edition | March 5, 2026 | Hyderabad                </h3>
               </div>
 
               <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -210,8 +209,7 @@ export default function Speakers() {
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
-                33rd HYSEA Annual Summit &amp; Awards 2026
-              </h3>
+                33rd Edition | March 5, 2026 | Hyderabad              </h3>
             </div>
 
             <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
@@ -235,7 +233,7 @@ export default function Speakers() {
         <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
           {chief_guests.map((guest, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <div className="  w-56 h-56 sm:w-60 sm:h-60 md:w-64 md:h-64  lg:w-52 lg:h-52 rounded-md p-6">
+              <div className="w-38 h-38 sm:w-48 sm:h-48 md:w-52 md:h-52   overflow-hidden ">
                 <img
                   src={guest.img}
                   alt={guest.name}
@@ -244,7 +242,14 @@ export default function Speakers() {
                 />
               </div>
 
-              <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium">
+              <p className="
+  mt-3
+  text-center
+  text-sm md:text-base
+  text-gray-700 font-medium
+  min-h-[2.5rem]   
+  leading-snug
+">
                 {guest.name}
               </p>
             </div>
@@ -258,16 +263,23 @@ export default function Speakers() {
           <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
             {speakers.map((spk, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="  w-56 h-56 sm:w-60 sm:h-60 md:w-64 md:h-64  lg:w-52 lg:h-52 rounded-md p-6">
+                <div className="w-38 h-38 sm:w-48 sm:h-48 md:w-52 md:h-52   overflow-hidden ">
                   <img
                     src={spk.img}
                     alt={spk.name}
-                    className="w-full h-full object-cover v"
+                    className="w-full h-full object-cover rounded-sm"
                     loading="lazy"
                   />
                 </div>
 
-                <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium">
+                <p className="
+  mt-3
+  text-center
+  text-sm md:text-base
+  text-gray-700 font-medium
+  min-h-[2.5rem]   
+  leading-snug
+">
                   {spk.name}
                 </p>
               </div>

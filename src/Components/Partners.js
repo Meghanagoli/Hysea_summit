@@ -104,8 +104,7 @@ gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
                         >
                             <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                                 <h3 className="text-[#0A2A73] text-sm font-semibold">
-                                    33rd HYSEA Annual Summit &amp; Awards 2026
-                                </h3>
+                                    33rd Edition | March 5, 2026 | Hyderabad                                </h3>
                             </div>
 
                             <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -168,8 +167,7 @@ gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
                     >
                         <div className="inline-flex mt-16 sm:mt-20 md:mt-12 items-center rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
                             <h3 className="text-[#0A2A73] text-sm font-semibold">
-                                33rd HYSEA Annual Summit &amp; Awards 2026
-                            </h3>
+                                33rd Edition | March 5, 2026 | Hyderabad                            </h3>
                         </div>
 
                         <h1 className="text-white text-[40px] sm:text-[44px] font-medium mb-3">
