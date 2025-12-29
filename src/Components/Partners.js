@@ -39,9 +39,8 @@ const Partners = () => {
         <div
             className={`
       grid ${cols} 
-gap-y-6 md:gap-y-12 lg:gap-y-18
-gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
-
+   gap-y-10 md:gap-y-12 lg:gap-y-18
+   gap-x-4 sm:gap-x-6 md:gap-x-6 lg:gap-x-10
 
       place-items-center
     `}
@@ -116,9 +115,7 @@ gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
                                     attracting over 1,000 delegates and 100+ speakers from industry,
                                 </span>
 
-                                <span className="block">
-                                    For all summit partnership/sponsorship queries, write to coo@hysea.in
-                                </span>
+
                             </p>
 
 
@@ -179,9 +176,7 @@ gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
                                 HYSEA's Annual Summit is India's premier technology leadership event,
                                 attracting over 1,000 delegates and 100+ speakers from industry,
                             </span>
-                            <span className="block">
-                                For all summit partnership/sponsorship queries, write to coo@hysea.in
-                            </span>
+
                         </p>
                     </div>
                 </div>
@@ -256,7 +251,9 @@ gap-x-4 sm:gap-x-3 md:gap-x-1 lg:gap-x-10
 
                     </section>
 
-
+                    <span className="block text-[#0530A8] text-center font-semibold text-lg">
+                        For all summit partnership/sponsorship queries, write to coo@hysea.in
+                    </span>
 
                 </div>
             </section>

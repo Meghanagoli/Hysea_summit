@@ -56,7 +56,8 @@ const Expo = () => {
             >
               <div className="inline-flex mt-10 sm:mt-14 md:mt-16 lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
                 <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd Edition | March 5, 2026 | Hyderabad                </h3>
+                  33rd HYSEA Annual Summit &amp; Awards 2026
+                </h3>
               </div>
 
               <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -133,7 +134,8 @@ const Expo = () => {
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
-                33rd Edition | March 5, 2026 | Hyderabad              </h3>
+                33rd HYSEA Annual Summit &amp; Awards 2026
+              </h3>
             </div>
 
             <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">
@@ -198,9 +200,9 @@ const Expo = () => {
         </div>
       </section>
       <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-16 lg:py-32">
-        <div className="max-w-9xl mx-auto text-center relative -mt-12 lg:-mt-10">
+        <div className="max-w-9xl mx-auto text-center relative mt-0">
 
-          <p className="text-3xl md:text-5xl font-semibold text-white uppercase tracking-wide text-center mb-2">
+          <p className="text-3xl md:text-5xl font-semibold text-white uppercase tracking-wide text-center mt-0 mb-2">
             Stall Options
           </p>
 
@@ -259,7 +261,7 @@ const Card = ({ title, image, waveImg }) => {
     <article className="relative w-full max-w-[300px] flex-shrink-0 rounded-xl overflow-hidden bg-white shadow-xl">
 
       {/* IMAGE */}
-      <div className="relative w-full h-[220px] md:h-[260px] lg:h-[360px] overflow-hidden">
+      <div className="relative w-full h-[360px] overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -267,7 +269,7 @@ const Card = ({ title, image, waveImg }) => {
         />
 
         {/* WAVY BLUE OVERLAY */}
-        <div className="absolute bottom-0 left-0 w-full h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px]">
+        <div className="absolute bottom-0 left-0 w-full h-[90px] sm:h-[90px] md:h-[90px] lg:h-[100px]">
           <img
             src={waveImg}
             alt="wave"
@@ -276,8 +278,8 @@ const Card = ({ title, image, waveImg }) => {
         </div>
 
         {/* TEXT ON WAVE */}
-        <div className="absolute bottom-0 left-0 w-full h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px] flex items-center px-4">
-          <h3 className="text-white text-lg sm:text-xl md:text-[22px] font-semibold loading-tight">
+        <div className="absolute bottom-0 left-0 w-full h-[70px] sm:h-[80px] md:h-[90px] lg:h-[100px] flex items-center px-6">
+          <h3 className="text-white text-[19px] sm:text-[21px] md:text-[23px] font-semibold loading-tight">
             {title}
           </h3>
         </div>

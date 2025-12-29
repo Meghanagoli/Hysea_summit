@@ -1,21 +1,21 @@
-<svg width="59" height="69" viewBox="0 0 59 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.6204 48.4502V66.9901M25.6676 66.9696L11.5117 66.9901V48.4297H25.6676V66.9696Z" stroke="url(#paint0_linear_1408_1935)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.9527 66.9648L1.43359 67.0057V1.47066L35.9527 1.42969V66.9648Z" stroke="url(#paint1_linear_1408_1935)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13.0089 7.02344V12.104M18.4991 7.02344V12.104M23.9689 7.02344V12.104M13.0089 17.1845V22.2651M18.4991 17.1845V22.2651M23.9689 17.1845V22.2651M13.0089 27.3457V32.4262M18.4991 27.3457V32.4262M23.9689 27.3457V32.4262M13.0089 37.4863V42.5668M18.4991 37.4863V42.5668M23.9689 37.4863V42.5668M29.4592 7.02344V12.104M29.4592 17.1845V22.2651M29.4592 27.3457V32.4262M29.4592 37.4863V42.5668M7.53906 7.02344V12.104M7.53906 17.1845V22.2651M7.53906 27.3457V32.4262M7.53906 37.4863V42.5668" stroke="#17A2F2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.9531 66.9653L57.6889 67.0063V20.3594H35.9531" stroke="url(#paint2_linear_1408_1935)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M40.8711 27.3281H52.5892M40.8711 32.7979H52.5892M40.8711 38.2472H52.5892M40.8711 43.717H52.5892M40.8711 49.1868H52.5892M40.8711 54.6566H52.5892M40.8711 60.1059H52.5892" stroke="#17A2F2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="58" height="68" viewBox="0 0 58 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.0618 47.8955V66.4354M25.109 66.4149L10.9531 66.4354V47.875H25.109V66.4149Z" stroke="url(#paint0_linear_1676_2463)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.3941 66.4101L0.875 66.451V0.915972L35.3941 0.875V66.4101Z" stroke="url(#paint1_linear_1676_2463)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.4503 6.46875V11.5493M17.9405 6.46875V11.5493M23.4103 6.46875V11.5493M12.4503 16.6299V21.7104M17.9405 16.6299V21.7104M23.4103 16.6299V21.7104M12.4503 26.791V31.8715M17.9405 26.791V31.8715M23.4103 26.791V31.8715M12.4503 36.9316V42.0122M17.9405 36.9316V42.0122M23.4103 36.9316V42.0122M28.9006 6.46875V11.5493M28.9006 16.6299V21.7104M28.9006 26.791V31.8715M28.9006 36.9316V42.0122M6.98047 6.46875V11.5493M6.98047 16.6299V21.7104M6.98047 26.791V31.8715M6.98047 36.9316V42.0122" stroke="#17A2F2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.3945 66.4106L57.1303 66.4516V19.8047H35.3945" stroke="url(#paint2_linear_1676_2463)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.3125 26.7734H52.0306M40.3125 32.2432H52.0306M40.3125 37.6925H52.0306M40.3125 43.1623H52.0306M40.3125 48.6321H52.0306M40.3125 54.1019H52.0306M40.3125 59.5512H52.0306" stroke="#17A2F2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
-<linearGradient id="paint0_linear_1408_1935" x1="25.3465" y1="48.4297" x2="8.88154" y2="51.1665" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_1676_2463" x1="24.7879" y1="47.875" x2="8.32295" y2="50.6118" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0D52E9"/>
 <stop offset="0.49" stop-color="#0F6AE1"/>
 <stop offset="1" stop-color="#076CE0"/>
 </linearGradient>
-<linearGradient id="paint1_linear_1408_1935" x1="35.1697" y1="1.42968" x2="-5.5534" y2="6.10148" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_1676_2463" x1="34.6111" y1="0.874996" x2="-6.112" y2="5.54679" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0D52E9"/>
 <stop offset="0.49" stop-color="#0F6AE1"/>
 <stop offset="1" stop-color="#076CE0"/>
 </linearGradient>
-<linearGradient id="paint2_linear_1408_1935" x1="57.1959" y1="20.3594" x2="31.4813" y2="22.9707" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear_1676_2463" x1="56.6373" y1="19.8047" x2="30.9227" y2="22.416" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0D52E9"/>
 <stop offset="0.49" stop-color="#0F6AE1"/>
 <stop offset="1" stop-color="#076CE0"/>

@@ -226,13 +226,13 @@ export default function Speakers() {
       </main>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
-        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-4 md:mb-14 max-w-[900px] mx-auto">
+        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
         </h2>
 
         <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
           {chief_guests.map((guest, idx) => (
-            <div key={idx} className="flex flex-col items-center">
+            <div key={idx} className="flex flex-col items-center self-start">
               <div className="w-38 h-38 sm:w-48 sm:h-48 md:w-52 md:h-52   overflow-hidden ">
                 <img
                   src={guest.img}
@@ -255,14 +255,14 @@ export default function Speakers() {
             </div>
           ))}
         </div>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
-          <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-4 md:mb-14 max-w-[900px] mx-auto">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 bg-white">
+          <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
             MARQUEE SPEAKERS FROM PAST EDITIONS
           </h2>
 
           <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
             {speakers.map((spk, idx) => (
-              <div key={idx} className="flex flex-col items-center">
+              <div key={idx} className="flex flex-col items-center self-start">
                 <div className="w-38 h-38 sm:w-48 sm:h-48 md:w-52 md:h-52   overflow-hidden ">
                   <img
                     src={spk.img}

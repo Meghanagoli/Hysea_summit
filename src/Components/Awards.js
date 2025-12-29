@@ -197,23 +197,23 @@ const Awards = () => {
         {/* =================== END MOBILE/TABLET =================== */}
       </main>
       <div className="mx-auto  w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] items-stretch">
           <div
-            className="block w-full h-[220px] md:h-[420px] lg:h-full
+            className="block w-full h-[380px] md:h-[580px] lg:h-full
              bg-no-repeat bg-cover bg-top"            style={{ backgroundImage: `url(${awards1})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
           ></div>
-          <div className=" border-[6px]  border-b-0  border-[#0530A8] bg-white max-w-3xl mx-auto px-6 sm:px-10 md:px-10 py-16 md:py-20 text-center">
+          <div className=" border-[6px]  border-b-0  border-[#0530A8] bg-white max-w-full mx-auto px-6 sm:px-10 md:px-10 py-16 md:py-20 text-center">
             <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
               About the Awards
             </h2>
-            <p className="text-black text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-4">
+            <p className="text-black text-base sm:text-lg leading-relaxed max-w-full mx-auto mb-4">
               Designed to highlight outstanding achievements across diverse
               areas, the HYSEA Awards bring together established enterprises,
               dynamic startups, and purpose-led organizations. Winners are
               selected through a rigorous evaluation process, reflecting
               excellence, measurable impact, and future potential.
             </p>
-            <p className="text-black text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-black text-base sm:text-lg leading-relaxed max-w-full mx-auto">
               Presented during an evening awards ceremony at the Summit, these
               accolades not only recognize individual and organizational success
               but also spotlight the collective energy driving Hyderabad's
@@ -223,8 +223,8 @@ const Awards = () => {
             </p>
           </div>
           <div
-            className="block w-full h-[220px] md:h-[420px] lg:h-full
-             bg-no-repeat bg-cover bg-top"            style={{ backgroundImage: `url(${awards2})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
+            className="block w-full h-[380px] md:h-[580px] lg:h-full
+             bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${awards2})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
           ></div>
         </div>
       </div>
@@ -233,7 +233,7 @@ const Awards = () => {
 
       <section className="w-full max-w-9xl bg-white">
         <div className=" w-full mx-auto grid grid-cols-1 lg:grid-cols-[1fr_420px] items-stretch">
-          <div className="bg-white px-4 sm:px-6 md:px-12 py-24 md:py-30">
+          <div className="bg-white px-4 sm:px-6 md:px-10 py-24 md:py-30">
             <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
               AWARD CATEGORIES
             </h2>
@@ -245,12 +245,12 @@ const Awards = () => {
             <div className="space-y-10 max-w-4xl mt-12 sm:mt-14">
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex ">
                 <div className="flex items-stretch">
-                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                  <div className="flex-shrink-0 w-16 sm:w-20 max-w-[96px] bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
                     <img
                       src={a1}
                       alt=""
                       aria-hidden="true"
-                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                      className="object-contain max-h-[300%] max-w-[300%] md:h-[100%] md:w-[100%] lg:h-[80%] lg:w-[80%]"
                     />
                   </div>
 
@@ -273,12 +273,12 @@ const Awards = () => {
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
 
                 <div className="flex items-stretch">
-                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                  <div className="flex-shrink-0 w-16 sm:w-20 max-w-[96px] bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
                     <img
                       src={a2}
                       alt=""
                       aria-hidden="true"
-                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                      className="object-contain max-h-[300%] max-w-[300%] md:h-[100%] md:w-[100%] lg:h-[80%] lg:w-[80%]"
                     />
                   </div>
 
@@ -299,16 +299,16 @@ const Awards = () => {
               </div>
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
                 <div className="flex items-stretch">
-                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                  <div className="flex-shrink-0 w-16 sm:w-20 max-w-[96px] bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
                     <img
                       src={a3}
                       alt=""
                       aria-hidden="true"
-                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                      className="object-contain max-h-[300%] max-w-[300%] md:h-[100%] md:w-[100%] lg:h-[80%] lg:w-[80%]"
                     />
                   </div>
 
-                  <div className="px-6 sm:px-8  py-6 sm:py-8flex flex-col justify-center">
+                  <div className="px-6 sm:px-8  py-6 sm:py-8 flex flex-col justify-center">
                     <h3 className="text-[#0530A8] text-lg sm:text-xl font-semibold mb-2">
                       Industry Excellence Awards
                     </h3>
@@ -326,12 +326,12 @@ const Awards = () => {
 
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
                 <div className="flex items-stretch">
-                  <div className="flex-shrink-0 w-20 sm:w-24 bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
+                  <div className="flex-shrink-0 w-16 sm:w-20 max-w-[96px] bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
                     <img
                       src={a4}
                       alt=""
                       aria-hidden="true"
-                      className="object-contain max-h-[600%] max-w-[600%] md:h-[120%] sm:w-[120%] lg:h-[100%] lg:w-[100%]"
+                      className="object-contain max-h-[300%] max-w-[300%] md:h-[100%] md:w-[100%] lg:h-[80%] lg:w-[80%]"
                     />
                   </div>
 
@@ -352,25 +352,30 @@ const Awards = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white block max-w-[1600px] px-12 py-6  overflow-hidden ">
+          <div className="bg-white block max-w-[1600px] pr-10  overflow-hidden ">
             <div className="hidden lg:block relative overflow-hidden h-full">
               <div className="absolute inset-0 flex flex-col gap-4 animate-vertical-scroll">
                 {cardImages.map((img, i) => (
-                  <div key={`a-${i}`} className="bg-[#d6d6d6] rounded-md h-48 w-[520px]">
-                    <img src={img} className="h-full w-full object-cover rounded-md" />
+                  <div key={`a-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
+                    <img src={img} className="h-full w-full object-cover object-contain rounded-md" />
                   </div>
                 ))}
 
                 {cardImages.map((img, i) => (
-                  <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-48 w-[520px]">
-                    <img src={img} className="h-full w-full object-cover rounded-md" />
+                  <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
+                    <img src={img} className="h-full w-full object-cover object-contain rounded-md" />
+                  </div>
+                ))}
+                {cardImages.map((img, i) => (
+                  <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-52">
+                    <img src={img} className="h-full w-full object-cover object-contain rounded-md" />
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="block lg:hidden relative overflow-hidden h-[220px] sm:h-[240px]">
-              <div className="absolute left-0 top-0 flex gap-4 animate-horizontal-scroll hover:[animation-play-state:paused]">
+              <div className="absolute left-0 top-0 flex gap-4 animate-horizontal-scroll hover:[animation-play-state:paused] ">
 
                 {/* first set */}
                 {cardImages.map((img, i) => (
@@ -380,7 +385,7 @@ const Awards = () => {
                   >
                     <img
                       src={img}
-                      className="h-full w-full object-cover rounded-md"
+                      className="h-full w-full object-center rounded-md"
                     />
                   </div>
                 ))}
@@ -393,7 +398,18 @@ const Awards = () => {
                   >
                     <img
                       src={img}
-                      className="h-full w-full object-cover rounded-md"
+                      className="h-full w-full object-center rounded-md"
+                    />
+                  </div>
+                ))}
+                {cardImages.map((img, i) => (
+                  <div
+                    key={`m-b-${i}`}
+                    className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
+                  >
+                    <img
+                      src={img}
+                      className="h-full w-full object-center rounded-md"
                     />
                   </div>
                 ))}
