@@ -1,6 +1,6 @@
 // src/App.js
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Components/Navbar.js";
 import Home from './Components/Home.js';
 import Expo from './Components/Expo.js';
@@ -19,12 +19,13 @@ function App() {
 
       <main >
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/exhibition" element={<Expo />} />
-          <Route path="/speakers" element={<Speakers />} />
-          <Route path="/awards" element={<Awards />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/sessions" element={<Sessions />} />
+          <Route path="/" element={<Navigate to="/2026/overview" />} />
+          <Route path="/2026/overview" element={<Home />} />
+          <Route path="/2026/exhibition" element={<Expo />} />
+          <Route path="/2026/speakers" element={<Speakers />} />
+          <Route path="/2026/awards" element={<Awards />} />
+          <Route path="/2026/partners" element={<Partners />} />
+          <Route path="/2026/sessions" element={<Sessions />} />
         </Routes>
       </main>
     </BrowserRouter>

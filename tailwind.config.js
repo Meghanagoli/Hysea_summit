@@ -8,8 +8,8 @@ module.exports = {
       },
       keyframes: {
         verticalScroll: {
-          "0%": { transform: "translateY(0)" },
-          "100%": { transform: "translateY(-50%)" },
+          "0%": { transform: "translateY(0px)" },
+          "100%": { transform: "translateY(-2688px)" },
         },
         horizontalScroll: {
           "0%": { transform: "translateX(-50%)" },

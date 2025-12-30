@@ -19,26 +19,13 @@ import c8 from "../assets/c8.webp";
 import c9 from "../assets/c9.webp";
 import c10 from "../assets/c10.webp";
 import c11 from "../assets/c11.webp";
+import c12 from "../assets/c12.png"
 import awards1 from "../assets/aw1.png";
 import awards2 from "../assets/aw2.png";
 const Awards = () => {
-  const cardImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11];
+  const cardImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12];
 
-  const cards = (
-    <>
-      {[c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11].map((img, i) => (
-        <div
-          key={i}
-          className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 lg:w-[520px] flex-shrink-0"
-        >
-          <img
-            src={img}
-            className="h-full w-full object-cover rounded-md"
-          />
-        </div>
-      ))}
-    </>
-  );
+
 
   useSEO({
     title: "Awards | HYSEA Annual Summit & Awards 2026",
@@ -357,20 +344,16 @@ const Awards = () => {
               <div className="absolute inset-0 flex flex-col gap-4 animate-vertical-scroll">
                 {cardImages.map((img, i) => (
                   <div key={`a-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
-                    <img src={img} className="h-full w-full object-cover object-contain rounded-md" />
+                    <img src={img} className="h-full w-full object-cover  rounded-md" />
                   </div>
                 ))}
 
                 {cardImages.map((img, i) => (
                   <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
-                    <img src={img} className="h-full w-full object-cover object-contain rounded-md" />
+                    <img src={img} className="h-full w-full object-cover  rounded-md" />
                   </div>
                 ))}
-                {cardImages.map((img, i) => (
-                  <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-52">
-                    <img src={img} className="h-full w-full object-cover object-contain rounded-md" />
-                  </div>
-                ))}
+
               </div>
             </div>
 

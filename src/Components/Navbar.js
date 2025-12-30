@@ -19,11 +19,11 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center w-full">
             <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6 text-white text-sm md:text-base">
               <Link to="/" className="hover:underline">Overview</Link>
-              <Link to="/sessions" className="hover:underline">Sessions</Link>
-              <Link to="/speakers" className="hover:underline">Speakers</Link>
-              <Link to="/exhibition" className="hover:underline">Exhibition</Link>
-              <Link to="/awards" className="hover:underline">Awards</Link>
-              <Link to="/partners" className="hover:underline">Partners</Link>
+              <Link to="/2026/sessions" className="hover:underline">Sessions</Link>
+              <Link to="/2026/speakers" className="hover:underline">Speakers</Link>
+              <Link to="/2026/exhibition" className="hover:underline">Exhibition</Link>
+              <Link to="/2026/awards" className="hover:underline">Awards</Link>
+              <Link to="/2026/partners" className="hover:underline">Partners</Link>
             </nav>
             <div className="ml-auto">
               <a
@@ -64,19 +64,19 @@ const Navbar = () => {
               <Link to="/" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Overview
               </Link>
-              <Link to="/sessions" onClick={() => setOpen(false)} className="py-2 hover:underline">
+              <Link to="/2026/sessions" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Sessions
               </Link>
-              <Link to="/speakers" onClick={() => setOpen(false)} className="py-2 hover:underline">
+              <Link to="/2026/speakers" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Speakers
               </Link>
-              <Link to="/exhibition" onClick={() => setOpen(false)} className="py-2 hover:underline">
+              <Link to="/2026/exhibition" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Exhibition
               </Link>
-              <Link to="/awards" onClick={() => setOpen(false)} className="py-2 hover:underline">
+              <Link to="/2026/awards" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Awards
               </Link>
-              <Link to="/partners" onClick={() => setOpen(false)} className="py-2 hover:underline">
+              <Link to="/2026/partners" onClick={() => setOpen(false)} className="py-2 hover:underline">
                 Partners
               </Link>
 
