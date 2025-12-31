@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        sans: ['"SF Pro Text"', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         verticalScroll: {

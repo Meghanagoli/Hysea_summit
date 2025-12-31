@@ -51,8 +51,8 @@ const Sessions = () => {
                             </h1>
 
                             <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
-                                HYSEA’s Annual Summit is India’s premier technology leadership event, attracting over 1,000 delegates and 100+ speakers from industry,
-                                government, academia, and startups. Now in its 33rd year, the Summit & Awards will be bigger, better and bolder.
+                                Discover how AI and emerging technologies are transforming industries through responsible innovation, secure digital transformation, and human–AI collaboration,
+                                equipping leaders with insights to stay competitive and future-ready.
                             </p>
 
 
@@ -62,7 +62,7 @@ const Sessions = () => {
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
                         className="
-    absolute right-0 top-4 md:top-10 -z-10
+    absolute right-0 top-4 md:top-12 -z-10
     w-1/2 h-full
     bg-no-repeat
     bg-[length:120%_auto]
@@ -119,9 +119,8 @@ const Sessions = () => {
                         </h1>
 
                         <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-                            HYSEA’s Annual Summit is India’s premier technology leadership event, attracting over 1,000 delegates and 100+ speakers from industry,
-                            government, academia, and startups.
-                            Now in its 33rd year, the Summit & Awards will be bigger, better and bolder.
+                            Discover how AI and emerging technologies are transforming industries through responsible innovation,
+                            secure digital transformation, and human–AI collaboration, equipping leaders with insights to stay competitive and future-ready.
                         </p>
 
 
@@ -129,7 +128,6 @@ const Sessions = () => {
                 </div>
                 {/* =================== END MOBILE/TABLET =================== */}
             </main>
-            {/* ====================== SESSIONS CONTINUATION ====================== */}
             <section
                 className="
     relative w-full
@@ -141,19 +139,17 @@ const Sessions = () => {
   "
                 style={{ backgroundImage: `url(${sessionsBg})` }}
             >
-                {/* MAX WIDTH CONTAINER */}
                 <div className="relative max-w-9xl mx-auto px-5 sm:px-8 lg:px-12 space-y-24 lg:space-y-32">
 
-                    {/* ================= CARD 1 ================= */}
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] items-center gap-12">
 
-                        {/* CARD */}
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
                             <div className="max-w-[700px] w-full lg:pl-24">
                                 <div
                                     className="
-              bg-white rounded-xl
-              shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+              bg-white/50 rounded-xl
+              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)]
+    backdrop-blur-[54px]
               p-8 sm:p-10 lg:p-12
              
               lg:-mr-28
@@ -168,16 +164,13 @@ const Sessions = () => {
                                     </h3>
 
                                     <p className="text-black/70 text-base leading-relaxed">
-                                        Technology is at a pivotal inflection point. Artificial Intelligence
-                                        is no longer evolving in isolation — it is co-advancing with
-                                        quantum computing, advanced robotics, edge computing, synthetic data,
-                                        autonomous systems, and next-generation cloud architectures.
+                                        Insightful keynotes and panel discussions exploring AI, emerging technologies, leadership, security, and transformation,
+                                        offering strategic perspectives, real-world experiences, and future-ready thinking from industry leaders.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* IMAGE */}
                         <div className="relative">
                             <img
                                 src={session1}
@@ -187,16 +180,14 @@ const Sessions = () => {
             h-[240px] sm:h-[320px] lg:h-[420px]
             object-cover
             rounded-lg
-            lg:ml-8
+            lg:ml-2
           "
                             />
                         </div>
                     </div>
 
-                    {/* ================= CARD 2 (FLIPPED) ================= */}
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] items-center gap-12">
 
-                        {/* IMAGE */}
                         <div className="relative order-1 lg:order-none">
                             <img
                                 src={session1}
@@ -206,18 +197,17 @@ const Sessions = () => {
             h-[240px] sm:h-[320px] lg:h-[420px]
             object-cover
             rounded-lg
-            lg:mr-8
-          "
+            lg:mr-16"
                             />
                         </div>
 
-                        {/* CARD */}
                         <div className="flex justify-center lg:justify-start relative z-10">
                             <div className="max-w-[700px] w-full lg:pr-24">
                                 <div
                                     className="
-              bg-white rounded-xl
-              shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+              bg-white/50 rounded-xl
+              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)]
+    backdrop-blur-[54px]
               p-8 sm:p-10 lg:p-12
               lg:-ml-20
             "
@@ -231,26 +221,23 @@ const Sessions = () => {
                                     </h3>
 
                                     <p className="text-black/70 text-base leading-relaxed">
-                                        Technology is at a pivotal inflection point. Artificial Intelligence
-                                        is no longer evolving in isolation — it is co-advancing with
-                                        quantum computing, advanced robotics, edge computing, synthetic data,
-                                        autonomous systems, and next-generation cloud architectures.
+                                        Deep-dive, hands-on sessions led by experts, focusing on practical applications, tools,
+                                        and frameworks across AI, cloud, security, and innovation to build skills and drive real-world impact.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* ================= CARD 3 ================= */}
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] items-center gap-12">
 
-                        {/* CARD */}
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
                             <div className="max-w-[700px] w-full lg:pl-24">
                                 <div
                                     className="
-              bg-white rounded-xl
-              shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+              bg-white/50 rounded-xl
+              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)]
+    backdrop-blur-[54px]
               p-8 sm:p-10 lg:p-12
               lg:-mr-28
             "
@@ -264,10 +251,8 @@ const Sessions = () => {
                                     </h3>
 
                                     <p className="text-black/70 text-base leading-relaxed">
-                                        Technology is at a pivotal inflection point. Artificial Intelligence
-                                        is no longer evolving in isolation — it is co-advancing with
-                                        quantum computing, advanced robotics, edge computing, synthetic data,
-                                        autonomous systems, and next-generation cloud architectures.
+                                        An evening celebrating excellence and innovation, honoring outstanding organizations and leaders whose impact, vision,
+                                        and achievements are shaping Hyderabad’s growth as a global technology and innovation hub.
                                     </p>
                                 </div>
                             </div>
@@ -282,7 +267,7 @@ const Sessions = () => {
             h-[240px] sm:h-[320px] lg:h-[420px]
             object-cover
             rounded-lg
-            lg:ml-8
+            lg:ml-2
           "
                             />
                         </div>

@@ -18,7 +18,10 @@ import math from "../assets/math.png";
 import haa from "../assets/ha.png";
 import succeed from "../assets/sucseed.png";
 import silverneedle from "../assets/silverneedle.png";
-
+import endiya from "../assets/endiya.png"
+import pavestone from "../assets/pavestone.png"
+import abyro from "../assets/abyro.png"
+import biome from "../assets/biome.png"
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 const Partners = () => {
@@ -31,8 +34,8 @@ const Partners = () => {
 
     const ecosystemPatrons = [mindspace, icici, cyient];
 
-    const outreachRow1 = [tHub, tie, ce, tgic, t10x];
-    const outreachRow2 = [math, haa, succeed, silverneedle];
+    const outreachPartners = [tHub, tie, ce, tgic, t10x, math, succeed, silverneedle, haa, endiya, pavestone, abyro, biome];
+
 
 
     const LogoGridPlain = ({ logos, cols, centerLastOnMobile = false }) => (
@@ -124,7 +127,7 @@ const Partners = () => {
 
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
-                        className="absolute -right-12 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-top "
+                        className="absolute -right-20 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-top "
                         style={{ backgroundImage: `url(${rightImage})` }}
                         aria-hidden="true"
                     />
@@ -215,41 +218,43 @@ const Partners = () => {
                             OUTREACH PARTNERS
                         </h2>
 
+                        <div className="hidden lg:grid grid-cols-5 gap-x-14 gap-y-16 place-items-center">
+                            {outreachPartners.map((logo, index) => {
+                                const desktopPosition =
+                                    index === 10
+                                        ? "col-start-2"
+                                        : index === 11
+                                            ? "col-start-3"
+                                            : index === 12
+                                                ? "col-start-4"
+                                                : "";
 
-                        <div className="block md:hidden">
-                            <LogoGridPlain
-                                logos={[...outreachRow1, ...outreachRow2]}
-                                cols="grid-cols-2"
-                                centerLastOnMobile
-                            />
+                                return (
+                                    <div
+                                        key={index}
+                                        className={`w-44 aspect-square flex items-center justify-center logo-shadow ${desktopPosition}`}
+                                    >
+                                        <img src={logo} alt="" className="w-full h-full object-contain" />
+                                    </div>
+                                );
+                            })}
                         </div>
-                        {/* DESKTOP */}
-                        <div className="hidden md:grid grid-cols-10 gap-x-16 gap-y-16 place-items-center">
-
-                            <img src={tHub} className="col-span-2 col-start-1 w-56 md:w-64 lg:w-44
-
- object-contain logo-shadow" />
-                            <img src={tie} className="col-span-2 col-start-3 w-40 sm:w-44 md:w-56 lg:w-44
- object-contain logo-shadow" />
-                            <img src={ce} className="col-span-2 col-start-5 w-40 sm:w-44 md:w-56 lg:w-44
- object-contain logo-shadow" />
-                            <img src={tgic} className="col-span-2 col-start-7 w-40 sm:w-44 md:w-56 lg:w-44
- object-contain logo-shadow" />
-                            <img src={t10x} className="col-span-2 col-start-9 w-40 sm:w-44 md:w-48 lg:w-44
- object-contain logo-shadow" />
-                            <img src={math} className="col-span-2 col-start-2 w-40 sm:w-44 md:w-48 lg:w-44
- object-contain logo-shadow" />
-                            <img src={haa} className="col-span-2 col-start-4 w-40 sm:w-44 md:w-48 lg:w-44
- object-contain logo-shadow" />
-                            <img src={succeed} className="col-span-2 col-start-6 w-40 sm:w-44 md:w-48 lg:w-44
- object-contain logo-shadow" />
-                            <img src={silverneedle} className="col-span-2 col-start-8 w-40 sm:w-44 md:w-48 lg:w-44
- object-contain logo-shadow" />
-
+                        <div className="grid lg:hidden grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12 place-items-center">
+                            {outreachPartners.map((logo, index) => (
+                                <div
+                                    key={index}
+                                    className={`
+        w-40 sm:w-44 md:w-48 aspect-square flex items-center justify-center logo-shadow
+        ${index === 12 ? "col-span-full" : ""}
+      `}
+                                >
+                                    <img src={logo} alt="" className="w-full h-full object-contain" />
+                                </div>
+                            ))}
                         </div>
-
 
                     </section>
+
 
                     <span className="block text-[#0530A8] text-center font-semibold text-lg">
                         For all summit partnership/sponsorship queries, write to coo@hysea.in
