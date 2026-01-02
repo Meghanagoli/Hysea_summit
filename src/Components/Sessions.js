@@ -8,8 +8,7 @@ import sessionsBg from "../assets/sessions_bg.webp";
 import session1 from "../assets/session1.webp";
 import session2 from "../assets/session2.webp";
 import session3 from "../assets/c12.webp";
-import agendaImg from "../assets/agenda.webp"
-import agendaPdf from "../assets/agenda.pdf";
+//import agendaImg from "../assets/agenda.webp"
 
 const Sessions = () => {
     useSEO({
@@ -65,10 +64,11 @@ const Sessions = () => {
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
                         className="
-    absolute right-0 top-4 md:top-20 -z-10
+    absolute right-0 top-4  -z-10
     w-1/2 h-full
     bg-no-repeat
-    bg-[length:120%_auto]
+    bg-[size:125%_auto] bg-[position:0%_center]
+
   "
                         style={{ backgroundImage: `url(${rightImage})` }}
                         aria-hidden="true"
@@ -147,7 +147,7 @@ const Sessions = () => {
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] items-center gap-12">
 
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
-                            <div className="max-w-[550px] w-full lg:pl-24">
+                            <div className=" w-full lg:pl-24">
                                 <div
                                     className="bg-white/50 rounded-xl shadow-[0_4px_65px_8px_rgba(0,0,0,0.1) backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-mr-28"
                                 >
@@ -159,6 +159,9 @@ const Sessions = () => {
                                         Insightful keynotes and panel discussions exploring AI, emerging technologies, leadership, security, and transformation,
                                         offering strategic perspectives, real-world experiences, and future-ready thinking from industry leaders.
                                     </p>
+                                    <p className="text-black/70 text-base leading-relaxed mt-5">
+                                        The conference sessions will take place during morning and afternoon of the event.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -169,6 +172,7 @@ const Sessions = () => {
                                 alt=""
                                 className="
             w-full
+             
             h-[240px] sm:h-[320px] lg:h-[420px]
             object-cover
             rounded-lg
@@ -195,7 +199,7 @@ const Sessions = () => {
                         </div>
 
                         <div className="flex justify-center lg:justify-start relative z-10">
-                            <div className="max-w-[700px] lg:max-w-[550px] w-full lg:pr-24">
+                            <div className=" w-full lg:pr-24">
                                 <div className="bg-white/50 rounded-xl
               shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)] backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-ml-28"
                                 >
@@ -208,6 +212,8 @@ const Sessions = () => {
                                         Deep-dive, hands-on sessions led by experts, focusing on practical applications, tools,
                                         and frameworks across AI, cloud, security, and innovation to build skills and drive real-world impact.
                                     </p>
+                                    <p className="text-black/70 text-base leading-relaxed mt-5">
+                                        The master classes will be conducted during morning and afternoon in parallel to the conference sessions.                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +222,7 @@ const Sessions = () => {
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] items-center gap-12">
 
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
-                            <div className="max-w-[700px] lg:max-w-[550px] w-full lg:pl-24">
+                            <div className=" w-full lg:pl-24">
                                 <div
                                     className="
               bg-white/50 rounded-xl
@@ -235,7 +241,8 @@ const Sessions = () => {
                                         An evening celebrating excellence and innovation, honoring outstanding organizations and leaders whose impact, vision,
                                         and achievements are shaping Hyderabad’s growth as a global technology and innovation hub.
                                     </p>
-                                </div>
+                                    <p className="text-black/70 text-base leading-relaxed mt-5">
+                                        The awards ceremony will take place in the evening after conclusion of conference sessions and master classes.        </p>                        </div>
                             </div>
                         </div>
 
@@ -255,9 +262,50 @@ const Sessions = () => {
                     </div>
 
                 </div>
+
+            </section>
+            <section className="w-full max-w-9xl bg-[#002F76] text-white">
+                <div className="mx-auto max-w-[1260px] px-4 sm:px-6 lg:px-8 py-12 sm:py-14 lg:py-20">
+                    <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide">
+                        DETAILED AGENDA
+                    </h2>
+                    <p className="mt-6 text-center text-m sm:text-lg text-white/80">
+                        You can view the detailed agenda and program schedule below.
+                    </p>
+
+                    <div className="mt-8 text-center">
+                        <a
+                            href="/2026/agenda.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+      inline-flex items-center justify-center
+      px-4 md:px-5 py-2
+      border border-white/80
+      text-white font-medium
+      rounded-md
+      hover:bg-white hover:text-[#0A2A73]
+      transition-colors duration-300
+    "
+                        >
+                            Agenda
+                        </a>
+                    </div>
+                    {/* <div className="flex justify-center items-center  ">
+                        <a
+                            href="/agenda.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white underline text-md translate-y-10"
+                        >
+                            View detailed agenda here
+                        </a>
+                    </div> */}
+                </div>
+
             </section>
 
-            <section className="w-full bg-[#002F76] py-16 sm:py-20 lg:py-24">
+            {/* <section className="w-full bg-[#002F76] py-16 sm:py-20 lg:py-24">
                 <div className="max-w-9xl mx-auto px-16 sm:px-20 lg:px-24">
                     <div className="bg-white rounded-2xl border border-blue-500 p-6 sm:p-10 lg:p-14">
                         <h2 className="text-center text-[#0530A8] text-2xl md:text-3xl lg:text-4xl font-semibold mb-8">
@@ -272,20 +320,20 @@ const Sessions = () => {
                         </div>
 
                     </div>
-                    <div className="flex justify-center items-center ">
-                        <a
-                            href={agendaPdf}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white underline text-md translate-y-10"
-                        >
-                            View detailed agenda here
-                        </a>
-                    </div>
+                     <div className="flex justify-center items-center  ">
+                    <a
+                        href="/agenda.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-black underline text-md translate-y-10"
+                    >
+                        View detailed agenda here
+                    </a>
+                </div>
 
 
                 </div>
-            </section>
+            </section> */}
 
 
 

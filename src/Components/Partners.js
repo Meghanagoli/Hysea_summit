@@ -262,7 +262,10 @@ const Partners = () => {
             </section>
 
             <section className="bg-[#0A2A73] py-12">
-                <p className="text-center text-sm text-white">
+                <h2 className="text-center text-white text-3xl sm:text-4xl lg:text-5xl font-semibold ">
+                    SPONSORSHIP OPPORTUNITIES
+                </h2>
+                <p className="text-center text-md text-white mt-6">
                     For all summit partnership/sponsorship queries, write to{" "}
                     <a
                         href="mailto:coo@hysea.in"

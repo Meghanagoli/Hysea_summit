@@ -339,8 +339,8 @@ const Awards = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white  block max-w-[1600px] -pr-6  w-[90%] overflow-hidden ">
-            <div className="hidden lg:block relative overflow-hidden h-full">
+          <div className="bg-white  block max-w-[1600px] -pr-6  w-full overflow-hidden ">
+            <div className="hidden w-[90%] lg:block relative overflow-hidden h-full">
               <div className="absolute inset-0 flex flex-col gap-4 animate-vertical-scroll">
                 {cardImages.map((img, i) => (
                   <div key={`a-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
@@ -357,8 +357,8 @@ const Awards = () => {
               </div>
             </div>
 
-            <div className="block lg:hidden relative overflow-hidden h-[220px] sm:h-[240px]">
-              <div className="absolute left-0 top-0 flex gap-4 animate-horizontal-scroll hover:[animation-play-state:paused] ">
+            <div className="block lg:hidden w-[100%] overflow-hidden h-[220px] sm:h-[240px]">
+              <div className=" flex gap-4 w-max animate-horizontal-scroll hover:[animation-play-state:paused] ">
 
                 {/* first set */}
                 {cardImages.map((img, i) => (
@@ -377,7 +377,7 @@ const Awards = () => {
                 {cardImages.map((img, i) => (
                   <div
                     key={`m-b-${i}`}
-                    className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
+                    className="bg-[#d6d6d6] rounded-md h-48 w-64  flex-shrink-0"
                   >
                     <img
                       src={img} alt=""
@@ -388,7 +388,7 @@ const Awards = () => {
                 {cardImages.map((img, i) => (
                   <div
                     key={`m-b-${i}`}
-                    className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
+                    className="bg-[#d6d6d6] rounded-md h-48 w-64  flex-shrink-0"
                   >
                     <img
                       src={img} alt=""
