@@ -3,10 +3,13 @@ import Footer from "../Components/Footer";
 
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
-import rightImage from "../assets/sessions_img.png";
-import sessionsBg from "../assets/sessions_bg.png";
-import session1 from "../assets/conf_img.png";
-import agendaImg from "../assets/agenda.png"
+import rightImage from "../assets/sessions_img.webp";
+import sessionsBg from "../assets/sessions_bg.webp";
+import session1 from "../assets/session1.webp";
+import session2 from "../assets/session2.webp";
+import session3 from "../assets/c12.webp";
+import agendaImg from "../assets/agenda.webp"
+import agendaPdf from "../assets/agenda.pdf";
 
 const Sessions = () => {
     useSEO({
@@ -62,7 +65,7 @@ const Sessions = () => {
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
                         className="
-    absolute right-0 top-4 md:top-12 -z-10
+    absolute right-0 top-4 md:top-20 -z-10
     w-1/2 h-full
     bg-no-repeat
     bg-[length:120%_auto]
@@ -144,21 +147,10 @@ const Sessions = () => {
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] items-center gap-12">
 
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
-                            <div className="max-w-[700px] w-full lg:pl-24">
+                            <div className="max-w-[550px] w-full lg:pl-24">
                                 <div
-                                    className="
-              bg-white/50 rounded-xl
-              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)]
-    backdrop-blur-[54px]
-              p-8 sm:p-10 lg:p-12
-             
-              lg:-mr-28
-            "
+                                    className="bg-white/50 rounded-xl shadow-[0_4px_65px_8px_rgba(0,0,0,0.1) backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-mr-28"
                                 >
-                                    <p className="text-sm font-semibold text-black mb-2">
-                                        7:00 AM – 10:00 AM
-                                    </p>
-
                                     <h3 className="text-[#155BE8] text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
                                         THE CONFERENCE
                                     </h3>
@@ -190,31 +182,23 @@ const Sessions = () => {
 
                         <div className="relative order-1 lg:order-none">
                             <img
-                                src={session1}
+                                src={session2}
                                 alt=""
                                 className="
             w-full
             h-[240px] sm:h-[320px] lg:h-[420px]
             object-cover
             rounded-lg
-            lg:mr-16"
+            lg:mr-22
+            lg:-ml-2"
                             />
                         </div>
 
                         <div className="flex justify-center lg:justify-start relative z-10">
-                            <div className="max-w-[700px] w-full lg:pr-24">
-                                <div
-                                    className="
-              bg-white/50 rounded-xl
-              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)]
-    backdrop-blur-[54px]
-              p-8 sm:p-10 lg:p-12
-              lg:-ml-20
-            "
+                            <div className="max-w-[700px] lg:max-w-[550px] w-full lg:pr-24">
+                                <div className="bg-white/50 rounded-xl
+              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)] backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-ml-28"
                                 >
-                                    <p className="text-sm font-semibold text-black mb-2">
-                                        1:00 PM – 4:00 PM
-                                    </p>
 
                                     <h3 className="text-[#155BE8] text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
                                         MASTERCLASSES
@@ -232,7 +216,7 @@ const Sessions = () => {
                     <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] items-center gap-12">
 
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
-                            <div className="max-w-[700px] w-full lg:pl-24">
+                            <div className="max-w-[700px] lg:max-w-[550px] w-full lg:pl-24">
                                 <div
                                     className="
               bg-white/50 rounded-xl
@@ -242,9 +226,6 @@ const Sessions = () => {
               lg:-mr-28
             "
                                 >
-                                    <p className="text-sm font-semibold text-black mb-2">
-                                        4:00 PM – 10:00 PM
-                                    </p>
 
                                     <h3 className="text-[#155BE8] text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
                                         AWARDS CEREMONY
@@ -260,7 +241,7 @@ const Sessions = () => {
 
                         <div className="relative">
                             <img
-                                src={session1}
+                                src={session3}
                                 alt=""
                                 className="
             w-full
@@ -280,7 +261,7 @@ const Sessions = () => {
                 <div className="max-w-9xl mx-auto px-16 sm:px-20 lg:px-24">
                     <div className="bg-white rounded-2xl border border-blue-500 p-6 sm:p-10 lg:p-14">
                         <h2 className="text-center text-[#0530A8] text-2xl md:text-3xl lg:text-4xl font-semibold mb-8">
-                            Event Agenda
+                            HIGH LEVEL AGENDA
                         </h2>
                         <div className="w-full">
                             <img
@@ -293,8 +274,10 @@ const Sessions = () => {
                     </div>
                     <div className="flex justify-center items-center ">
                         <a
-                            href="#"
-                            className="text-white underline text-md  translate-y-10"
+                            href={agendaPdf}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white underline text-md translate-y-10"
                         >
                             View detailed agenda here
                         </a>

@@ -2,7 +2,7 @@ import React from "react";
 import { useSEO } from "./useSEO";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
-import rightImage from "../assets/speakers_img.png";
+import rightImage from "../assets/speakers_img.webp";
 import s1 from "../assets/s1.png";
 import s2 from "../assets/s2.png";
 import s3 from "../assets/s3.png";

@@ -1,6 +1,6 @@
 import React from "react";
 import heroImg from "../../assets/hero-img.webp";
-import rectBg from "../../assets/wavy-bg.png";
+import rectBg from "../../assets/wavy-bg.webp";
 
 const HeroPage = () => {
   return (

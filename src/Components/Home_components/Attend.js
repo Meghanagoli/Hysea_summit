@@ -34,7 +34,7 @@ const Attend = () => {
           executives who are leading the new era of transformation.
         </p>
 
-        <h3 className="text-3xl md:text-4xl font-semibold mt-2 mb-10"></h3>
+        <div className="text-3xl md:text-4xl font-semibold mt-2 mb-10" />
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-4 max-w-[900px] mx-auto">
           {tags.map((tag) => (

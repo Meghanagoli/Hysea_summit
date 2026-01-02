@@ -28,7 +28,7 @@ const What_to_expect = () => {
             WHAT TO EXPECT
           </h2>
 
-          <p className="text-sm md:text-lg leading-relaxed mb-4">
+          <p className="text-sm md:text-base leading-relaxed mb-4">
             The future is here, and it’s accelerating fast. Artificial
             intelligence isn’t evolving in isolation anymore. It’s converging
             with quantum computing, robotics, edge computing, synthetic data,

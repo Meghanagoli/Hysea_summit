@@ -4,7 +4,6 @@ import leaders from "../../assets/leaders.webp";
 import innovation from "../../assets/innovation.webp";
 import bottomWave from "../../assets/bottom-wave.png";
 import topWave from "../../assets/top-wave.png";
-import attendBg from "../../assets/attend_bg.webp";
 const Why_Attend = () => {
   return (
     <section className="relative">
@@ -53,7 +52,7 @@ const Why_Attend = () => {
         </div>
       </section>
       <img
-        src={bottomWave}
+        src={bottomWave} alt=""
         className="
         absolute z-[-1]
         bottom-[-200px] left-[0px]
@@ -62,7 +61,7 @@ const Why_Attend = () => {
       />
 
       <img
-        src={topWave}
+        src={topWave} alt=""
         className="
         absolute z-[-1]
         top-[0px] right-[-0px]

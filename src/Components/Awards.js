@@ -3,7 +3,7 @@ import { useSEO } from "./useSEO";
 import Footer from "./Footer.js";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
-import rightImage from "../assets/awards_img.png";
+import rightImage from "../assets/awards_img.webp";
 import a1 from "../assets/a1.svg";
 import a2 from "../assets/a2.svg";
 import a3 from "../assets/a3.svg";
@@ -19,9 +19,9 @@ import c8 from "../assets/c8.webp";
 import c9 from "../assets/c9.webp";
 import c10 from "../assets/c10.webp";
 import c11 from "../assets/c11.webp";
-import c12 from "../assets/c12.png"
-import awards1 from "../assets/aw1.png";
-import awards2 from "../assets/aw2.png";
+import c12 from "../assets/c12.webp"
+import awards1 from "../assets/aw1.webp";
+import awards2 from "../assets/aw2.webp";
 const Awards = () => {
   const cardImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12];
 
@@ -339,18 +339,18 @@ const Awards = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white block max-w-[1600px] pr-10  overflow-hidden ">
+          <div className="bg-white  block max-w-[1600px] -pr-6  w-[90%] overflow-hidden ">
             <div className="hidden lg:block relative overflow-hidden h-full">
               <div className="absolute inset-0 flex flex-col gap-4 animate-vertical-scroll">
                 {cardImages.map((img, i) => (
                   <div key={`a-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
-                    <img src={img} className="h-full w-full object-cover  rounded-md" />
+                    <img src={img} alt="" className="h-full w-full object-cover  rounded-md" />
                   </div>
                 ))}
 
                 {cardImages.map((img, i) => (
                   <div key={`b-${i}`} className="bg-[#d6d6d6] rounded-md h-52 ">
-                    <img src={img} className="h-full w-full object-cover  rounded-md" />
+                    <img src={img} alt="" className="h-full w-full object-cover  rounded-md" />
                   </div>
                 ))}
 
@@ -367,7 +367,7 @@ const Awards = () => {
                     className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
                   >
                     <img
-                      src={img}
+                      src={img} alt=""
                       className="h-full w-full object-center rounded-md"
                     />
                   </div>
@@ -380,7 +380,7 @@ const Awards = () => {
                     className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
                   >
                     <img
-                      src={img}
+                      src={img} alt=""
                       className="h-full w-full object-center rounded-md"
                     />
                   </div>
@@ -391,7 +391,7 @@ const Awards = () => {
                     className="bg-[#d6d6d6] rounded-md h-48 w-64 sm:w-72 flex-shrink-0"
                   >
                     <img
-                      src={img}
+                      src={img} alt=""
                       className="h-full w-full object-center rounded-md"
                     />
                   </div>

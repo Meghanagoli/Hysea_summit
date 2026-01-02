@@ -44,36 +44,46 @@ const About = () => {
           </h2>
 
           <p className="text-sm md:text-base leading-relaxed mb-4">
-            Established in 1991, HYSEA (Hyderabad Software Enterprises
-            Association) is the premier industry association for Telangana’s IT
-            sector, representing over 90% of the export revenues and workforce
-            across the region’s IT/ITeS companies, Global Capability Centers
-            (GCCs), and startups.
+            Founded in 1991, HYSEA (Hyderabad Software Enterprises Association) is the apex industry body representing Telangana's technology ecosystem. It accounts for over 90% of the region's IT export revenues and employees, spanning global enterprises, Global Capability Centers (GCCs), and a fast-growing startup community.
           </p>
 
           <p className="text-sm md:text-base leading-relaxed mb-4">
-            As a driving force behind Hyderabad’s rise as a global technology
-            hub, HYSEA works closely with the government to advocate for
-            industry needs, provide impact metrics for IT policy, promote
-            investment, and strengthen the industry’s position on the world
-            stage. The association serves as a vital bridge, connecting
-            corporations, research institutions, and startups, and fostering a
-            culture of innovation and collaboration across the ecosystem.
+            HYSEA has been instrumental in shaping Hyderabad's evolution into a global technology hub, working closely with government, industry, and academia to strengthen the region's global competitiveness.
           </p>
 
-          <p className="text-sm md:text-base leading-relaxed ">
-            HYSEA’s initiatives are focused on building a future-ready talent
-            pipeline and fostering strong industry leadership. The association
-            runs regular leadership development programs for mid-level managers,
-            conducts faculty development workshops to equip educators and
-            students with emerging technologies, and curates a year-round
-            calendar of roundtables with emerging technologies, and curates a
-            year-round calendar of roundtables and thought leadership seminars
-            on key industry topics.
+          <p className="text-sm md:text-base leading-relaxed font-medium mb-2">
+            Key Highlights
+          </p>
+
+          <ul className="list-disc pl-6 text-sm md:text-base leading-relaxed space-y-1">
+            <li>
+              Represents the majority of Telangana's IT industry, including enterprises, GCCs, and startups
+            </li>
+            <li>
+              Plays a strategic role in industry advocacy and IT policy inputs through data-driven insights
+            </li>
+            <li>
+              Acts as a bridge across the ecosystem, connecting industry leaders, startups, research institutions, and academia
+            </li>
+            <li>
+              Drives leadership development through structured programs for mid-level and emerging leaders
+            </li>
+            <li>
+              Builds future-ready talent via faculty development and emerging technology enablement
+            </li>
+            <li>
+              Curates a year-round calendar of roundtables and thought leadership forums on critical and emerging technology themes
+            </li>
+          </ul>
+
+
+          <p className="text-sm md:text-base leading-relaxed mt-3">
+            Through these initiatives, HYSEA continues to foster innovation, leadership, and sustainable growth, reinforcing Telangana's position on the global technology map.
           </p>
         </div>
       </div>
     </div>
   );
 };
+
 export default About;

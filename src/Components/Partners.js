@@ -256,12 +256,25 @@ const Partners = () => {
                     </section>
 
 
-                    <span className="block text-[#0530A8] text-center font-semibold text-lg">
-                        For all summit partnership/sponsorship queries, write to coo@hysea.in
-                    </span>
+
 
                 </div>
             </section>
+
+            <section className="bg-[#0A2A73] py-12">
+                <p className="text-center text-sm text-white">
+                    For all summit partnership/sponsorship queries, write to{" "}
+                    <a
+                        href="mailto:coo@hysea.in"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        className="underline hover:opacity-80 cursor-pointer"
+                    >
+                        coo@hysea.in
+                    </a>
+                </p>
+            </section>
+
 
             <Footer />
         </section>
