@@ -9,38 +9,6 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full z-50 shadow-md"
       style={{ backgroundImage: `url(${footerBg})` }}>
       <div className="w-full ">
-        <div className="w-full bg-[#002F76]">
-          <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-10 py-[6px] flex justify-between items-center text-white text-[11px]">
-
-            <div>March 5th, 2026</div>
-
-            <div className="tracking-wide">HYSEA ANNUAL SUMMIT & AWARDS 2026</div>
-
-            <a
-              href="https://www.google.com/maps/place/HYDERABAD+INTERNATIONAL+CONVENTION+CENTRE+(HICC)"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:underline"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-[14PX] h-[14PX] opacity-80"
-              >
-                <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z" />
-                <circle cx="12" cy="11" r="2" />
-              </svg>
-              <span>HICC, Hyderabad</span>
-            </a>
-
-          </div>
-        </div>
-
 
         <div className="mx-auto max-w-9xl px-4 sm:px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
           <div className="flex items-center">
