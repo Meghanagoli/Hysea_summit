@@ -149,7 +149,7 @@ const Sessions = () => {
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
                             <div className=" w-full lg:pl-24">
                                 <div
-                                    className="bg-white/50 rounded-xl shadow-[0_4px_65px_8px_rgba(0,0,0,0.1) backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-mr-28"
+                                    className="bg-white/50 rounded-xl shadow-[0_4px_65px_8px_rgba(0,0,0,0.1) backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-mr-20"
                                 >
                                     <h3 className="text-[#155BE8] text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
                                         THE CONFERENCE
@@ -201,7 +201,7 @@ const Sessions = () => {
                         <div className="flex justify-center lg:justify-start relative z-10">
                             <div className=" w-full lg:pr-24">
                                 <div className="bg-white/50 rounded-xl
-              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)] backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-ml-28"
+              shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)] backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-ml-20"
                                 >
 
                                     <h3 className="text-[#155BE8] text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
@@ -229,7 +229,7 @@ const Sessions = () => {
               shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)]
     backdrop-blur-[54px]
               p-8 sm:p-10 lg:p-12
-              lg:-mr-28
+              lg:-mr-20
             "
                                 >
 
@@ -256,6 +256,7 @@ const Sessions = () => {
             object-cover
             rounded-lg
             lg:ml-2
+          
           "
                             />
                         </div>

@@ -114,7 +114,7 @@ const Awards = () => {
           className="
                        block lg:hidden
                        relative w-full
-                       overflow-hidden
+                       overflow-hidden mt-14
                      "
         >
           {/* MOBILE TOP PHOTO */}
@@ -187,7 +187,8 @@ const Awards = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] items-stretch">
           <div
             className="block w-full h-[380px] md:h-[580px] lg:h-full
-             bg-no-repeat bg-cover bg-top"            style={{ backgroundImage: `url(${awards1})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
+             bg-no-repeat bg-cover bg-[position:70%_center]
+"            style={{ backgroundImage: `url(${awards1})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
           ></div>
           <div className=" border-[6px]  border-b-0  border-[#0530A8] bg-white max-w-full mx-auto px-6 sm:px-10 md:px-10 py-16 md:py-20 text-center">
             <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">

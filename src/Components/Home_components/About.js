@@ -17,8 +17,13 @@ const About = () => {
           "
           style={{
             backgroundImage: `url(${heroImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "75% 20%",
+            backgroundRepeat: "no-repeat",
             boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset",
           }}
+
+
         />
 
         {/* TEXT BLOCK (unchanged) */}
