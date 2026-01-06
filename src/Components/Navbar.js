@@ -4,11 +4,11 @@ import logo from "../assets/logo.webp";
 import footerBg from "../assets/bg.webp";
 
 const navLinkClass = ({ isActive }) =>
-  `hover:underline ${isActive ? "underline font-semibold" : ""
+  `hover:underline ${isActive ? "underline" : ""
   }`;
 
 const mobileNavLinkClass = ({ isActive }) =>
-  `py-2 hover:underline ${isActive ? "underline font-semibold" : ""
+  `py-2 hover:underline ${isActive ? "underline" : ""
   }`;
 
 const Navbar = () => {

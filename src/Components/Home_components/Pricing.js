@@ -17,7 +17,7 @@ const Pricing = () => {
           {/* Event */}
           <div className="flex justify-center items-center">
             <div className="bg-white rounded-xl shadow-md px-8 py-6 max-w-[420px] w-full">
-              <h3 className="text-[#0530A8] text-xl font-semibold mb-3">
+              <h3 className="text-[#0530A8] text-2xl font-semibold mb-3">
                 EVENT SIGNUP
               </h3>
               <p className="text-[13px] italic text-gray-400 mb-3"> Early bird offer</p>
@@ -34,9 +34,15 @@ const Pricing = () => {
                 Will have access to the Conference & Expo
               </p>
 
-              <button className="bg-[#0530A8] text-white px-6 py-2 rounded-md">
-                Register Now
-              </button>
+              <a
+                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-[#1E60D9] text-white px-4 sm:px-6 py-2 rounded-md">
+                  Register Now
+                </button>
+              </a>
             </div>
           </div>
 
@@ -62,8 +68,8 @@ const Pricing = () => {
           <div className="flex justify-center items-center">
             <div className="bg-white rounded-xl shadow-md px-8 py-6 max-w-[420px] w-full">
               <h3 className="text-[#0530A8] font-semibold mb-2 text-2xl">VENUE</h3>
-              <p className="font-medium">HICC, Hyderabad</p>
-              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+              <p className="font-medium  text-[#0530A8]">HICC, Hyderabad</p>
+              <p className="text-sm text-gray-600 py-2">
                 Novotel & HICC Complex, Near HITEC City, P.O Bag 1101, Cyberabad Post Office,
                 Hyderabad – 500081, India
               </p>

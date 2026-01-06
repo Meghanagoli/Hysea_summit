@@ -55,7 +55,6 @@ import g18 from "../assets/g18.png";
 import g19 from "../assets/g19.png";
 import g20 from "../assets/g20.png";
 
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 const speakers = [
   { name: "Prof. Ashok Jhunjhunwala, IITM", img: s1 },
@@ -121,7 +120,7 @@ export default function Speakers() {
 
   return (
     <section className="w-full">
-      <Navbar />
+
       <main className="relative w-full overflow-clip bg-transparent">
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div

@@ -127,7 +127,7 @@ const Partners = () => {
 
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
-                        className="absolute -right-20 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-top "
+                        className="absolute -right-20 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-[35%_top] "
                         style={{ backgroundImage: `url(${rightImage})` }}
                         aria-hidden="true"
                     />
@@ -141,7 +141,7 @@ const Partners = () => {
                         <img
                             src={rightImage}
                             alt="Partners"
-                            className="h-full w-full object-cover object-top"
+                            className="h-full w-full object-cover object-top mt-6"
                         />
                     </div>
 
@@ -149,7 +149,7 @@ const Partners = () => {
                     <div
                         className="
       absolute left-0 right-0 bottom-0
-   top-[120px] sm:top-[160px] md:top-[180px]
+   top-[180px] sm:top-[160px] md:top-[180px]
   min-h-[520px] sm:min-h-[560px]      z-0
       bg-no-repeat bg-cover bg-top
     "

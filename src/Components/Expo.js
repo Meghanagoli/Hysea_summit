@@ -186,7 +186,7 @@ const Expo = () => {
             global business and technology.
           </p>
 
-          <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row flex-wrap items-start justify-center gap-12 md:gap-10">
+          <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row flex-wrap items-start justify-center gap-12 md:gap-10 text-center">
             {cards.map((c, idx) => (
               <Card
                 key={idx}
