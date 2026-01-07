@@ -12,13 +12,12 @@ const About = () => {
             bg-no-repeat bg-cover bg-center
             md:order-1 lg:order-1
 
-            /* Increased height for mobile & tablet to ensure visibility */
             h-[360px] sm:h-[520px] md:h-[680px] lg:h-auto
           "
           style={{
             backgroundImage: `url(${heroImg})`,
             backgroundSize: "cover",
-            backgroundPosition: "75% 20%",
+            backgroundPosition: "65% 20%",
             backgroundRepeat: "no-repeat",
             boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset",
           }}

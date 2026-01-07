@@ -79,7 +79,7 @@ const Partners = () => {
     return (
         <section className="w-full">
             <Navbar />
-            <main className="relative w-full overflow-clip bg-transparent">
+           <main className="relative w-full overflow-clip bg-transparent">
 
                 {/* ====================== DESKTOP (lg+) ====================== */}
                 <div
@@ -137,7 +137,7 @@ const Partners = () => {
                 <div className="block lg:hidden relative w-full overflow-hidden">
 
                     {/* TOP IMAGE */}
-                    <div className="relative w-full h-[300px] sm:h-[330px] md:h-[360px]">
+                   <div className="relative w-full h-[300px] sm:h-[330px] md:h-[450px] ">
                         <img
                             src={rightImage}
                             alt="Partners"
@@ -151,7 +151,7 @@ const Partners = () => {
       absolute left-0 right-0 bottom-0
    top-[180px] sm:top-[160px] md:top-[180px]
   min-h-[520px] sm:min-h-[560px]      z-0
-      bg-no-repeat bg-cover bg-top
+      bg-no-repeat bg-cover  bg-[position:center_60px] sm:bg-[position:center_125px]
     "
                         style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
                     />

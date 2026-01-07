@@ -29,7 +29,7 @@ const Expo = () => {
 
   return (
     <div className="w-full ">
-      <main className="relative w-full overflow-clip bg-transparent">
+          <main className="relative w-full overflow-clip bg-transparent">
 
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
@@ -106,7 +106,7 @@ const Expo = () => {
                        "
         >
           {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[300px] sm:h-[350px] md:h-[380px]">
+          <div className="relative w-full h-[300px] sm:h-[350px] md:h-[380px] mt-20">
             <img
               src={rightImage}
               alt="Speakers"
@@ -119,7 +119,7 @@ const Expo = () => {
             className="
                            absolute inset-0 z-0
                            bg-no-repeat bg-cover
-                           bg-[position:center_220px]
+                           sm: bg-[position:center_320px]  
                          "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
@@ -169,7 +169,6 @@ const Expo = () => {
         {/* =================== END MOBILE/TABLET =================== */}
 
       </main>
-
 
 
 

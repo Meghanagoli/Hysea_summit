@@ -19,7 +19,7 @@ const Sessions = () => {
 
     return (
         <section className="w-full">
-            <main className="relative w-full overflow-clip bg-transparent">
+         <main className="relative w-full overflow-clip bg-transparent">
                 {/* ====================== DESKTOP (lg+) ====================== */}
                 <div
                     className="
@@ -63,13 +63,9 @@ const Sessions = () => {
 
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
-                        className="
-    absolute right-0 top-4  -z-10
-    w-1/2 h-full
-    bg-no-repeat
-    bg-[size:125%_auto] bg-[position:0%_center]
+className="absolute -right-12 top-0 translate-y-10 -z-10 w-1/2 h-full bg-no-repeat bg-[length:150%_auto] bg-right-center"
 
-  "
+
                         style={{ backgroundImage: `url(${rightImage})` }}
                         aria-hidden="true"
                     />
@@ -85,7 +81,7 @@ const Sessions = () => {
                      "
                 >
                     {/* MOBILE TOP PHOTO */}
-                    <div className="relative w-full h-[300px] sm:h-[330px]">
+                     <div className="relative w-full h-[300px] sm:h-[370px]">
                         {" "}
                         <img
                             src={rightImage}
@@ -149,7 +145,7 @@ const Sessions = () => {
                         <div className="flex justify-center lg:justify-end relative z-10 lg:pr-0">
                             <div className=" w-full lg:pl-24">
                                 <div
-                                    className="bg-white/50 rounded-xl shadow-[0_4px_65px_8px_rgba(0,0,0,0.1) backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-mr-20"
+                                    className="bg-white/50 rounded-xl shadow-[0_4px_65px_8px_rgba(0,0,0,0.1)] backdrop-blur-[54px] p-8 sm:p-10 lg:p-12 lg:-mr-20"
                                 >
                                     <h3 className="text-[#155BE8] text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
                                         THE CONFERENCE

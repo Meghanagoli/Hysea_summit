@@ -164,7 +164,7 @@ export default function Speakers() {
 
           {/* RIGHT IMAGE (desktop only) */}
           <div
-            className="absolute -right-12 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-[length:90%_auto] bg-top "
+            className="absolute -right-12 top-16 -z-10 w-1/2 h-full bg-no-repeat bg-[length:100%_auto] bg-top "
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
@@ -180,7 +180,7 @@ export default function Speakers() {
           "
         >
           {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[300px] sm:h-[330px]">
+          <div className="relative w-full h-[300px] sm:h-[630px]">
             <img
               src={rightImage}
               alt="Speakers"
@@ -193,7 +193,7 @@ export default function Speakers() {
             className="
               absolute inset-0 z-0
               bg-no-repeat bg-cover
-              bg-[position:center_220px]
+              bg-[position:center_220px] sm:bg-[position:center_430px] 
             "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"

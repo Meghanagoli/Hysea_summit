@@ -34,7 +34,7 @@ const Awards = () => {
   });
   return (
     <section className="w-full">
-      <main className="relative w-full overflow-clip bg-transparent">
+        <main className="relative w-full overflow-clip bg-transparent">
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
           className="
@@ -101,7 +101,7 @@ const Awards = () => {
     w-1/2 h-full
     bg-no-repeat
    bg-[position:25%_center]
-    bg-[length:120%_auto]
+    bg-[length:150%_auto]
   "
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
@@ -118,7 +118,7 @@ const Awards = () => {
                      "
         >
           {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[300px] sm:h-[330px]">
+         <div className="relative w-full h-[360px] sm:h-[580px] mt-50">
             {" "}
             <img
               src={rightImage}
@@ -132,7 +132,7 @@ const Awards = () => {
             className="
                          absolute inset-0 z-0
                          bg-no-repeat bg-cover
-                         bg-[position:center_220px]
+                       bg-[position:center_220px] sm:bg-[position:center_430px]
                        "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
@@ -142,7 +142,7 @@ const Awards = () => {
           <div
             className="
                          relative z-10
-                         -mt-[100px] px-5 pt-8 pb-12
+                         -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]
                        "
           >
             <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">

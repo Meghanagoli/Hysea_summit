@@ -54,10 +54,15 @@ const Pricing = () => {
               <p className="text-sm text-black-400 mb-6">
                 Will have access to the Conference & Expo
               </p>
-
-              <button className="bg-[#0530A8] text-white px-6 py-2 rounded-md">
+<a
+              href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#1E60D9] text-white px-4 sm:px-6 py-2 rounded-md">
                 Register Now
               </button>
+            </a>
             </div>
           </div>
 
