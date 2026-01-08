@@ -133,6 +133,7 @@ export default function Speakers() {
           <div
             className="
               w-[65%]
+            
               min-h-[544px]
               lg:px-5
               bg-no-repeat bg-cover bg-right-top
@@ -164,7 +165,7 @@ export default function Speakers() {
 
           {/* RIGHT IMAGE (desktop only) */}
           <div
-            className="absolute -right-12 top-16 -z-10 w-1/2 h-full bg-no-repeat bg-[length:100%_auto] bg-top "
+            className="absolute -right-12 top-10 -z-10 w-1/2 h-full bg-no-repeat bg-[length:100%_auto] bg-center" 
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />

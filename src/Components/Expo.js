@@ -90,7 +90,7 @@ const Expo = () => {
 
           {/* RIGHT IMAGE (desktop only) */}
           <div
-            className="absolute right-0 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left"
+            className="absolute -right-10 top-0 -z-10 w-1/2 h-full bg-no-repeat bg-cover bg-left-center"
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
@@ -173,7 +173,7 @@ const Expo = () => {
 
 
       <div className="block lg:hidden " />
-      <section className="w-full bg-white px-4 sm:px-6 md:px-12 py-16 lg:py-32">
+      <section className="w-full  bg-white px-4 sm:px-6 md:px-12 py-16 lg:py-32">
         <div className="mx-auto max-w-9xl flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#0530A8] ">
             EXHIBITION OPPORTUNITIES

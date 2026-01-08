@@ -46,6 +46,7 @@ const Awards = () => {
           <div
             className="
                          w-[65%]
+                         md:h-[640px]
                          min-h-[544px]
                          lg:px-5
                          bg-no-repeat bg-cover bg-right-top
@@ -101,7 +102,7 @@ const Awards = () => {
     w-1/2 h-full
     bg-no-repeat
    bg-[position:25%_center]
-    bg-[length:150%_auto]
+    bg-[length:120%_auto]
   "
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"

@@ -31,6 +31,7 @@ const Sessions = () => {
                     <div
                         className="
                          w-[65%]
+                         md:h-[580px]
                          min-h-[544px]
                          lg:px-5
                          bg-no-repeat bg-cover bg-right-top
@@ -63,8 +64,8 @@ const Sessions = () => {
 
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
-className="absolute -right-12 top-0 translate-y-10 -z-10 w-1/2 h-full bg-no-repeat bg-[length:150%_auto] bg-right-center"
-
+className="absolute right-0 top-0 translate-y-10 -z-10 w-1/2 h-full bg-no-repeat bg-[length:125%_auto] bg-right-center
+lg:bg-[position:left_center]"
 
                         style={{ backgroundImage: `url(${rightImage})` }}
                         aria-hidden="true"
