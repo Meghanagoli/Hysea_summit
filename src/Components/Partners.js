@@ -92,6 +92,7 @@ const Partners = () => {
                     <div
                         className="
               w-[65%]
+              
               min-h-[544px]
               lg:px-5
               bg-no-repeat bg-cover bg-right-top
@@ -160,7 +161,7 @@ const Partners = () => {
                     <div
                         className="
       relative z-10
-      -mt-[140px] sm:-mt-[180px] md:-mt-[80px]
+      -mt-[50px] sm:-mt-[180px] md:-mt-[80px]
       px-5 pt-8 pb-12
       max-w-[720px] md:max-w-[860px] 
     "

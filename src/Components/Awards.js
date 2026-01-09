@@ -124,7 +124,7 @@ const Awards = () => {
             <img
               src={rightImage}
               alt="Speakers"
-              className="h-full w-full object-cover object-right"
+              className="h-full w-full object-cover object-center"
             />
           </div>
 
