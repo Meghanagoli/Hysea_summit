@@ -1,5 +1,5 @@
 import React from "react";
-import venueImg from "../../assets/venue.png";
+import venueImg from "../../assets/venue.jpg";
 import pricingbg from "../../assets/pricing_bg.png";
 
 const Pricing = () => {
@@ -14,25 +14,18 @@ const Pricing = () => {
     >
       <div className="max-w-9xl mx-auto px-4 sm:px-6 md:px-10">
 
-        
+        {/* ===== Row 1: Event Signup + Venue Image ===== */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-12 gap-x-6 lg:gap-x-10">
           {/* Event Signup */}
           <div className="flex items-center">
             <div
               className="
-                bg-white  w-full
-                px-5 py-5
-                sm:px-6 sm:py-6
-                md:px-8 md:py-6 rounded-xl
+                bg-white w-full
+                px-5 py-5 sm:px-6 sm:py-6 md:px-8 md:py-6 rounded-xl
               "
               style={{ boxShadow: "0px 8px 24px rgba(5,48,168,0.12)" }}
             >
-              <h3
-                className="
-                  text-[#0530A8] font-semibold mb-2
-                  text-xl sm:text-2xl
-                "
-              >
+              <h3 className="text-[#0530A8] font-semibold mb-2 text-xl sm:text-2xl">
                 EVENT SIGNUP
               </h3>
 
@@ -68,69 +61,61 @@ const Pricing = () => {
                 Will have access to the Conference &amp; Expo
               </p>
 
-             <a
-              href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-[#1E60D9] text-white px-4 sm:px-6 py-2 rounded-md">
-                Register Now
-              </button>
-            </a>
+              <a
+                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-[#1E60D9] text-white px-4 sm:px-6 py-2 rounded-md">
+                  Register Now
+                </button>
+              </a>
             </div>
           </div>
 
+          {/* Venue Image */}
           <div
             className="
-               w-full
-                h-[240px]
-                sm:h-[280px]
-                md:h-[334px]
-                lg:h-[360px] rounded-xl overflow-hidden border-2 border-[#53A8FF]
+              w-full rounded-xl overflow-hidden
+              h-[220px] sm:h-[280px] md:h-[334px] lg:h-[360px]
+              bg-cover bg-center bg-no-repeat
+              bg-transparent border-0 ring-0 outline-none
+              shadow-[0_4px_24px_10px_#00000014]
             "
-            style={{
-              boxShadow: "0px 4px 64px 0px rgba(0, 0, 0, 0.08)",
-            }}
+            style={{ backgroundImage: `url(${venueImg})` }}
+          />
+        </div>
+
+        {/* Spacing between rows */}
+        <div className="mt-8 sm:mt-10 md:mt-12" />
+
+        {/* ===== Row 2: Map + Venue Card (mobile: venue first, then map) ===== */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-12 gap-x-6 lg:gap-x-10">
+          {/* Map (mobile second, desktop left) */}
+          <div
+            className="
+              order-2 md:order-1
+              w-full
+              h-[240px] sm:h-[280px] md:h-[334px] lg:h-[360px]
+              rounded-xl overflow-hidden border-2 border-[#53A8FF]
+              shadow-[0_4px_24px_10px_#00000014]
+            "
           >
             <iframe
-              className="
-               w-full h-full border-0 
-              "
+              className="w-full h-full border-0"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7611.463719863719!2d78.37104772412594!3d17.47254345034845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb922dedfac813%3A0xe3675c0e78567be0!2sHYDERABAD%20INTERNATIONAL%20CONVENTION%20CENTRE-HICC%2C%20Izzathnagar%2C%20Hyderabad%2C%20Kothaguda%2C%20Telangana%20500084%2C%20India!5e0!3m2!1sen!2sus!4v1765862010707!5m2!1sen!2sus"
               loading="lazy"
               allowFullScreen
               title="Map"
             />
           </div>
-        </div>
-     
-  
-        <div className="mt-8 sm:mt-10 md:mt-12" />
 
-      
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-12 gap-x-6 lg:gap-x-10">
-        
-          
-<div
-  className="
-    w-full rounded-xl overflow-hidden
-    h-[220px] sm:h-[280px] md:h-[334px] lg:h-[360px]
-    bg-cover bg-center bg-no-repeat
-    bg-transparent border-0 ring-0 outline-none
-    shadow-sm md:shadow-md lg:shadow-[0_0_0_1px_rgba(0,0,0,0.12)]
-  "
-  style={{ backgroundImage: `url(${venueImg})` }}
-/>
-
-
-          {/* Venue Card */}
-          <div className="flex items-center">
+          {/* Venue Card (mobile first, desktop right) */}
+          <div className="order-1 md:order-2 flex items-center">
             <div
               className="
                 bg-white rounded-xl w-full
-                px-6 py-6
-                sm:px-8 sm:py-7
-                md:px-10 md:py-8
+                px-6 py-6 sm:px-8 sm:py-7 md:px-10 md:py-8
               "
               style={{ boxShadow: "0px 4px 64px 0px rgba(0, 0, 0, 0.08)" }}
             >
