@@ -119,7 +119,7 @@ const Expo = () => {
             className="
                            absolute inset-0 z-0
                            bg-no-repeat bg-cover
-                           sm: bg-[position:center_320px]  
+                           sm: bg-[position:center_310px]  
                          "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
