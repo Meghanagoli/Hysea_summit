@@ -106,7 +106,7 @@ const Expo = () => {
                        "
         >
           {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[300px] sm:h-[350px] md:h-[380px] mt-20">
+          <div className="relative w-full h-[320px] sm:h-[350px] md:h-[380px] mt-20">
             <img
               src={rightImage}
               alt="Speakers"
@@ -119,7 +119,7 @@ const Expo = () => {
             className="
                            absolute inset-0 z-0
                            bg-no-repeat bg-cover
-                           sm: bg-[position:center_310px]  
+                           sm: bg-[position:center_320px]  
                          "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
