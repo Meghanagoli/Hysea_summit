@@ -14,7 +14,7 @@ const Why_Attend = () => {
           backdropFilter: "blur(8px)",
         }}
       >
-        <h1 className=" text-center text-[#0530A8] text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0530A8] mb-8">
+        <h1 className=" text-center text-[#0530A8] text-3xl sm:text-4xl md:text-5xl font-semibold  mb-8">
           WHY ATTEND
         </h1>
         <div
@@ -91,11 +91,11 @@ const Card = ({
         loading="lazy"
       />
 
-      <h3 className=" text-[#0f4fb3] px-6 mt-6 text-left text-4xl font-medium">
+      <h3 className=" text-[#0f4fb3] px-6 mt-6 text-center text-4xl font-medium">
         {title}
       </h3>
 
-      <p className="text-left px-6 mt-6 text-lg font-regular">{subtitle}</p>
+      <p className="text-center px-6 mt-6 text-lg font-regular">{subtitle}</p>
 
       <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[215px] h-[137px] overflow-hidden">
         <div className="absolute left-0 bottom-[-78px] w-[215px] h-[215px]  flex flex-col items-center justify-center shadow-[0_6px_18px_rgba(16,24,40,0.06)]">

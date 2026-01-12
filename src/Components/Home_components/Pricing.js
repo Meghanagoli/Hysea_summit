@@ -62,7 +62,7 @@ const Pricing = () => {
               </p>
 
               <a
-                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
                 target="_blank"
                 rel="noopener noreferrer"
               >

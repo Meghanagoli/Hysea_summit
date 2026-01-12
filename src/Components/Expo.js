@@ -68,7 +68,7 @@ const Expo = () => {
                 Generate leads, progress your pipeline and build brand awareness. Become an exhibitor at HYSEA Annual Summit and get in front of industry leaders.
               </p>
               <a
-                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -147,7 +147,7 @@ const Expo = () => {
             </p>
 
             <a
-              href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets"
+              href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -244,7 +244,7 @@ const Expo = () => {
 
               </div>
 
-              <a href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/tickets" target="_blank" rel="noopener noreferrer" className="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold">Reserve Your Space</a>
+              <a href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets" target="_blank" rel="noopener noreferrer" className="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold">Reserve Your Space</a>
 
             </div>
 

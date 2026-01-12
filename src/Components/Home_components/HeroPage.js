@@ -48,7 +48,7 @@ const HeroPage = () => {
         }}
       >
         <div className="absolute inset-0 -z-10 min-h-[220px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[320px]" />
-        <div className="absolute inset-0 bg-black/8 md:bg-black/10" />
+        <div className="absolute inset-0 bg-black/8 md:bg-black/10 pointer-events-none" />
 
         <div className="max-w-9xl m-auto px-4 py-12 sm:px-6 md:px-12   md:py-16 lg:py-20 ">
           {/* ⬇️ Only change here: tablet stays single column */}
