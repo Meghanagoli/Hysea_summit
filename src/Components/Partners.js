@@ -79,7 +79,7 @@ const Partners = () => {
     return (
         <section className="w-full">
             <Navbar />
-           <main className="relative w-full overflow-clip bg-transparent">
+            <main className="relative w-full overflow-clip bg-transparent">
 
                 {/* ====================== DESKTOP (lg+) ====================== */}
                 <div
@@ -138,7 +138,7 @@ const Partners = () => {
                 <div className="block lg:hidden relative w-full overflow-hidden">
 
                     {/* TOP IMAGE */}
-                   <div className="relative w-full h-[300px] sm:h-[330px] md:h-[450px] ">
+                    <div className="relative w-full h-[300px] sm:h-[330px] md:h-[450px] ">
                         <img
                             src={rightImage}
                             alt="Partners"
