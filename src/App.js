@@ -2,6 +2,7 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Components/Navbar.js";
+import AgendaButton from "./Components/AgendaButton";
 import Home from './Components/Home.js';
 import Expo from './Components/Expo.js';
 import Speakers from "./Components/Speakers.js";
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Navbar />
+      <AgendaButton />
 
 
 
