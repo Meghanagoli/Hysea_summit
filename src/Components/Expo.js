@@ -29,7 +29,7 @@ const Expo = () => {
 
   return (
     <div className="w-full ">
-          <main className="relative w-full overflow-clip bg-transparent">
+      <main className="relative w-full overflow-clip bg-transparent">
 
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
@@ -198,7 +198,7 @@ const Expo = () => {
 
         </div>
       </section>
-      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-12 py-16 lg:py-32">
+      <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-10 py-16 lg:py-32">
         <div className="max-w-9xl mx-auto text-center relative mt-0">
 
           <p className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white uppercase tracking-wide text-center mt-0 mb-2">
