@@ -54,6 +54,30 @@ import g17 from "../assets/g17.png";
 import g18 from "../assets/g18.png";
 import g19 from "../assets/g19.png";
 import g20 from "../assets/g20.png";
+import cognizant from "../assets/cognizant.webp";
+import p1 from "../assets/p1.png";
+import p2 from "../assets/p2.png";
+import p3 from "../assets/p3.png";
+import p4 from "../assets/p4.png";
+import p5 from "../assets/p5.png";
+import p6 from "../assets/p6.png";
+import p7 from "../assets/p7.png";
+import p8 from "../assets/p8.png";
+import p9 from "../assets/p9.png";
+import p10 from "../assets/p10.png";
+import p11 from "../assets/p11.png";
+import p12 from "../assets/p12.png";
+import p13 from "../assets/p13.png";
+import p14 from "../assets/p14.png";
+import p15 from "../assets/p15.png";
+import p16 from "../assets/p16.png";
+import p17 from "../assets/p17.png";
+import p18 from "../assets/p18.png";
+import p19 from "../assets/p19.png";
+import p20 from "../assets/p20.png";
+import p21 from "../assets/p21.png";
+import p22 from "../assets/p22.png";
+import p23 from "../assets/p23.png";
 
 import Footer from "./Footer";
 const speakers = [
@@ -110,7 +134,31 @@ const chief_guests = [
   { name: "V.C. Sajjanar, IPS", img: g19 },
   { name: "Shikha Goel, IPS", img: g20 },
 ];
-
+const distinguished_guests = [
+  { name: "Akshay Khanna, Avasant", img: p1 },
+  { name: "Ashutosh Sharma, Forrester", img: p2 },
+  { name: "Dr. Subbarao Pavuluri, Ananth Technologies", img: p3 },
+  { name: "Ganesh Ramamoorthy, Gartner", img: p4 },
+  { name: "Harita Gupta, Sutherland", img: p5 },
+  { name: "Kashyap Kompella, RPA2AI Research", img: p6 },
+  { name: "Krishna Sastry Pendyala, EY", img: p7 },
+  { name: "Laura Williams, U S Consulate General", img: p8 },
+  { name: "Lekshmi Nair, NTT Data", img: p9 },
+  { name: "Narsimha Rao Mannepalli, Ex-Infosys", img: p10 },
+  { name: "Prashanth Nandella, President, HYSEA", img: p11 },
+  { name: "Rajanna V., TCS Ltd", img: p12 },
+  { name: "Rajesh Dhuddu, PwC", img: p13 },
+  { name: "Ramesh Loganathan, IIIT-H", img: p14 },
+  { name: "Sailaja Josyula, Cognizant", img: p15 },
+  { name: "Sandhya Ramesh, Mastech Digital", img: p16 },
+  { name: "Sanjeev Jain, Wipro", img: p17 },
+  { name: "Somnath Chatterjee, Prismforce", img: p18 },
+  { name: "Sravan Kumar Desikan,  AI", img: p19 },
+  { name: "Sridhar Sidhu, AT&T", img: p20 },
+  { name: "Valli Bollavaram, Swiss Re", img: p21 },
+  { name: "Vekatesh Natarajan, Vanguard India", img: p22 },
+  { name: "Vishal Salvi, Cognizant", img: p23 },
+];
 export default function Speakers() {
   useSEO({
     title: "Speakers | HYSEA Annual Summit & Awards 2026",
@@ -141,26 +189,43 @@ export default function Speakers() {
             style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
             <div
-              className="
-                relative z-10
-                lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-              "
-            >
-              <div className="inline-flex lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
-                <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd Edition | March 5, 2026 | Hyderabad                </h3>
-              </div>
+  className="
+    relative z-10
+    lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+  "
+>
+  {/* Wrapper */}
+  <div className="flex flex-col items-start">
 
-              <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
-                Speakers
-              </h1>
+    {/* Logo */}
+    <img
+      src={cognizant}
+      alt="Cognizant Logo"
+      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56 rounded-full border"
+      style={{ borderColor: "#115df5", borderWidth: "4px" }}
+    />
 
-              <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
-                Experience an exceptional lineup of distinguished experts and
-                dignitaries as they explore the trends, breakthroughs, and bold
-                ideas shaping the future.
-              </p>
-            </div>
+    {/* 33rd Edition */}
+    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+      <h3 className="text-[#0A2A73] text-sm font-semibold">
+        33rd Edition | March 5, 2026 | Hyderabad
+      </h3>
+    </div>
+
+    {/* Heading */}
+    <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+      Speakers
+    </h1>
+
+    {/* Description */}
+    <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
+      Experience an exceptional lineup of distinguished experts and
+      dignitaries as they explore the trends, breakthroughs, and bold
+      ideas shaping the future.
+    </p>
+
+  </div>
+</div>
           </div>
 
           {/* RIGHT IMAGE (desktop only) */}
@@ -201,30 +266,77 @@ export default function Speakers() {
           />
 
           {/* CONTENT (above backgrounds) */}
-          <div
-            className="
-              relative z-10
-              -mt-[100px] px-5 pt-8 pb-12
-            "
-          >
-            <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
-              <h3 className="text-[#0A2A73] text-sm font-semibold">
-                33rd Edition | March 5, 2026 | Hyderabad              </h3>
-            </div>
+         <div
+  className="
+    relative z-10
+    -mt-[100px] px-5 pt-8 pb-12
+  "
+>
+  {/* Wrapper */}
+  <div className="flex flex-col items-start mt-24">
 
-            <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
-              Speakers
-            </h1>
+    {/* Logo */}
+    <img
+      src={cognizant}
+      alt="Cognizant Logo"
+      className="w-28 h-auto mb-4 sm:w-36 md:w-44 rounded-full border"
+      style={{ borderColor: "#115df5", borderWidth: "4px" }}
+    />
 
-            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-              Experience an exceptional lineup of distinguished experts and
-              dignitaries as they explore the trends, breakthroughs, and bold
-              ideas shaping the future.
-            </p>
-          </div>
+    {/* 33rd Edition */}
+    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+      <h3 className="text-[#0A2A73] text-sm font-semibold">
+        33rd Edition | March 5, 2026 | Hyderabad
+      </h3>
+    </div>
+
+    {/* Heading */}
+    <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+      Speakers
+    </h1>
+
+    {/* Description */}
+    <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+      Experience an exceptional lineup of distinguished experts and
+      dignitaries as they explore the trends, breakthroughs, and bold
+      ideas shaping the future.
+    </p>
+
+  </div>
+</div>
         </div>
       </main>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
+        <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
+          DISTINGUISHED GUESTS
+        </h2>
+         <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
+          {distinguished_guests.map((guest, idx) => (
+            <div key={idx} className="flex flex-col items-center self-start">
+              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg  overflow-hidden shadow-sm">
+  
+                <img
+                  src={guest.img}
+                  alt={guest.name}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
 
+              <p className="
+  mt-3
+  text-center
+  text-sm md:text-base
+  text-gray-700 font-medium
+  min-h-[2.5rem]   
+  leading-snug
+">
+                {guest.name}
+              </p>
+            </div>
+          ))}
+          </div>
+       </div> 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
@@ -251,6 +363,7 @@ export default function Speakers() {
   leading-snug
 ">
                 {guest.name}
+                {guest.organization}
               </p>
             </div>
           ))}

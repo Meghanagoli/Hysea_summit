@@ -11,6 +11,7 @@ import waveImg from "../assets/wave-blue.webp";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
 import rightImage from "../assets/expo-img.webp";
+import cognizant from "../assets/cognizant.webp"
 
 const cards = [
   { title: "Engage with Decision Makers", img: img1 },
@@ -48,44 +49,63 @@ const Expo = () => {
                          "
             style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
-            <div
-              className="
-                             relative z-10
-                             lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-                           "
-            >
-              <div className="inline-flex mt-10 sm:mt-14 md:mt-16 lg:mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
-                <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd HYSEA Annual Summit &amp; Awards 2026
-                </h3>
-              </div>
+            
+          <div
+  className="
+    relative z-10
+    lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+  "
+>
+  {/* Wrapper */}
+  <div className="flex flex-col items-start">
 
-              <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
-                Exhibition
-              </h1>
+    {/* Logo */}
+    <img
+      src={cognizant}
+      alt="Cognizant Logo"
+      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56 rounded-full border"
+      style={{ borderColor: "#115df5", borderWidth: "4px" }}
+    />
 
-              <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
-                Generate leads, progress your pipeline and build brand awareness. Become an exhibitor at HYSEA Annual Summit and get in front of industry leaders.
-              </p>
-              <a
-                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-              w-[fit-content] h-[43px]
-              border-[1.5px] border-white
-              rounded-[4px]
-              bg-transparent
-              text-white
-              font-medium text-[16px] leading-[34.13px]
-              flex items-center justify-center
-              px-[20px] py-[4px]
-            "
-              >
-                Reserve your Space
-              </a>
+    {/* Edition */}
+    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+      <h3 className="text-[#0A2A73] text-sm font-semibold">
+        33rd HYSEA Annual Summit &amp; Awards 2026
+      </h3>
+    </div>
 
-            </div>
+    {/* Heading */}
+    <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+      Exhibition
+    </h1>
+
+    {/* Description */}
+    <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
+      Generate leads, progress your pipeline and build brand awareness.
+      Become an exhibitor at HYSEA Annual Summit and get in front of
+      industry leaders.
+    </p>
+
+    {/* Button */}
+    <a
+      href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        border-[1.5px] border-white
+        rounded-[4px]
+        bg-transparent
+        text-white
+        font-medium text-[16px]
+        flex items-center justify-center
+        px-[20px] py-[6px]
+      "
+    >
+      Reserve your Space
+    </a>
+
+  </div>
+</div>
           </div>
 
           {/* RIGHT IMAGE (desktop only) */}
@@ -127,44 +147,63 @@ const Expo = () => {
 
           {/* CONTENT (above backgrounds) */}
           <div
-            className="
-                           relative z-10
-                           -mt-[60px] sm:-mt-[80px] md:-mt-[40px] px-5 pt-8 pb-12
-                         "
-          >
-            <div className="inline-flex mt-24 items-center justify-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mr-auto">
-              <h3 className="text-[#0A2A73] text-sm font-semibold">
-                33rd HYSEA Annual Summit &amp; Awards 2026
-              </h3>
-            </div>
+  className="
+    relative z-10
+    -mt-[60px] sm:-mt-[80px] md:-mt-[40px]
+    px-5 pt-8 pb-12
+  "
+>
+  {/* Wrapper */}
+  <div className="flex flex-col items-start mt-24">
 
-            <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">
-              Exhibition
-            </h1>
+    {/* Logo */}
+    <img
+      src={cognizant}
+      alt="Cognizant Logo"
+      className="w-28 h-auto mb-4 sm:w-36 md:w-44 rounded-full border"
+      style={{ borderColor: "#115df5", borderWidth: "4px" }}
+    />
 
-            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-              Generate leads, progress your pipeline and build brand awareness. Become an exhibitor at HYSEA Annual Summit and get in front of industry leaders.
-            </p>
+    {/* Edition */}
+    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+      <h3 className="text-[#0A2A73] text-sm font-semibold">
+        33rd HYSEA Annual Summit &amp; Awards 2026
+      </h3>
+    </div>
 
-            <a
-              href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-              inline-flex
-              max-w-[220px]
-              border-[1.5px] border-white
-              rounded-[4px]
-              bg-transparent
-              text-white
-              text-sm font-semibold
-              px-4 md:px-5 py-2
-            "
-            >
-              Reserve your Space
-            </a>
+    {/* Heading */}
+    <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">
+      Exhibition
+    </h1>
 
-          </div>
+    {/* Description */}
+    <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+      Generate leads, progress your pipeline and build brand awareness.
+      Become an exhibitor at HYSEA Annual Summit and get in front of
+      industry leaders.
+    </p>
+
+    {/* Button */}
+    <a
+      href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        inline-flex
+        max-w-[220px]
+        border-[1.5px] border-white
+        rounded-[4px]
+        bg-transparent
+        text-white
+        text-sm font-semibold
+        px-4 md:px-5 py-2
+      "
+    >
+      Reserve your Space
+    </a>
+
+  </div>
+</div>
         </div>
         {/* =================== END MOBILE/TABLET =================== */}
 
