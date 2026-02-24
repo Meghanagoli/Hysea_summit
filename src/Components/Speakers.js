@@ -202,7 +202,7 @@ export default function Speakers() {
       src={cognizant}
       alt="Cognizant Logo"
       className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56 rounded-full border"
-      style={{ borderColor: "#115df5", borderWidth: "4px" }}
+      
     />
 
     {/* 33rd Edition */}
@@ -280,7 +280,7 @@ export default function Speakers() {
       src={cognizant}
       alt="Cognizant Logo"
       className="w-28 h-auto mb-4 sm:w-36 md:w-44 rounded-full border"
-      style={{ borderColor: "#115df5", borderWidth: "4px" }}
+  
     />
 
     {/* 33rd Edition */}
@@ -306,7 +306,7 @@ export default function Speakers() {
 </div>
         </div>
       </main>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 bg-white mt-2">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           DISTINGUISHED GUESTS
         </h2>
@@ -337,7 +337,7 @@ export default function Speakers() {
           ))}
           </div>
        </div> 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white ">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
         </h2>
