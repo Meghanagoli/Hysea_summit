@@ -53,7 +53,7 @@ const Sessions = () => {
     <img
       src={cognizant}
       alt="Cognizant Logo"
-      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56 rounded-full border"
+      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56"
   
     />
 
@@ -135,7 +135,7 @@ lg:bg-[position:left_center]"
     <img
       src={cognizant}
       alt="Cognizant Logo"
-      className="w-28 h-auto mb-4 sm:w-36 md:w-44 rounded-full border"
+      className="w-28 h-auto mb-4 sm:w-36 md:w-44 "
       
     />
 

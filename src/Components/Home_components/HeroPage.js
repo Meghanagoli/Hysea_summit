@@ -64,8 +64,7 @@ const HeroPage = () => {
                   md:w-40
                   lg:w-48
                   mb-3 sm:mb-4
-                  rounded-full
-                  border
+                  
                   pt-[-10px]
                 "
                 
