@@ -30,7 +30,7 @@ import stpi from "../assets/stpi.png";
 import vanguard from "../assets/vanguard.png"
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import cognizant from "..//assets/cognizant.webp";
+import cognizant from "..//assets/cognizant.svg";
 const Partners = () => {
     useSEO({
         title: "Partners | HYSEA Annual Summit & Awards 2026",

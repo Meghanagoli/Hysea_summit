@@ -8,8 +8,8 @@ import sessionsBg from "../assets/sessions_bg.webp";
 import session1 from "../assets/session1.webp";
 import session2 from "../assets/session2.webp";
 import session3 from "../assets/c12.webp";
-import cognizant from "../assets/cognizant.webp"
-//import agendaImg from "../assets/agenda.webp"
+import cognizant from "../assets/cognizant.svg"
+
 
 
 const Sessions = () => {
@@ -21,7 +21,7 @@ const Sessions = () => {
 
     return (
         <section className="w-full">
-         <main className="relative w-full overflow-clip bg-transparent">
+            <main className="relative w-full overflow-clip bg-transparent">
                 {/* ====================== DESKTOP (lg+) ====================== */}
                 <div
                     className="
@@ -40,50 +40,50 @@ const Sessions = () => {
                        "
                         style={{ backgroundImage: `url(${heroLeftBg})` }}
                     >
-                      <div
-  className="
+                        <div
+                            className="
     relative z-10
     lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
   "
->
-  {/* Wrapper */}
-  <div className="flex flex-col items-start">
+                        >
+                            {/* Wrapper */}
+                            <div className="flex flex-col items-start">
 
-    {/* Logo */}
-    <img
-      src={cognizant}
-      alt="Cognizant Logo"
-      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56"
-  
-    />
+                                {/* Logo */}
+                                <img
+                                    src={cognizant}
+                                    alt="Cognizant Logo"
+                                    className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56"
 
-    {/* 33rd Edition */}
-    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-      <h3 className="text-[#0A2A73] text-sm font-semibold">
-        33rd Edition | March 5, 2026 | Hyderabad
-      </h3>
-    </div>
+                                />
 
-    {/* Heading */}
-    <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
-      Sessions
-    </h1>
+                                {/* 33rd Edition */}
+                                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                                    <h3 className="text-[#0A2A73] text-sm font-semibold">
+                                        33rd Edition | March 5, 2026 | Hyderabad
+                                    </h3>
+                                </div>
 
-    {/* Description */}
-    <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
-      Discover how AI and emerging technologies are transforming industries
-      through responsible innovation, secure digital transformation, and
-      human–AI collaboration, equipping leaders with insights to stay
-      competitive and future-ready.
-    </p>
+                                {/* Heading */}
+                                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                                    Sessions
+                                </h1>
 
-  </div>
-</div>
+                                {/* Description */}
+                                <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                                    Discover how AI and emerging technologies are transforming industries
+                                    through responsible innovation, secure digital transformation, and
+                                    human–AI collaboration, equipping leaders with insights to stay
+                                    competitive and future-ready.
+                                </p>
+
+                            </div>
+                        </div>
                     </div>
 
                     {/* RIGHT IMAGE (desktop only) */}
                     <div
-className="absolute right-0 top-0 translate-y-10 -z-10 w-1/2 h-full bg-no-repeat bg-[length:125%_auto] bg-right-center
+                        className="absolute right-0 top-0 translate-y-10 -z-10 w-1/2 h-full bg-no-repeat bg-[length:125%_auto] bg-right-center
 lg:bg-[position:left_center]"
 
                         style={{ backgroundImage: `url(${rightImage})` }}
@@ -101,7 +101,7 @@ lg:bg-[position:left_center]"
                      "
                 >
                     {/* MOBILE TOP PHOTO */}
-                     <div className="relative w-full h-[300px] sm:h-[370px]">
+                    <div className="relative w-full h-[300px] sm:h-[370px]">
                         {" "}
                         <img
                             src={rightImage}
@@ -122,45 +122,45 @@ lg:bg-[position:left_center]"
                     />
 
                     {/* CONTENT (above backgrounds) */}
-                  <div
-  className="
+                    <div
+                        className="
     relative z-10
     -mt-[100px] px-5 pt-8 pb-12
   "
->
-  {/* Wrapper */}
-  <div className="flex flex-col items-start mt-24">
+                    >
+                        {/* Wrapper */}
+                        <div className="flex flex-col items-start mt-24">
 
-    {/* Logo */}
-    <img
-      src={cognizant}
-      alt="Cognizant Logo"
-      className="w-28 h-auto mb-4 sm:w-36 md:w-44 "
-      
-    />
+                            {/* Logo */}
+                            <img
+                                src={cognizant}
+                                alt="Cognizant Logo"
+                                className="w-28 h-auto mb-4 sm:w-36 md:w-44 "
 
-    {/* 33rd Edition */}
-    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-      <h3 className="text-[#0A2A73] text-sm font-semibold">
-        33rd Edition | March 5, 2026 | Hyderabad
-      </h3>
-    </div>
+                            />
 
-    {/* Heading */}
-    <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
-      Sessions
-    </h1>
+                            {/* 33rd Edition */}
+                            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                                    33rd Edition | March 5, 2026 | Hyderabad
+                                </h3>
+                            </div>
 
-    {/* Description */}
-    <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-      Discover how AI and emerging technologies are transforming industries
-      through responsible innovation, secure digital transformation, and
-      human–AI collaboration, equipping leaders with insights to stay
-      competitive and future-ready.
-    </p>
+                            {/* Heading */}
+                            <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+                                Sessions
+                            </h1>
 
-  </div>
-</div>
+                            {/* Description */}
+                            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+                                Discover how AI and emerging technologies are transforming industries
+                                through responsible innovation, secure digital transformation, and
+                                human–AI collaboration, equipping leaders with insights to stay
+                                competitive and future-ready.
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
                 {/* =================== END MOBILE/TABLET =================== */}
             </main>

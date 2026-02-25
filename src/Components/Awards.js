@@ -22,7 +22,7 @@ import c11 from "../assets/c11.webp";
 import c12 from "../assets/c12.webp"
 import awards1 from "../assets/aw1.webp";
 import awards2 from "../assets/aw2.webp";
-import cognizant from "../assets/cognizant.webp"
+import cognizant from "../assets/cognizant.svg"
 const Awards = () => {
   const cardImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12];
 
@@ -35,7 +35,7 @@ const Awards = () => {
   });
   return (
     <section className="w-full">
-        <main className="relative w-full overflow-clip bg-transparent">
+      <main className="relative w-full overflow-clip bg-transparent">
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
           className="
@@ -54,49 +54,49 @@ const Awards = () => {
                        "
             style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
-            
-         <div
-  className="
+
+            <div
+              className="
     relative z-10
     lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
   "
->
-  {/* Wrapper */}
-  <div className="flex flex-col items-start">
+            >
+              {/* Wrapper */}
+              <div className="flex flex-col items-start">
 
-    {/* Logo */}
-    <img
-      src={cognizant}
-      alt="Cognizant Logo"
-      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56  border"
- 
-    />
+                {/* Logo */}
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56  border"
 
-    {/* 33rd Edition */}
-    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-      <h3 className="text-[#0A2A73] text-sm font-semibold">
-        33rd Edition | March 5, 2026 | Hyderabad
-      </h3>
-    </div>
+                />
 
-    {/* Heading */}
-    <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
-      Awards
-    </h1>
+                {/* 33rd Edition */}
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                  <h3 className="text-[#0A2A73] text-sm font-semibold">
+                    33rd Edition | March 5, 2026 | Hyderabad
+                  </h3>
+                </div>
 
-    {/* Description */}
-    <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
-      The HYSEA Awards are a cornerstone of the Summit, celebrating
-      excellence, innovation, leadership, and social impact across the
-      technology ecosystem.
-    </p>
+                {/* Heading */}
+                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                  Awards
+                </h1>
 
-    {/* Button */}
-    <a
-      href="https://hysea.accubate.app/ext/form/12107/1/apply"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
+                {/* Description */}
+                <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                  The HYSEA Awards are a cornerstone of the Summit, celebrating
+                  excellence, innovation, leadership, and social impact across the
+                  technology ecosystem.
+                </p>
+
+                {/* Button */}
+                <a
+                  href="https://hysea.accubate.app/ext/form/12107/1/apply"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
         border-[1.5px] border-white
         rounded-[4px]
         min-w-40
@@ -106,12 +106,12 @@ const Awards = () => {
         flex items-center justify-center
         px-[20px] py-[6px]
       "
-    >
-      Apply Now
-    </a>
+                >
+                  Apply Now
+                </a>
 
-  </div>
-</div>
+              </div>
+            </div>
           </div>
 
           {/* RIGHT IMAGE (desktop only) */}
@@ -138,7 +138,7 @@ const Awards = () => {
                      "
         >
           {/* MOBILE TOP PHOTO */}
-         <div className="relative w-full h-[360px] sm:h-[580px] mt-50">
+          <div className="relative w-full h-[360px] sm:h-[580px] mt-50">
             {" "}
             <img
               src={rightImage}
@@ -160,47 +160,47 @@ const Awards = () => {
 
           {/* CONTENT (above backgrounds) */}
           <div
-  className="
+            className="
     relative z-10
     -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]
   "
->
-  {/* Wrapper */}
-  <div className="flex flex-col items-start mt-24">
+          >
+            {/* Wrapper */}
+            <div className="flex flex-col items-start mt-24">
 
-    {/* Logo */}
-    <img
-      src={cognizant}
-      alt="Cognizant Logo"
-      className="w-28 h-auto mb-4 sm:w-36 md:w-44  border"
-  
-    />
+              {/* Logo */}
+              <img
+                src={cognizant}
+                alt="Cognizant Logo"
+                className="w-28 h-auto mb-4 sm:w-36 md:w-44  border"
 
-    {/* 33rd Edition */}
-    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-      <h3 className="text-[#0A2A73] text-sm font-semibold">
-        33rd Edition | March 5, 2026 | Hyderabad
-      </h3>
-    </div>
+              />
 
-    {/* Heading */}
-    <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
-      Awards
-    </h1>
+              {/* 33rd Edition */}
+              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                  33rd Edition | March 5, 2026 | Hyderabad
+                </h3>
+              </div>
 
-    {/* Description */}
-    <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-      The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
-      celebrating excellence, innovation, leadership, and social impact
-      across the IT/ITES and technology ecosystem.
-    </p>
+              {/* Heading */}
+              <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+                Awards
+              </h1>
 
-    {/* Button */}
-    <a
-      href="https://hysea.accubate.app/ext/form/12107/1/apply"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
+              {/* Description */}
+              <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+                The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
+                celebrating excellence, innovation, leadership, and social impact
+                across the IT/ITES and technology ecosystem.
+              </p>
+
+              {/* Button */}
+              <a
+                href="https://hysea.accubate.app/ext/form/12107/1/apply"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
         border-[1.5px] border-white
         rounded-md
         bg-transparent
@@ -208,12 +208,12 @@ const Awards = () => {
         text-sm font-semibold
         px-4 md:px-5 py-2
       "
-    >
-      Apply Now
-    </a>
+              >
+                Apply Now
+              </a>
 
-  </div>
-</div>
+            </div>
+          </div>
         </div>
         {/* =================== END MOBILE/TABLET =================== */}
       </main>
