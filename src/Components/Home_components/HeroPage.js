@@ -67,8 +67,8 @@ const HeroPage = () => {
                   
                   pt-[-10px]
                 "
-                
-              
+
+
               />
 
               <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm mt-6">

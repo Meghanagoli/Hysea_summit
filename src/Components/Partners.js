@@ -12,16 +12,22 @@ import cyient from "../assets/Qcity.png";
 import tHub from "../assets/thub.png";
 import tie from "../assets/tie.png";
 import ce from "../assets/ce.png";
-import tgic from "../assets/tgic.png";
+import wehub from "../assets/wehub.png";
 import t10x from "../assets/tg10x.png";
-import math from "../assets/math.png";
-import haa from "../assets/ha.png";
-import succeed from "../assets/sucseed.png";
-import silverneedle from "../assets/silverneedle.png";
 import endiya from "../assets/endiya.png"
-import pavestone from "../assets/pavestone.png"
-import abyro from "../assets/abyro.png"
-import biome from "../assets/biome.png"
+import scsc from "../assets/scsc.png"
+import iacc from "../assets/iacc.png"
+import ftcci from "../assets/ftcci.png"
+import bai from "../assets/bai.png"
+import amcham from "../assets/amcham.png"
+import cognizant_logo from "../assets/cognizant.png"
+import govt1 from "../assets/govt1.png";
+import govt2 from "../assets/govt2.png";
+import tao from "../assets/tao.png";
+import qapilot from "../assets/qapilot.png";
+import technogen from "../assets/technogen.png";
+import stpi from "../assets/stpi.png";
+import vanguard from "../assets/vanguard.png"
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import cognizant from "..//assets/cognizant.webp";
@@ -31,20 +37,24 @@ const Partners = () => {
         description:
             "As a HYSEA partner, you'll engage with a high-caliber audience of CEOs, tech founders, and government dignitaries. With over 1,000 delegates in attendance, the 33rd Annual Summit is your platform to build meaningful connections and showcase leadership in the tech space.",
     });
-    const industryPatrons = [broadbridge, servicenow, dbs, realpage];
+    const industryPatrons = [broadbridge, servicenow, dbs, realpage, vanguard];
 
     const ecosystemPatrons = [mindspace, icici, cyient];
 
-    const outreachPartners = [tHub, tie, ce, tgic, t10x, math, succeed, silverneedle, haa, endiya, pavestone, abyro, biome];
-
+    const outreachPartners = [tHub, tie, ce, wehub, t10x, endiya, scsc, iacc, ftcci, bai, amcham];
+    const titleSponsor = [cognizant_logo];
+    const govtPartners = [govt1, govt2];
+    const goldSponsor = [tao];
+    const featuredPartners = [qapilot, technogen];
+    const sponsors = [stpi];
 
 
     const LogoGridPlain = ({ logos, cols, centerLastOnMobile = false }) => (
         <div
             className={`
       grid ${cols} 
-   gap-y-10 md:gap-y-12 lg:gap-y-18
-   gap-x-4 sm:gap-x-6 md:gap-x-6 lg:gap-x-10
+   gap-y-6 md:gap-y-8 lg:gap-y-12
+   gap-x-2 sm:gap-x-4 md:gap-x-4 lg:gap-x-6
 
       place-items-center
     `}
@@ -100,45 +110,45 @@ const Partners = () => {
             "
                         style={{ backgroundImage: `url(${heroLeftBg})` }}
                     >
-                       <div
-  className="
+                        <div
+                            className="
     relative z-10
     lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
   "
->
+                        >
 
-  {/* Logo + Content Wrapper */}
-  <div className="flex flex-col items-start">
+                            {/* Logo + Content Wrapper */}
+                            <div className="flex flex-col items-start">
 
-    {/* Logo */}
-    <img
-      src={cognizant}
-      alt="Cognizant Logo"
-      className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56  border"
-      
-    />
+                                {/* Logo */}
+                                <img
+                                    src={cognizant}
+                                    alt="Cognizant Logo"
+                                    className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56  border"
 
-    {/* 33rd Edition */}
-    <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-      <h3 className="text-[#0A2A73] text-sm font-semibold">
-        33rd Edition | March 5, 2026 | Hyderabad
-      </h3>
-    </div>
+                                />
 
-    {/* Heading */}
-    <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
-      Partners
-    </h1>
+                                {/* 33rd Edition */}
+                                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                                    <h3 className="text-[#0A2A73] text-sm font-semibold">
+                                        33rd Edition | March 5, 2026 | Hyderabad
+                                    </h3>
+                                </div>
 
-    {/* Description */}
-    <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px]">
-      HYSEA's Annual Summit is India's premier technology leadership event,
-      attracting over 1,000 delegates and 100+ speakers from industry.
-    </p>
+                                {/* Heading */}
+                                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                                    Partners
+                                </h1>
 
-  </div>
+                                {/* Description */}
+                                <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px]">
+                                    HYSEA's Annual Summit is India's premier technology leadership event,
+                                    attracting over 1,000 delegates and 100+ speakers from industry.
+                                </p>
 
-</div>
+                            </div>
+
+                        </div>
                     </div>
 
                     {/* RIGHT IMAGE (desktop only) */}
@@ -174,54 +184,100 @@ const Partners = () => {
 
                     {/* CONTENT */}
                     <div
-  className="
+                        className="
     relative z-10
     -mt-[50px] sm:-mt-[180px] md:-mt-[80px]
     px-5 pt-8 pb-12
     max-w-[720px] md:max-w-[860px] 
   "
->
+                    >
 
-  {/* Logo + Content Wrapper */}
-  <div className="flex flex-col items-start mt-16 sm:mt-20 md:mt-12">
+                        {/* Logo + Content Wrapper */}
+                        <div className="flex flex-col items-start mt-16 sm:mt-20 md:mt-12">
 
-    {/* Logo */}
-    <img
-      src={cognizant}
-      alt="Cognizant Logo"
-      className="w-28 h-auto mb-4 sm:w-36 md:w-44"
+                            {/* Logo */}
+                            <img
+                                src={cognizant}
+                                alt="Cognizant Logo"
+                                className="w-28 h-auto mb-4 sm:w-36 md:w-44"
 
-      
-    />
 
-    {/* 33rd Edition */}
-    <div className="inline-flex items-center rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-      <h3 className="text-[#0A2A73] text-sm font-semibold">
-        33rd Edition | March 5, 2026 | Hyderabad
-      </h3>
-    </div>
+                            />
 
-    {/* Heading */}
-    <h1 className="text-white text-[40px] sm:text-[44px] font-medium mb-3">
-      Partners
-    </h1>
+                            {/* 33rd Edition */}
+                            <div className="inline-flex items-center rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                                    33rd Edition | March 5, 2026 | Hyderabad
+                                </h3>
+                            </div>
 
-    {/* Description */}
-    <p className="text-white text-[15px] sm:text-[16px] leading-[1.6]">
-      HYSEA's Annual Summit is India's premier technology leadership event,
-      attracting over 1,000 delegates and 100+ speakers from industry.
-    </p>
+                            {/* Heading */}
+                            <h1 className="text-white text-[40px] sm:text-[44px] font-medium mb-3">
+                                Partners
+                            </h1>
 
-  </div>
+                            {/* Description */}
+                            <p className="text-white text-[15px] sm:text-[16px] leading-[1.6]">
+                                HYSEA's Annual Summit is India's premier technology leadership event,
+                                attracting over 1,000 delegates and 100+ speakers from industry.
+                            </p>
 
-</div>
+                        </div>
+
+                    </div>
                 </div>
 
 
 
             </main>
+            {/* ================= SPONSORS ================= */}
+
+            <section className="py-20 lg:py-24">
+                <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                    TITLE SPONSOR
+                </h2>
+                <LogoGridPlain logos={titleSponsor} cols="grid-cols-1" />
+            </section>
+
+            <section className="py-20 lg:py-24">
+                <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                    GOVERNMENT PARTNERS
+                </h2>
+                <div className="flex justify-center">
+                    <div className="w-full max-w-xl">
+                        <LogoGridPlain logos={govtPartners} cols="grid-cols-2" />
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-20 lg:py-24">
+                <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                    GOLD SPONSOR
+                </h2>
+                <LogoGridPlain logos={goldSponsor} cols="grid-cols-1" />
+            </section>
+
+            <section className="py-20 lg:py-24">
+                <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                    FEATURED PARTNERS
+                </h2>
+                <div className="flex justify-center">
+                    <div className="w-full max-w-xl">
+                        <LogoGridPlain logos={featuredPartners} cols="grid-cols-2" />
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-20 lg:py-24">
+                <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
+                    SPONSOR
+                </h2>
+                <LogoGridPlain logos={sponsors} cols="grid-cols-1" />
+            </section>
+
+            {/* ================= END SPONSORS ================= */}
             <section className="bg-white ">
-                <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8 py-16">
+                <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8 py-0">
 
 
 
@@ -232,7 +288,7 @@ const Partners = () => {
 
                         <LogoGridPlain
                             logos={industryPatrons}
-                            cols="grid-cols-2 lg:grid-cols-4"
+                            cols="grid-cols-2 lg:grid-cols-5"
                         />
 
                     </section>
@@ -255,12 +311,8 @@ const Partners = () => {
                             {outreachPartners.map((logo, index) => {
                                 const desktopPosition =
                                     index === 10
-                                        ? "col-start-2"
-                                        : index === 11
-                                            ? "col-start-3"
-                                            : index === 12
-                                                ? "col-start-4"
-                                                : "";
+                                        ? "col-start-3"
+                                        : "";
 
                                 return (
                                     <div
