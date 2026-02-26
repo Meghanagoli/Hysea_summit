@@ -52,27 +52,30 @@ const Expo = () => {
                 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
               "
             >
-              {/* Wrapper ➜ relative + padding to reserve space for absolute logo row */}
-              <div className="relative flex flex-col items-start pt-10">
-                {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
-                <div className="absolute -top-2 left-0 flex items-center gap-2">
+                 {/* Increased padding-top for bigger logo */}
+              <div className="relative flex flex-col items-start pt-32">
+
+                {/* UPDATED LOGO SECTION */}
+                <div className="absolute top-0 left-0 flex flex-col items-start">
                   <img
                     src={cognizant}
                     alt="Cognizant Logo"
-                    className="w-40 h-auto lg:w-56"
+                    className="w-64 xl:w-72 2xl:w-80 h-auto"
                     draggable="false"
                   />
-                  <span className="text-white/90 text-base font-light tracking-wide">
+                  <span className="text-white/90 text-lg font-dark tracking-wide mt-1 pl-[120px]">
                     presents
                   </span>
                 </div>
 
-                {/* Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                {/* 33rd Edition */}
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
-                    33rd HYSEA Annual Summit &amp; Awards 2026
+                    33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
                 </div>
+
+                
 
                 {/* Heading */}
                 <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -152,27 +155,29 @@ const Expo = () => {
               px-5 pt-8 pb-12
             "
           >
-            {/* Wrapper ➜ relative + padding to reserve space for absolute logo row */}
-            <div className="relative flex flex-col items-start mt-10 pt-10 sm:pt-12">
-              {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
-              <div className="absolute top-0 left-0 flex items-center gap-2 sm:gap-3">
-                <img
-                  src={cognizant}
-                  alt="Cognizant Logo"
-                  className="w-28 h-auto sm:w-36 md:w-44"
-                  draggable="false"
-                />
-                <span className="text-white text-sm sm:text-base font-light opacity-90 whitespace-nowrap">
-                  presents
-                </span>
-              </div>
+             <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
-              {/* Edition */}
-              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-                <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd HYSEA Annual Summit &amp; Awards 2026
-                </h3>
-              </div>
+      {/* LOGO + PRESENTS */}
+      <div className="absolute top-0 left-0 flex flex-col items-start">
+        <img
+          src={cognizant}
+          alt="Cognizant Logo"
+          className="w-56 sm:w-64 md:w-72 h-auto"
+          draggable="false"
+        />
+
+        {/* Now directly under logo */}
+        <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
+          presents
+        </span>
+      </div>
+
+      {/* 33rd Edition */}
+      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-4 sm:-mt-10 -mt-12">
+        <h3 className="text-[#0A2A73] text-sm font-semibold">
+          33rd Edition | March 5, 2026 | Hyderabad
+        </h3>
+      </div>
 
               {/* Heading */}
               <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">

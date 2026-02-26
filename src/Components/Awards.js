@@ -36,192 +36,145 @@ const Awards = () => {
   return (
     <section className="w-full">
       <main className="relative w-full overflow-clip bg-transparent">
+
         {/* ====================== DESKTOP (lg+) ====================== */}
-        <div
-          className="
-            hidden lg:block
-            relative w-full
-          "
-        >
-          {/* Left desktop panel with background */}
+        <div className="hidden lg:block relative w-full">
+
           <div
-            className="
-              w-[65%]
-              md:h-[640px]
-              min-h-[544px]
-              lg:px-5
-              bg-no-repeat bg-cover bg-right-top
-            "
+            className="w-[65%] md:h-[640px] min-h-[544px] lg:px-5 bg-no-repeat bg-cover bg-right-top"
             style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
-            <div
-              className="
-                relative z-10
-                lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-              "
-            >
-              {/* Wrapper  ⬇️ make relative + padding to reserve space for absolute row */}
-              <div className="relative flex flex-col items-start pt-10">
-                {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
-                <div className="absolute -top-2 left-0 flex items-center gap-2">
+            <div className="relative z-10 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]">
+
+              {/* Increased padding-top for bigger logo */}
+              <div className="relative flex flex-col items-start pt-32">
+
+                {/* UPDATED LOGO SECTION */}
+                <div className="absolute top-0 left-0 flex flex-col items-start">
                   <img
                     src={cognizant}
                     alt="Cognizant Logo"
-                    className="w-40 h-auto lg:w-56"
+                    className="w-64 xl:w-72 2xl:w-80 h-auto"
                     draggable="false"
                   />
-                  <span className="text-white/90 text-base font-light tracking-wide">
+                  <span className="text-white/90 text-lg font-dark tracking-wide mt-1 pl-[120px]">
                     presents
                   </span>
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
                 </div>
 
-                {/* Heading */}
                 <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
                   Awards
                 </h1>
 
-                {/* Description */}
                 <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
                   The HYSEA Awards are a cornerstone of the Summit, celebrating
                   excellence, innovation, leadership, and social impact across the
                   technology ecosystem.
                 </p>
 
-                {/* Button */}
                 <a
                   href="https://hysea.accubate.app/ext/form/12107/1/apply"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="
-                    border-[1.5px] border-white
-                    rounded-[4px]
-                    min-w-40
-                    bg-transparent
-                    text-white
-                    font-medium text-[16px]
-                    flex items-center justify-center
-                    px-[20px] py-[6px]
-                  "
+                  className="border-[1.5px] border-white rounded-[4px] min-w-40 bg-transparent text-white font-medium text-[16px] flex items-center justify-center px-[20px] py-[6px]"
                 >
                   Apply Now
                 </a>
+
               </div>
             </div>
           </div>
 
-          {/* RIGHT IMAGE (desktop only) */}
+          {/* RIGHT IMAGE */}
           <div
-            className="
-              absolute right-0 top-4 md:top-10 -z-10
-              w-1/2 h-full
-              bg-no-repeat
-              bg-[position:25%_center]
-              bg-[length:120%_auto]
-            "
+            className="absolute right-0 top-4 md:top-10 -z-10 w-1/2 h-full bg-no-repeat bg-[position:25%_center] bg-[length:120%_auto]"
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
         </div>
-        {/* =================== END DESKTOP =================== */}
 
-        {/* ====================== MOBILE/TABLET (< lg) ====================== */}
-        <div
-          className="
-            block lg:hidden
-            relative w-full
-            overflow-hidden mt-14
-          "
-        >
-          {/* MOBILE TOP PHOTO */}
-          <div className="relative w-full h-[360px] sm:h-[580px] mt-50">
-            <img
-              src={rightImage}
-              alt="Awards"
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
+        {/* ====================== MOBILE / TABLET ====================== */}
+       {/* ====================== MOBILE / TABLET (< lg) ====================== */}
+<div className="block lg:hidden relative w-full overflow-hidden mt-14">
 
-          {/* MOBILE BACKGROUND LAYER (under content) */}
-          <div
-            className="
-              absolute inset-0 z-0
-              bg-no-repeat bg-cover
-              bg-[position:center_220px] sm:bg-[position:center_430px]
-            "
-            style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
-            aria-hidden="true"
-          />
+  {/* MOBILE TOP PHOTO */}
+  <div className="relative w-full h-[360px] sm:h-[580px]">
+    <img
+      src={rightImage}
+      alt="Awards"
+      className="h-full w-full object-cover object-center"
+    />
+  </div>
 
-          {/* CONTENT (above backgrounds) */}
-          <div
-            className="
-              relative z-10
-              -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]
-            "
-          >
-            {/* Wrapper  ⬇️ relative + padding to reserve space for absolute row */}
-            <div className="relative flex flex-col items-start mt-10 pt-10 sm:pt-12">
-              {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
-              <div className="absolute top-0 left-0 flex items-center gap-2 sm:gap-3">
-                <img
-                  src={cognizant}
-                  alt="Cognizant Logo"
-                  className="w-28 h-auto sm:w-36 md:w-44"
-                  draggable="false"
-                />
-                <span className="text-white text-sm sm:text-base font-light opacity-90 whitespace-nowrap">
-                  presents
-                </span>
-              </div>
+  {/* MOBILE BACKGROUND */}
+  <div
+    className="absolute inset-0 z-0 bg-no-repeat bg-cover bg-[position:center_220px] sm:bg-[position:center_430px]"
+    style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
+    aria-hidden="true"
+  />
 
-              {/* 33rd Edition */}
-              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
-                <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd Edition | March 5, 2026 | Hyderabad
-                </h3>
-              </div>
+  {/* CONTENT */}
+  <div className="relative z-10 -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]">
 
-              {/* Heading */}
-              <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
-                Awards
-              </h1>
+    {/* Increased spacing to fit bigger logo */}
+    <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
-              {/* Description */}
-              <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-                The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
-                celebrating excellence, innovation, leadership, and social impact
-                across the IT/ITES and technology ecosystem.
-              </p>
+      {/* LOGO + PRESENTS */}
+      <div className="absolute top-0 left-0 flex flex-col items-start">
+        <img
+          src={cognizant}
+          alt="Cognizant Logo"
+          className="w-56 sm:w-64 md:w-72 h-auto"
+          draggable="false"
+        />
 
-              {/* Button */}
-              <a
-                href="https://hysea.accubate.app/ext/form/12107/1/apply"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  border-[1.5px] border-white
-                  rounded-md
-                  bg-transparent
-                  text-white
-                  text-sm font-semibold
-                  px-4 md:px-5 py-2
-                "
-              >
-                Apply Now
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* =================== END MOBILE/TABLET =================== */}
+        {/* Now directly under logo */}
+        <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
+          presents
+        </span>
+      </div>
+
+      {/* 33rd Edition */}
+      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-4 sm:-mt-10 -mt-12">
+        <h3 className="text-[#0A2A73] text-sm font-semibold">
+          33rd Edition | March 5, 2026 | Hyderabad
+        </h3>
+      </div>
+
+      {/* Heading */}
+      <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+        Awards
+      </h1>
+
+      {/* Description */}
+      <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+        The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
+        celebrating excellence, innovation, leadership, and social impact
+        across the IT/ITES and technology ecosystem.
+      </p>
+
+      {/* Button */}
+      <a
+        href="https://hysea.accubate.app/ext/form/12107/1/apply"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="border-[1.5px] border-white rounded-md bg-transparent text-white text-sm font-semibold px-4 md:px-5 py-2"
+      >
+        Apply Now
+      </a>
+
+    </div>
+  </div>
+</div>
+
       </main>
-
       <div className="mx-auto  w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] items-stretch">
           <div

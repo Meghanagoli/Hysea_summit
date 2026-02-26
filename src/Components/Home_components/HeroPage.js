@@ -7,8 +7,8 @@ const HeroPage = () => {
   return (
     <section
       className="
-      w-full min-h-[100vh]
-      sm:min-h-[100vh]
+        w-full min-h-[100vh]
+        sm:min-h-[100vh]
       "
       style={{
         height: "auto",
@@ -31,47 +31,83 @@ const HeroPage = () => {
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
-      ></div>
+      />
 
+      {/* Wavy panel (kept unchanged; overlay elements won’t shift this) */}
       <div
-        className={`
+        className="
           relative z-30 sm:mt-[-60px] md:mt-[-80px] lg:mt-[0px] mt-[-240px]
           flex items-center w-full
           md:absolute md:bottom-0
-          /* ⬇️ Responsive background-position to nudge the wave down more on small screens */
-          bg-[position:center_64px]      /* default: mobile */
-          sm:bg-[position:center_56px]
-          md:bg-[position:center_48px]
-          lg:bg-[position:center_48px]
-        `}
+        "
         style={{
           backgroundImage: `url(${rectBg})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          // Keep the wave position; adjust only if you want to nudge the art
+          backgroundPosition: "center 48px",
           minHeight: "260px",
         }}
       >
         <div className="absolute inset-0 -z-10 min-h-[220px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[320px]" />
         <div className="absolute inset-0 bg-black/8 md:bg-black/10 pointer-events-none" />
 
-        <div className="max-w-9xl m-auto px-4 py-12 sm:px-6 md:px-12   md:py-16 lg:py-20 ">
-          {/* ⬇️ Tablet stays single column */}
+        <div className="max-w-9xl m-auto px-4 py-12 sm:px-6 md:px-12 md:py-16 lg:py-20">
+          {/* Tablet stays single column */}
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
-            {/* ⬇️ Added a bit more top padding on mobile to avoid overlap */}
-            <div className="relative max-w-[60ch] md:max-w-none self-end pt-8 sm:pt-12 md:pt-16 lg:pt-8">
-              {/* Absolute logo + 'presents' row with slightly lower top on mobile */}
-              <div className="absolute top-2 sm:top-1 md:top-2 left-0 flex items-center gap-2 sm:gap-3 mt-4 lg:mt-1">
+
+            {/* =========================
+                LEFT COLUMN (responsive)
+               ========================= */}
+            <div
+              className="
+                relative max-w-[60ch] md:max-w-none self-end
+                /* Reserve space so the absolute overlay never collides with the badge */
+                pt-18 sm:pt-20 md:pt-24 lg:pt-20 xl:pt-24 2xl:pt-28
+              "
+            >
+              {/* Absolute overlay: logo (left) + bold 'presents' under it */}
+              <div
+                className="
+                  absolute
+                  /* Fine anchor per breakpoint; change these to move BOTH logo+label together */
+                  top-2 sm:top-2 md:top-3 lg:top-3 xl:top-4
+                  left-0
+                  flex flex-col items-start gap-2
+                "
+              >
+                {/* Logo size per breakpoint (safe to tweak) */}
                 <img
                   src={cognizant}
                   alt="Cognizant Logo"
-                  className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
+                  className="
+                    w-36 h-auto          /* phones */
+                    sm:w-40              /* large phones / small tablets */
+                    md:w-48              /* tablets */
+                    lg:w-56              /* laptops */
+                    xl:w-64 2xl:w-72     /* large desktops */
+                  "
                 />
-                <span className="text-white text-sm font-light opacity-90 lowercase whitespace-nowrap">
+
+                {/* 'presents' — bold; use ml-* to line it under the logotype;
+                    use -mt-* / mt-* to move the label up/down only */}
+                <span
+                  className="
+                    text-white font-dark
+                    text-[0.95rem] sm:text-base md:text-[1.05rem]
+                    leading-none
+                    /* Horizontal nudge (RIGHT = larger ml; LEFT = smaller ml) */
+                    ml-14 sm:ml-16 md:ml-20 lg:ml-24
+                    /* Vertical nudge ONLY for the label (UP = more negative; DOWN = positive) */
+                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:-mt-1.5 
+                  "
+                >
                   presents
                 </span>
               </div>
 
-              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm mt-6">
+              {/* Badge in normal flow; margin keeps it clear of the overlay */}
+              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm  md:mt-0 mt-14 ">
                 33rd Edition | March 5, 2026 | Hyderabad
               </span>
 
@@ -86,6 +122,9 @@ const HeroPage = () => {
               </p>
             </div>
 
+            {/* =========================
+                RIGHT COLUMN (unchanged)
+               ========================= */}
             <div className="text-base leading-relaxed sm:text-lg md:mt-1 lg:mt-auto max-w-[70ch] md:max-w-none ml-0 self-end">
               <p>
                 HYSEA’s Annual Summit is India’s premier technology leadership
@@ -101,6 +140,7 @@ const HeroPage = () => {
                 showcases, an expo, and unmatched networking opportunities.
               </p>
             </div>
+
           </div>
         </div>
       </div>
