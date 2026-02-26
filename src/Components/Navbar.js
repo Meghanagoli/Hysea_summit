@@ -44,6 +44,7 @@ const Navbar = () => {
               <NavLink to="/2026/speakers" className={navLinkClass}>
                 Speakers
               </NavLink>
+
               <NavLink to="/2026/exhibition" className={navLinkClass}>
                 Exhibition
               </NavLink>
@@ -53,6 +54,9 @@ const Navbar = () => {
               <NavLink to="/2026/partners" className={navLinkClass}>
                 Partners
               </NavLink>
+              <a href="/2026/agenda.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                Agenda
+              </a>
             </nav>
 
             <div className="ml-auto">
@@ -146,6 +150,15 @@ const Navbar = () => {
               >
                 Partners
               </NavLink>
+              <a
+                href="/2026/agenda.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="py-2 hover:underline"
+              >
+                Agenda
+              </a>
 
               <div className="pt-2">
                 <a
