@@ -264,7 +264,7 @@ const Partners = () => {
                         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
                             INDUSTRY PATRONS
                         </h2>
-                        <LogoGridPlain logos={industryPatrons} cols="grid-cols-2 lg:grid-cols-5" />
+                        <LogoGridPlain logos={industryPatrons} cols="grid-cols-2 lg:grid-cols-5" centerLastOnMobile />
                     </section>
 
                     <section className="py-10 lg:py-12">
@@ -305,7 +305,7 @@ const Partners = () => {
                                     key={index}
                                     className={`
                     w-40 sm:w-44 md:w-48 aspect-square flex items-center justify-center logo-shadow
-                    ${index === 12 ? "col-span-full" : ""}
+                    ${index === 10 ? "col-span-2 md:col-span-1 justify-self-center" : ""}
                   `}
                                 >
                                     <img src={logo} alt="" className="w-full h-full object-contain" />
