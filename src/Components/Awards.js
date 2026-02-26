@@ -142,7 +142,7 @@ const Awards = () => {
       </div>
 
       {/* 33rd Edition */}
-      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-4 sm:-mt-10 -mt-12">
+      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-11 sm:-mt-10 -mt-12">
         <h3 className="text-[#0A2A73] text-sm font-semibold">
           33rd Edition | March 5, 2026 | Hyderabad
         </h3>
