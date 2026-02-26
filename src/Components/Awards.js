@@ -19,58 +19,61 @@ import c8 from "../assets/c8.webp";
 import c9 from "../assets/c9.webp";
 import c10 from "../assets/c10.webp";
 import c11 from "../assets/c11.webp";
-import c12 from "../assets/c12.webp"
+import c12 from "../assets/c12.webp";
 import awards1 from "../assets/aw1.webp";
 import awards2 from "../assets/aw2.webp";
-import cognizant from "../assets/cognizant.svg"
+import cognizant from "../assets/cognizant.svg";
+
 const Awards = () => {
   const cardImages = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12];
-
-
 
   useSEO({
     title: "Awards | HYSEA Annual Summit & Awards 2026",
     description:
       "Gain industry recognition and spotlight your success at the 33rd HYSEA Annual Summit & Awards 2026. Whether you are a scale-ready startup or an established enterprise, the HYSEA Awards offer a platform to showcase your innovation and impact.",
   });
+
   return (
     <section className="w-full">
       <main className="relative w-full overflow-clip bg-transparent">
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
           className="
-                       hidden lg:block
-                       relative w-full
-                     "
+            hidden lg:block
+            relative w-full
+          "
         >
           {/* Left desktop panel with background */}
           <div
             className="
-                         w-[65%]
-                         md:h-[640px]
-                         min-h-[544px]
-                         lg:px-5
-                         bg-no-repeat bg-cover bg-right-top
-                       "
+              w-[65%]
+              md:h-[640px]
+              min-h-[544px]
+              lg:px-5
+              bg-no-repeat bg-cover bg-right-top
+            "
             style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
-
             <div
               className="
-    relative z-10
-    lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-  "
+                relative z-10
+                lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+              "
             >
-              {/* Wrapper */}
-              <div className="flex flex-col items-start">
-
-                {/* Logo */}
-                <img
-                  src={cognizant}
-                  alt="Cognizant Logo"
-                  className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56  border"
-
-                />
+              {/* Wrapper  ⬇️ make relative + padding to reserve space for absolute row */}
+              <div className="relative flex flex-col items-start pt-10">
+                {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
+                <div className="absolute -top-2 left-0 flex items-center gap-2">
+                  <img
+                    src={cognizant}
+                    alt="Cognizant Logo"
+                    className="w-40 h-auto lg:w-56"
+                    draggable="false"
+                  />
+                  <span className="text-white/90 text-base font-light tracking-wide">
+                    presents
+                  </span>
+                </div>
 
                 {/* 33rd Edition */}
                 <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
@@ -97,19 +100,18 @@ const Awards = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
-        border-[1.5px] border-white
-        rounded-[4px]
-        min-w-40
-        bg-transparent
-        text-white
-        font-medium text-[16px]
-        flex items-center justify-center
-        px-[20px] py-[6px]
-      "
+                    border-[1.5px] border-white
+                    rounded-[4px]
+                    min-w-40
+                    bg-transparent
+                    text-white
+                    font-medium text-[16px]
+                    flex items-center justify-center
+                    px-[20px] py-[6px]
+                  "
                 >
                   Apply Now
                 </a>
-
               </div>
             </div>
           </div>
@@ -117,12 +119,12 @@ const Awards = () => {
           {/* RIGHT IMAGE (desktop only) */}
           <div
             className="
-    absolute right-0 top-4 md:top-10 -z-10
-    w-1/2 h-full
-    bg-no-repeat
-   bg-[position:25%_center]
-    bg-[length:120%_auto]
-  "
+              absolute right-0 top-4 md:top-10 -z-10
+              w-1/2 h-full
+              bg-no-repeat
+              bg-[position:25%_center]
+              bg-[length:120%_auto]
+            "
             style={{ backgroundImage: `url(${rightImage})` }}
             aria-hidden="true"
           />
@@ -132,17 +134,16 @@ const Awards = () => {
         {/* ====================== MOBILE/TABLET (< lg) ====================== */}
         <div
           className="
-                       block lg:hidden
-                       relative w-full
-                       overflow-hidden mt-14
-                     "
+            block lg:hidden
+            relative w-full
+            overflow-hidden mt-14
+          "
         >
           {/* MOBILE TOP PHOTO */}
           <div className="relative w-full h-[360px] sm:h-[580px] mt-50">
-            {" "}
             <img
               src={rightImage}
-              alt="Speakers"
+              alt="Awards"
               className="h-full w-full object-cover object-center"
             />
           </div>
@@ -150,10 +151,10 @@ const Awards = () => {
           {/* MOBILE BACKGROUND LAYER (under content) */}
           <div
             className="
-                         absolute inset-0 z-0
-                         bg-no-repeat bg-cover
-                       bg-[position:center_220px] sm:bg-[position:center_430px]
-                       "
+              absolute inset-0 z-0
+              bg-no-repeat bg-cover
+              bg-[position:center_220px] sm:bg-[position:center_430px]
+            "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
           />
@@ -161,20 +162,24 @@ const Awards = () => {
           {/* CONTENT (above backgrounds) */}
           <div
             className="
-    relative z-10
-    -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]
-  "
+              relative z-10
+              -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]
+            "
           >
-            {/* Wrapper */}
-            <div className="flex flex-col items-start mt-24">
-
-              {/* Logo */}
-              <img
-                src={cognizant}
-                alt="Cognizant Logo"
-                className="w-28 h-auto mb-4 sm:w-36 md:w-44  border"
-
-              />
+            {/* Wrapper  ⬇️ relative + padding to reserve space for absolute row */}
+            <div className="relative flex flex-col items-start mt-10 pt-10 sm:pt-12">
+              {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
+              <div className="absolute top-0 left-0 flex items-center gap-2 sm:gap-3">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-28 h-auto sm:w-36 md:w-44"
+                  draggable="false"
+                />
+                <span className="text-white text-sm sm:text-base font-light opacity-90 whitespace-nowrap">
+                  presents
+                </span>
+              </div>
 
               {/* 33rd Edition */}
               <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
@@ -201,29 +206,32 @@ const Awards = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-        border-[1.5px] border-white
-        rounded-md
-        bg-transparent
-        text-white
-        text-sm font-semibold
-        px-4 md:px-5 py-2
-      "
+                  border-[1.5px] border-white
+                  rounded-md
+                  bg-transparent
+                  text-white
+                  text-sm font-semibold
+                  px-4 md:px-5 py-2
+                "
               >
                 Apply Now
               </a>
-
             </div>
           </div>
         </div>
         {/* =================== END MOBILE/TABLET =================== */}
       </main>
+
       <div className="mx-auto  w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] items-stretch">
           <div
             className="block w-full h-[380px] md:h-[580px] lg:h-full
-             bg-no-repeat bg-cover bg-[position:70%_center]
-"            style={{ backgroundImage: `url(${awards1})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
-          ></div>
+             bg-no-repeat bg-cover bg-[position:70%_center]"
+            style={{
+              backgroundImage: `url(${awards1})`,
+              boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset",
+            }}
+          />
           <div className=" border-[6px]  border-b-0  border-[#0530A8] bg-white max-w-full mx-auto px-6 sm:px-10 md:px-10 py-16 md:py-20 text-center">
             <h2 className="text-[#0530A8] text-3xl sm:text-5xl md:text-6xl font-semibold tracking-wide uppercase mb-6">
               About the Awards
@@ -246,8 +254,12 @@ const Awards = () => {
           </div>
           <div
             className="block w-full h-[380px] md:h-[580px] lg:h-full
-             bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${awards2})`, boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset", }}
-          ></div>
+             bg-no-repeat bg-cover bg-top"
+            style={{
+              backgroundImage: `url(${awards2})`,
+              boxShadow: "-10px 4px 34px 20px rgba(0, 0, 0, 0.30) inset",
+            }}
+          />
         </div>
       </div>
 
@@ -259,10 +271,6 @@ const Awards = () => {
             <h2 className="text-[#0530A8] text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-4 font-semibold uppercase tracking-wide">
               AWARD CATEGORIES
             </h2>
-            {/* <p className="text-black-700 text-base sm:text-lg max-w-3xl mt-10">
-              In the past 10+ years, Organizations have found the opportunity to
-              gain:
-            </p> */}
 
             <div className="space-y-10 max-w-4xl mt-12 sm:mt-14">
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex ">
@@ -293,7 +301,6 @@ const Awards = () => {
               </div>
 
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
-
                 <div className="flex items-stretch">
                   <div className="flex-shrink-0 w-16 sm:w-20 max-w-[96px] bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
                     <img
@@ -319,6 +326,7 @@ const Awards = () => {
                   </div>
                 </div>
               </div>
+
               <div className="border border-gray-300 rounded-xl shadow-md w-full min-h-[200px] flex">
                 <div className="flex items-stretch">
                   <div className="flex-shrink-0 w-16 sm:w-20 max-w-[96px] bg-[#F4FBFF] border border-[#0D52E9] rounded-xl flex items-center justify-center p-6 sm:p-4">
@@ -374,6 +382,8 @@ const Awards = () => {
               </div>
             </div>
           </div>
+
+          {/* Scrollers (unchanged) */}
           <div className="bg-white  block max-w-[1600px] -pr-6  w-full overflow-hidden ">
             <div className="hidden w-[90%] lg:block relative overflow-hidden h-full">
               <div className="absolute inset-0 flex flex-col gap-4 animate-vertical-scroll">
@@ -388,13 +398,11 @@ const Awards = () => {
                     <img src={img} alt="" className="h-full w-full object-cover  rounded-md" />
                   </div>
                 ))}
-
               </div>
             </div>
 
             <div className="block lg:hidden w-[100%] overflow-hidden h-[220px] sm:h-[240px]">
               <div className=" flex gap-4 w-max animate-horizontal-scroll hover:[animation-play-state:paused] ">
-
                 {/* first set */}
                 {cardImages.map((img, i) => (
                   <div
@@ -431,10 +439,8 @@ const Awards = () => {
                     />
                   </div>
                 ))}
-
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -444,47 +450,6 @@ const Awards = () => {
           <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide">
             AWARD NOMINATIONS
           </h2>
-          {/* <div className="mt-8 max-w-9xl flex flex-col md:flex-row justify-between gap-6">
-            <div className="flex-1 rounded-md border border-white/90 p-8 ">
-              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">10x STARTUP AWARDS</h3>
-              <p className="text-sm sm:text-base mb-4">
-                Is your startup building market confidence? <br />This is your moment to shine, scale, and stand out.
-              </p>
-              <h4 className="font-bold mb-2">Why Nominate Your Product?</h4>
-              <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
-                <li>High-value press visibility</li>
-                <li>Access to top enterprise leaders and catalyst programs (T-Hub, IIIT-H, etc.)</li>
-                <li>1 year HYSEA membership</li>
-                <li>Referrals to VCs &amp; angel networks</li>
-                <li>A free showcase slot for finalists at the HYSEA Annual Summit and so much more!</li>
-              </ul>
-
-              <h4 className="font-semibold mt-4 mb-2">Who Can Apply?</h4>
-              <p className="text-sm sm:text-base">
-                Startups incorporated in Telangana with a Market-ready Product / Customer Traction.
-              </p>
-            </div>
-
-            <div className="flex-1 rounded-md border border-white/90 bg- p-8 ">
-              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">TECH PRODUCT AND INNOVATION AWARDS</h3>
-              <p className="text-sm sm:text-base mb-4">
-                It’s time to spotlight the most impactful products and breakthrough innovations built in Telangana’s thriving tech ecosystem.
-              </p>
-
-              <h4 className="font-bold mb-2">Why Nominate Your Product?</h4>
-              <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
-                <li>Visibility across the innovation ecosystem with researchers, corporates &amp; tech leaders</li>
-                <li>Access to HYSEA programs in partnership with T-Hub, IIIT-H &amp; leading incubators</li>
-                <li>A chance for finalists to showcase their product at the HYSEA Annual Summit completely free</li>
-              </ul>
-
-              <h4 className="font-semibold mt-4 mb-2">Who Can Apply?</h4>
-              <p className="text-sm sm:text-base">
-                Products/Platforms that are already in the market and built by established companies.<br /> (Idea-stage tech is eligible only with a granted patent.)
-              </p>
-            </div>
-          </div>
- */}
 
           <p className="mt-4 text-center text-m sm:text-lg text-white/80">
             Nominate your company for the 10x Startup and Product Innovation
@@ -497,14 +462,14 @@ const Awards = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="
-      inline-flex items-center justify-center
-      px-4 md:px-5 py-2
-      border border-white/80
-      text-white font-medium
-      rounded-md
-      hover:bg-white hover:text-[#0A2A73]
-      transition-colors duration-300
-    "
+                inline-flex items-center justify-center
+                px-4 md:px-5 py-2
+                border border-white/80
+                text-white font-medium
+                rounded-md
+                hover:bg-white hover:text-[#0A2A73]
+                transition-colors duration-300
+              "
             >
               Apply Now
             </a>

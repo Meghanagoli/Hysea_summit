@@ -34,16 +34,20 @@ const HeroPage = () => {
       ></div>
 
       <div
-        className="
+        className={`
           relative z-30 sm:mt-[-60px] md:mt-[-80px] lg:mt-[0px] mt-[-240px]
           flex items-center w-full
           md:absolute md:bottom-0
-        "
+          /* ⬇️ Responsive background-position to nudge the wave down more on small screens */
+          bg-[position:center_64px]      /* default: mobile */
+          sm:bg-[position:center_56px]
+          md:bg-[position:center_48px]
+          lg:bg-[position:center_48px]
+        `}
         style={{
           backgroundImage: `url(${rectBg})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "top center",
           minHeight: "260px",
         }}
       >
@@ -53,23 +57,19 @@ const HeroPage = () => {
         <div className="max-w-9xl m-auto px-4 py-12 sm:px-6 md:px-12   md:py-16 lg:py-20 ">
           {/* ⬇️ Tablet stays single column */}
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-start text-white">
-            <div className=" max-w-[60ch] md:max-w-none self-end">
-              {/* ✅ ADDED: Logo above the badge (keeps hero bg untouched) */}
-              <img
-                src={cognizant}
-                alt="Cognizant Logo"
-                className="
-                 absolute top-6 w-28 h-auto
-                  sm:w-32
-                  md:w-40
-                  lg:w-48
-                  mb-3 sm:mb-4
-                  
-                  pt-[-10px]
-                "
-
-
-              />
+            {/* ⬇️ Added a bit more top padding on mobile to avoid overlap */}
+            <div className="relative max-w-[60ch] md:max-w-none self-end pt-8 sm:pt-12 md:pt-16 lg:pt-8">
+              {/* Absolute logo + 'presents' row with slightly lower top on mobile */}
+              <div className="absolute top-2 sm:top-1 md:top-2 left-0 flex items-center gap-2 sm:gap-3 mt-4 lg:mt-1">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
+                />
+                <span className="text-white text-sm font-light opacity-90 lowercase whitespace-nowrap">
+                  presents
+                </span>
+              </div>
 
               <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm mt-6">
                 33rd Edition | March 5, 2026 | Hyderabad

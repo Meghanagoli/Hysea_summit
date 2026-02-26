@@ -55,6 +55,7 @@ import g18 from "../assets/g18.png";
 import g19 from "../assets/g19.png";
 import g20 from "../assets/g20.png";
 import cognizant from "../assets/cognizant.svg";
+
 import p1 from "../assets/p1.png";
 import p2 from "../assets/p2.png";
 import p3 from "../assets/p3.png";
@@ -78,8 +79,21 @@ import p20 from "../assets/p20.png";
 import p21 from "../assets/p21.png";
 import p22 from "../assets/p22.png";
 import p23 from "../assets/p23.png";
+import p24 from "../assets/p24.png";
+import p25 from "../assets/p25.png";
+import p26 from "../assets/p26.png";
+import p27 from "../assets/p27.png";
+import p28 from "../assets/p28.png";
+import p29 from "../assets/p29.png";
+import p30 from "../assets/p30.png";
+import p31 from "../assets/p31.png";
+import p32 from "../assets/p32.png";
+import p33 from "../assets/p33.png";
+import p34 from "../assets/p34.png";
+import p35 from "../assets/p35.png";
 
 import Footer from "./Footer";
+
 const speakers = [
   { name: "Prof. Ashok Jhunjhunwala, IITM", img: s1 },
   { name: "Ayodhya Rami Reddy, Ramky Group", img: g11 },
@@ -112,6 +126,7 @@ const speakers = [
   { name: "Vikram Vuppala, NephroPlus", img: s28 },
   { name: "Vineet Nayar, HCL", img: s30 },
 ];
+
 const chief_guests = [
   { name: "M. Venkaiah Naidu", img: g1 },
   { name: "Jishnu Dev Varma", img: g2 },
@@ -134,30 +149,43 @@ const chief_guests = [
   { name: "V.C. Sajjanar, IPS", img: g19 },
   { name: "Shikha Goel, IPS", img: g20 },
 ];
+
 const distinguished_guests = [
-  { name: "Akshay Khanna, Avasant", img: p1 },
-  { name: "Ashutosh Sharma, Forrester", img: p2 },
-  { name: "Ganesh Ramamoorthy, Gartner", img: p3 },
-  { name: "Harita Gupta, Sutherland", img: p4 },
-  { name: "Kashyap Kompella, RPA2AI Research", img: p5 },
-  { name: "Krishna Sastry Pendyala, EY", img: p6 },
-  { name: "Laura Williams, U S Consulate General", img: p7 },
-  { name: "Lekshmi Nair, NTT Data", img: p8 },
-  { name: "Narsimha Rao Mannepalli, Ex-Infosys", img: p9 },
-  { name: "Prashanth Nandella, President, HYSEA", img: p10 },
-  { name: "Rajanna V., TCS Ltd", img: p11 },
-  { name: "Rajesh Dhuddu, PwC", img: p12 },
-  { name: "Ramesh Loganathan, IIIT-H", img: p13 },
-  { name: "Sailaja Josyula, Cognizant", img: p14 },
-  { name: "Sandhya Ramesh, Mastech Digital", img: p15 },
-  { name: "Sanjeev Jain, Wipro", img: p16 },
-  { name: "Sravan Kumar Desikan,  AI", img: p17 },
-  { name: "Somnath Chatterjee, Prismforce", img: p18 },
-  { name: "Sridhar Sidhu, AT&T", img: p19 },
-  { name: "Dr. Subbarao Pavuluri, Ananth Technologies", img: p20 },
-  { name: "Valli Bollavaram, Swiss Re", img: p21 },
-  { name: "Vekatesh Natarajan, Vanguard India", img: p22 },
-  { name: "Vishal Salvi, Cognizant", img: p23 },
+  { name: "Laura Williams, US Consul General", img: p1 },
+  { name: "Sanjay Kumar IAS, Spl. CS, Government of Telangana, ITE&C, I&C Department", img: p2 },
+  { name: "Dr. BVR Mohan Reddy, Founder Chairman, Cyient", img: p3 },
+  { name: "Srinivasa Raju C, Founder Chairman, iLabs Capital", img: p4 },
+  { name: "Amit Singhee, IBM", img: p5 },
+  { name: "Akshay Khanna, Avasant", img: p6 },
+  { name: "Ashutosh Sharma, Forrester", img: p7 },
+  { name: "Bhargavi Sunkara, Barclays India", img: p8 },
+  { name: "Ganesh Ramamoorthy, Gartner", img: p9 },
+  { name: "Kashyap Kompella, RPA2AI Research", img: p10 },
+  { name: "Dr. Krishna Ella, Bharat Biotech", img: p11 },
+  { name: "Krishna Sastry Pendyala, EY", img: p12 },
+  { name: "Laxmikanth V, Pavestone", img: p13 },
+  { name: "Lekshmi Nair, NTT Data", img: p14 },
+  { name: "Mohit Dhingra, Bristol Myers Squibb", img: p15 },
+  { name: "Narsimha Rao Mannepalli, Ex-Infosys", img: p16 },
+  { name: "Nitin Sethi, AON", img: p17 },
+  { name: "Prasanna Kumar Arikala, Kore.AI", img: p18 },
+  { name: "Rajanna V., TCS", img: p19 },
+  { name: "Rajkumar Velagapudi, TAO Digital Solutions", img: p20 },
+  { name: "Rajesh Dhuddu, PwC", img: p21 },
+  { name: "Sailaja Josyula, Cognizant", img: p22 },
+  { name: "Sandhya Ramesh, Mastech Digital", img: p23 },
+  { name: "Sanjeev Jain, Wipro", img: p24 },
+  { name: "Smita Mohanty, Novartis", img: p25 },
+  { name: "Somnath Chatterjee, Prismforce", img: p26 },
+  { name: "Sravan Kumar Desikan, Yasmai AI", img: p27 },
+  { name: "Sridhar Sidhu, AT&T", img: p28 },
+  { name: "Dr. Subbarao Pavuluri, Ananth Technologies", img: p29 },
+  { name: "Valli Bollavaram, Swiss Re", img: p30 },
+  { name: "G T Venkateshwar Rao, Posidex", img: p31 },
+  { name: "Vekatesh Natarajan, Vanguard India", img: p32 },
+  { name: "Viraj Malhan, Deloitte", img: p33 },
+  { name: "Vishal Salvi, Cognizant", img: p34 },
+  { name: "Prashanth Nandella, President, HYSEA", img: p35 },
 ];
 export default function Speakers() {
   useSEO({
@@ -168,7 +196,6 @@ export default function Speakers() {
 
   return (
     <section className="w-full">
-
       <main className="relative w-full overflow-clip bg-transparent">
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
@@ -181,7 +208,6 @@ export default function Speakers() {
           <div
             className="
               w-[65%]
-            
               min-h-[544px]
               lg:px-5
               bg-no-repeat bg-cover bg-right-top
@@ -190,20 +216,24 @@ export default function Speakers() {
           >
             <div
               className="
-    relative z-10
-    lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-  "
+                relative z-10
+                lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+              "
             >
-              {/* Wrapper */}
-              <div className="flex flex-col items-start">
-
-                {/* Logo */}
-                <img
-                  src={cognizant}
-                  alt="Cognizant Logo"
-                  className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56 "
-
-                />
+              {/* Wrapper — relative + padding to reserve space for absolute logo row */}
+              <div className="relative flex flex-col items-start pt-10">
+                {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
+                <div className="absolute -top-2 left-0 flex items-center gap-2">
+                  <img
+                    src={cognizant}
+                    alt="Cognizant Logo"
+                    className="w-40 h-auto lg:w-56"
+                    draggable="false"
+                  />
+                  <span className="text-white/90 text-base font-light tracking-wide">
+                    presents
+                  </span>
+                </div>
 
                 {/* 33rd Edition */}
                 <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
@@ -223,7 +253,6 @@ export default function Speakers() {
                   dignitaries as they explore the trends, breakthroughs, and bold
                   ideas shaping the future.
                 </p>
-
               </div>
             </div>
           </div>
@@ -259,7 +288,7 @@ export default function Speakers() {
             className="
               absolute inset-0 z-0
               bg-no-repeat bg-cover
-              bg-[position:center_220px] sm:bg-[position:center_430px] 
+              bg-[position:center_220px] sm:bg-[position:center_430px]
             "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
@@ -268,20 +297,24 @@ export default function Speakers() {
           {/* CONTENT (above backgrounds) */}
           <div
             className="
-    relative z-10
-    -mt-[100px] px-5 pt-8 pb-12
-  "
+              relative z-10
+              -mt-[100px] px-5 pt-8 pb-12
+            "
           >
-            {/* Wrapper */}
-            <div className="flex flex-col items-start mt-24">
-
-              {/* Logo */}
-              <img
-                src={cognizant}
-                alt="Cognizant Logo"
-                className="w-28 h-auto mb-4 sm:w-36 md:w-44"
-
-              />
+            {/* Wrapper — relative + padding to reserve space for absolute logo row */}
+            <div className="relative flex flex-col items-start mt-24 pt-10 sm:pt-12">
+              {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
+              <div className="absolute top-0 left-0 flex items-center gap-2 sm:gap-3">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-28 h-auto sm:w-36 md:w-44"
+                  draggable="false"
+                />
+                <span className="text-white text-sm sm:text-base font-light opacity-90 whitespace-nowrap">
+                  presents
+                </span>
+              </div>
 
               {/* 33rd Edition */}
               <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
@@ -301,11 +334,12 @@ export default function Speakers() {
                 dignitaries as they explore the trends, breakthroughs, and bold
                 ideas shaping the future.
               </p>
-
             </div>
           </div>
         </div>
       </main>
+
+      {/* Lists */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 bg-white mt-2">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           DISTINGUISHED GUESTS
@@ -314,7 +348,6 @@ export default function Speakers() {
           {distinguished_guests.map((guest, idx) => (
             <div key={idx} className="flex flex-col items-center self-start">
               <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg  overflow-hidden shadow-sm">
-
                 <img
                   src={guest.img}
                   alt={guest.name}
@@ -324,19 +357,20 @@ export default function Speakers() {
               </div>
 
               <p className="
-  mt-3
-  text-center
-  text-sm md:text-base
-  text-gray-700 font-medium
-  min-h-[2.5rem]   
-  leading-snug
-">
+                mt-3
+                text-center
+                text-sm md:text-base
+                text-gray-700 font-medium
+                min-h-[2.5rem]
+                leading-snug
+              ">
                 {guest.name}
               </p>
             </div>
           ))}
         </div>
       </div>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white ">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           CHIEF GUESTS & DIGNITARIES OVER THE YEARS
@@ -355,19 +389,20 @@ export default function Speakers() {
               </div>
 
               <p className="
-  mt-3
-  text-center
-  text-sm md:text-base
-  text-gray-700 font-medium
-  min-h-[2.5rem]   
-  leading-snug
-">
+                mt-3
+                text-center
+                text-sm md:text-base
+                text-gray-700 font-medium
+                min-h-[2.5rem]
+                leading-snug
+              ">
                 {guest.name}
                 {guest.organization}
               </p>
             </div>
           ))}
         </div>
+
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 bg-white">
           <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
             MARQUEE SPEAKERS FROM PAST EDITIONS
@@ -386,13 +421,13 @@ export default function Speakers() {
                 </div>
 
                 <p className="
-  mt-3
-  text-center
-  text-sm md:text-base
-  text-gray-700 font-medium
-  min-h-[2.5rem]   
-  leading-snug
-">
+                  mt-3
+                  text-center
+                  text-sm md:text-base
+                  text-gray-700 font-medium
+                  min-h-[2.5rem]
+                  leading-snug
+                ">
                   {spk.name}
                 </p>
               </div>

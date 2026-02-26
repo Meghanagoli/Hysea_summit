@@ -1,9 +1,9 @@
 import React from "react";
 import { useSEO } from "./useSEO";
-import smallPod from "../assets/small_pod.svg"
-import largeStall from "../assets/large-stall.svg"
-import medBooth from "../assets/medium-booth.svg"
-import Footer from "../Components/Footer"
+import smallPod from "../assets/small_pod.svg";
+import largeStall from "../assets/large-stall.svg";
+import medBooth from "../assets/medium-booth.svg";
+import Footer from "../Components/Footer";
 import img1 from "../assets/expo1.webp";
 import img2 from "../assets/expo2.webp";
 import img3 from "../assets/expo3.webp";
@@ -11,14 +11,13 @@ import waveImg from "../assets/wave-blue.webp";
 import heroLeftBg from "../assets/hero-left-bg.webp";
 import heroLeftBgMobile from "../assets/hero-left-bg-mobile.webp";
 import rightImage from "../assets/expo-img.webp";
-import cognizant from "../assets/cognizant.svg"
+import cognizant from "../assets/cognizant.svg";
 
 const cards = [
   { title: "Engage with Decision Makers", img: img1 },
   { title: "Connect with Key Stakeholders", img: img2 },
   { title: "Tell Your Unique Success Story", img: img3 },
 ];
-
 
 const Expo = () => {
   useSEO({
@@ -27,46 +26,46 @@ const Expo = () => {
       "Showcase your innovation at the 33rd HYSEA Annual Summit 2026. Engage with industry leaders, founders, and tech experts. Reserve your exhibition stall today.",
   });
 
-
   return (
     <div className="w-full ">
       <main className="relative w-full overflow-clip bg-transparent">
-
         {/* ====================== DESKTOP (lg+) ====================== */}
         <div
           className="
-                         hidden lg:block
-                         relative w-full
-                       "
+            hidden lg:block
+            relative w-full
+          "
         >
           {/* Left desktop panel with background */}
           <div
             className="
-                           w-[65%]
-                           min-h-[544px]
-                           lg:px-5
-                           bg-no-repeat bg-cover bg-right-top
-                         "
+              w-[65%]
+              min-h-[544px]
+              lg:px-5
+              bg-no-repeat bg-cover bg-right-top
+            "
             style={{ backgroundImage: `url(${heroLeftBg})` }}
           >
-
             <div
               className="
-    relative z-10
-    lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
-  "
+                relative z-10
+                lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
+              "
             >
-              {/* Wrapper */}
-              <div className="flex flex-col items-start">
-
-                {/* Logo */}
-                <img
-                  src={cognizant}
-                  alt="Cognizant Logo"
-                  className="w-32 h-auto mb-6 sm:w-40 md:w-48 lg:w-56  border"
-
-
-                />
+              {/* Wrapper ➜ relative + padding to reserve space for absolute logo row */}
+              <div className="relative flex flex-col items-start pt-10">
+                {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
+                <div className="absolute -top-2 left-0 flex items-center gap-2">
+                  <img
+                    src={cognizant}
+                    alt="Cognizant Logo"
+                    className="w-40 h-auto lg:w-56"
+                    draggable="false"
+                  />
+                  <span className="text-white/90 text-base font-light tracking-wide">
+                    presents
+                  </span>
+                </div>
 
                 {/* Edition */}
                 <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
@@ -93,18 +92,17 @@ const Expo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
-        border-[1.5px] border-white
-        rounded-[4px]
-        bg-transparent
-        text-white
-        font-medium text-[16px]
-        flex items-center justify-center
-        px-[20px] py-[6px]
-      "
+                    border-[1.5px] border-white
+                    rounded-[4px]
+                    bg-transparent
+                    text-white
+                    font-medium text-[16px]
+                    flex items-center justify-center
+                    px-[20px] py-[6px]
+                  "
                 >
                   Reserve your Space
                 </a>
-
               </div>
             </div>
           </div>
@@ -121,10 +119,10 @@ const Expo = () => {
         {/* ====================== MOBILE/TABLET (< lg) ====================== */}
         <div
           className="
-                         block lg:hidden
-                         relative w-full
-                         overflow-hidden
-                       "
+            block lg:hidden
+            relative w-full
+            overflow-hidden
+          "
         >
           {/* MOBILE TOP PHOTO */}
           <div className="relative w-full h-[320px] sm:h-[350px] md:h-[380px] mt-16">
@@ -138,10 +136,10 @@ const Expo = () => {
           {/* MOBILE BACKGROUND LAYER (under content) */}
           <div
             className="
-                           absolute inset-0 z-0
-                           bg-no-repeat bg-cover
-                           sm:bg-[position:center_280px] bg-[position:center_300px]    
-                         "
+              absolute inset-0 z-0
+              bg-no-repeat bg-cover
+              sm:bg-[position:center_280px] bg-[position:center_300px]
+            "
             style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
             aria-hidden="true"
           />
@@ -149,21 +147,25 @@ const Expo = () => {
           {/* CONTENT (above backgrounds) */}
           <div
             className="
-    relative z-10
-    -mt-[60px] sm:-mt-[80px] md:-mt-[40px]
-    px-5 pt-8 pb-12
-  "
+              relative z-10
+              -mt-[60px] sm:-mt-[80px] md:-mt-[40px]
+              px-5 pt-8 pb-12
+            "
           >
-            {/* Wrapper */}
-            <div className="flex flex-col items-start mt-24">
-
-              {/* Logo */}
-              <img
-                src={cognizant}
-                alt="Cognizant Logo"
-                className="w-28 h-auto mb-4 sm:w-36 md:w-44  border"
-
-              />
+            {/* Wrapper ➜ relative + padding to reserve space for absolute logo row */}
+            <div className="relative flex flex-col items-start mt-10 pt-10 sm:pt-12">
+              {/* ✅ Absolute row: logo + 'presents' (no layout shift) */}
+              <div className="absolute top-0 left-0 flex items-center gap-2 sm:gap-3">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-28 h-auto sm:w-36 md:w-44"
+                  draggable="false"
+                />
+                <span className="text-white text-sm sm:text-base font-light opacity-90 whitespace-nowrap">
+                  presents
+                </span>
+              </div>
 
               {/* Edition */}
               <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4">
@@ -190,27 +192,23 @@ const Expo = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-        inline-flex
-        max-w-[220px]
-        border-[1.5px] border-white
-        rounded-[4px]
-        bg-transparent
-        text-white
-        text-sm font-semibold
-        px-4 md:px-5 py-2
-      "
+                  inline-flex
+                  max-w-[220px]
+                  border-[1.5px] border-white
+                  rounded-[4px]
+                  bg-transparent
+                  text-white
+                  text-sm font-semibold
+                  px-4 md:px-5 py-2
+                "
               >
                 Reserve your Space
               </a>
-
             </div>
           </div>
         </div>
         {/* =================== END MOBILE/TABLET =================== */}
-
       </main>
-
-
 
       <div className="block lg:hidden " />
       <section className="w-full  bg-white px-4 sm:px-6 md:px-12 py-16 lg:py-32">
@@ -227,27 +225,19 @@ const Expo = () => {
 
           <div className="mt-12 max-w-[1200px] mx-auto flex flex-col md:flex-row flex-wrap items-start justify-center gap-12 md:gap-10 text-center">
             {cards.map((c, idx) => (
-              <Card
-                key={idx}
-                title={c.title}
-                image={c.img}
-                waveImg={waveImg}
-              />
+              <Card key={idx} title={c.title} image={c.img} waveImg={waveImg} />
             ))}
           </div>
-
         </div>
       </section>
+
       <div className="w-full bg-[#002F76] px-4 sm:px-6 lg:px-10 py-16 lg:py-32">
         <div className="max-w-9xl mx-auto text-center relative mt-0">
-
           <p className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white uppercase tracking-wide text-center mt-0 mb-2">
             Stall Options
           </p>
 
           <div className="max-w-9xl">
-
-
             <div className="bg-white rounded-3xl mt-8 lg:mt-12 px-6 md:px-10 lg:px-14 py-16 lg:py-24 shadow-md">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mb-10">
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
@@ -255,50 +245,56 @@ const Expo = () => {
                     Large Stall
                   </h3>
                   <div className="w-60 h-60 mb-4 flex items-center justify-center">
-                    <img src={largeStall} alt="Small pod" />                  </div>
+                    <img src={largeStall} alt="Small pod" />
+                  </div>
                   <p className="text-sm md:text-base font-semibold mb-2">3M x 3M</p>
                   <p className="text-xl md:text-2xl font-semibold">₹50,000</p>
                 </div>
-
 
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
                   <h3 className="text-[21px] md:text-[33px] font-medium text-[#0050c9] mb-4">
                     Small Stall
                   </h3>
                   <div className="w-60 h-60 mb-4 flex items-center justify-center">
-                    <img src={medBooth} alt="Small pod" />                  </div>
+                    <img src={medBooth} alt="Small pod" />
+                  </div>
                   <p className="text-sm md:text-base font-semibold mb-2">2M x 2M</p>
                   <p className="text-xl md:text-2xl font-semibold">₹30,000</p>
                 </div>
+
                 <div className="flex flex-col items-center text-center sm:last:col-span-2 sm:last:flex sm:last:justify-center lg:last:col-span-1">
                   <h3 className="text-[21px] md:text-[33px] font-medium text-[#0050c9] mb-4">
                     Demo Pod
                   </h3>
                   <div className="w-60 h-60 mb-4 flex items-center justify-center">
                     <img src={smallPod} alt="Small pod" />
-
                   </div>
                   <p className="text-sm md:text-base font-semibold mb-2">1M x 1M</p>
                   <p className="text-xl md:text-2xl font-semibold">₹10,000</p>
                 </div>
-
               </div>
 
-              <a href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets" target="_blank" rel="noopener noreferrer" className="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold">Reserve Your Space</a>
-
+              <a
+                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold"
+              >
+                Reserve Your Space
+              </a>
             </div>
-
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
 };
+
 const Card = ({ title, image, waveImg }) => {
   return (
     <article className="relative w-full max-w-[300px] flex-shrink-0 rounded-xl overflow-hidden bg-white shadow-xl">
-
       {/* IMAGE */}
       <div className="relative w-full h-[360px] overflow-hidden">
         <img
@@ -309,11 +305,7 @@ const Card = ({ title, image, waveImg }) => {
 
         {/* WAVY BLUE OVERLAY */}
         <div className="absolute bottom-0 left-0 w-full h-[90px] sm:h-[90px] md:h-[90px] lg:h-[100px]">
-          <img
-            src={waveImg}
-            alt="wave"
-            className="w-full h-full object-cover"
-          />
+          <img src={waveImg} alt="wave" className="w-full h-full object-cover" />
         </div>
 
         {/* TEXT ON WAVE */}
@@ -323,8 +315,8 @@ const Card = ({ title, image, waveImg }) => {
           </h3>
         </div>
       </div>
-
     </article>
   );
 };
+
 export default Expo;
