@@ -168,7 +168,7 @@ const distinguished_guests = [
   { name: "Mohit Dhingra, Bristol Myers Squibb", img: p15 },
   { name: "Narsimha Rao Mannepalli, Ex-Infosys", img: p16 },
   { name: "Nitin Sethi, AON", img: p17 },
- // { name: "Prasanna Kumar Arikala, Kore.AI", img: p18 },
+  // { name: "Prasanna Kumar Arikala, Kore.AI", img: p18 },
   { name: "Rajanna V., TCS", img: p19 },
   { name: "Rajkumar Velagapudi, TAO Digital Solutions", img: p20 },
   { name: "Rajesh Dhuddu, PwC", img: p21 },
@@ -220,7 +220,7 @@ export default function Speakers() {
                 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
               "
             >
-             {/* Increased padding-top for bigger logo */}
+              {/* Increased padding-top for bigger logo */}
               <div className="relative flex flex-col items-start pt-32">
 
                 {/* UPDATED LOGO SECTION */}
@@ -301,29 +301,29 @@ export default function Speakers() {
               -mt-[100px] px-5 pt-8 pb-12
             "
           >
-              <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
+            <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
-      {/* LOGO + PRESENTS */}
-      <div className="absolute top-0 left-0 flex flex-col items-start pt-10">
-        <img
-          src={cognizant}
-          alt="Cognizant Logo"
-          className="w-56 sm:w-64 md:w-72 h-auto"
-          draggable="false"
-        />
+              {/* LOGO + PRESENTS */}
+              <div className="absolute top-0 left-0 flex flex-col items-start pt-10">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-56 sm:w-64 md:w-72 h-auto"
+                  draggable="false"
+                />
 
-        {/* Now directly under logo */}
-        <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
-          presents
-        </span>
-      </div>
+                {/* Now directly under logo */}
+                <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
+                  presents
+                </span>
+              </div>
 
-      {/* 33rd Edition */}
-      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-2 sm:-mt-10 -mt-12">
-        <h3 className="text-[#0A2A73] text-sm font-semibold">
-          33rd Edition | March 5, 2026 | Hyderabad
-        </h3>
-      </div>
+              {/* 33rd Edition */}
+              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-2 sm:-mt-10 -mt-12">
+                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                  33rd Edition | March 5, 2026 | Hyderabad
+                </h3>
+              </div>
 
               {/* Heading */}
               <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
