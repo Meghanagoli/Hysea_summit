@@ -304,7 +304,7 @@ export default function Speakers() {
               <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
       {/* LOGO + PRESENTS */}
-      <div className="absolute top-0 left-0 flex flex-col items-start">
+      <div className="absolute top-0 left-0 flex flex-col items-start pt-10">
         <img
           src={cognizant}
           alt="Cognizant Logo"
