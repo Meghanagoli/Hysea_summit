@@ -98,28 +98,28 @@ const Partners = () => {
                 relative z-10
                 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
               "
-            >
-             <div className="relative flex flex-col items-start pt-32">
+                        >
+                            <div className="relative flex flex-col items-start pt-32">
 
-                {/* UPDATED LOGO SECTION */}
-                <div className="absolute top-0 left-0 flex flex-col items-start">
-                  <img
-                    src={cognizant}
-                    alt="Cognizant Logo"
-                    className="w-64 xl:w-72 2xl:w-80 h-auto"
-                    draggable="false"
-                  />
-                  <span className="text-white/90 text-lg font-dark tracking-wide mt-1 pl-[120px]">
-                    presents
-                  </span>
-                </div>
+                                {/* UPDATED LOGO SECTION */}
+                                <div className="absolute top-0 left-0 flex flex-col items-start">
+                                    <img
+                                        src={cognizant}
+                                        alt="Cognizant Logo"
+                                        className="w-64 xl:w-72 2xl:w-80 h-auto"
+                                        draggable="false"
+                                    />
+                                    <span className="text-white/90 text-lg font-dark tracking-wide mt-1 pl-[120px]">
+                                        presents
+                                    </span>
+                                </div>
 
-                {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
-                  <h3 className="text-[#0A2A73] text-sm font-semibold">
-                    33rd Edition | March 5, 2026 | Hyderabad
-                  </h3>
-                </div>
+                                {/* 33rd Edition */}
+                                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
+                                    <h3 className="text-[#0A2A73] text-sm font-semibold">
+                                        33rd Edition | March 5, 2026 | Hyderabad
+                                    </h3>
+                                </div>
 
                                 {/* Heading */}
                                 <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -174,30 +174,30 @@ const Partners = () => {
               px-5 pt-8 pb-12
               max-w-[720px] md:max-w-[860px]
             "
-          >
-             <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
+                    >
+                        <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
-      {/* LOGO + PRESENTS */}
-      <div className="absolute top-0 left-0 flex flex-col items-start">
-        <img
-          src={cognizant}
-          alt="Cognizant Logo"
-          className="w-56 sm:w-64 md:w-72 h-auto"
-          draggable="false"
-        />
+                            {/* LOGO + PRESENTS */}
+                            <div className="absolute top-0 left-0 flex flex-col items-start">
+                                <img
+                                    src={cognizant}
+                                    alt="Cognizant Logo"
+                                    className="w-56 sm:w-64 md:w-72 h-auto"
+                                    draggable="false"
+                                />
 
-        {/* Now directly under logo */}
-        <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
-          presents
-        </span>
-      </div>
+                                {/* Now directly under logo */}
+                                <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
+                                    presents
+                                </span>
+                            </div>
 
-      {/* 33rd Edition */}
-      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-4 sm:-mt-10 -mt-12">
-        <h3 className="text-[#0A2A73] text-sm font-semibold">
-          33rd Edition | March 5, 2026 | Hyderabad
-        </h3>
-      </div>
+                            {/* 33rd Edition */}
+                            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-4 sm:-mt-10 -mt-12">
+                                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                                    33rd Edition | March 5, 2026 | Hyderabad
+                                </h3>
+                            </div>
 
                             {/* Heading */}
                             <h1 className="text-white text-[40px] sm:text-[44px] font-medium mb-3">Partners</h1>
@@ -218,11 +218,7 @@ const Partners = () => {
                 <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-16">
                     TITLE SPONSOR
                 </h2>
-                <div className="flex justify-center">
-                    <div className="w-56 sm:w-64 md:w-80 lg:w-80 aspect-square flex items-center justify-center logo-shadow">
-                        <img src={titleSponsor[0]} alt="partner logo" className="w-full h-full object-contain" />
-                    </div>
-                </div>
+                <LogoGridPlain logos={titleSponsor} cols="grid-cols-1" />
             </section>
 
             <section className="py-10 lg:py-12">
