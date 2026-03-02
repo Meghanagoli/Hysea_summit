@@ -65,17 +65,15 @@ import p6 from "../assets/p6.png";
 //import p7 from "../assets/p7.png";
 import p8 from "../assets/p8.png";
 import p9 from "../assets/p9.png";
-// import p10 from "../assets/p10.png";
+import p10 from "../assets/p10.png";
 import p11 from "../assets/p11.png";
 import p12 from "../assets/p12.png";
-import p13 from "../assets/p13.png";
+import p13 from "../assets/p13.png"
 //import p14 from "../assets/p14.png";
-// import p13 from "../assets/p13.png";
-import p14 from "../assets/p14.png";
 import p15 from "../assets/p15.png";
 import p16 from "../assets/p16.png";
 import p17 from "../assets/p17.png";
-// import p18 from "../assets/p18.png";
+import p18 from "../assets/p18.png";
 import p19 from "../assets/p19.png";
 import p20 from "../assets/p20.png";
 import p21 from "../assets/p21.png";
@@ -193,42 +191,7 @@ const distinguished_guests = [
   { name: "Viraj Malhan, Deloitte US India Office Management Director", img: p35 },
   { name: "Vishal Salvi, Global Head of Cyber Security Service Line, Cognizant", img: p36 },
   { name: "Prashanth Nandella, President, HYSEA", img: p37 },
-  
-  { name: "Sanjay Kumar IAS, Spl. CS, Government of Telangana, ITE&C, I&C Department", img: p2 },
-  { name: "Dr. BVR Mohan Reddy, Founder Chairman, Cyient", img: p3 },
-  { name: "Srinivasa Raju C, Founder Chairman, iLabs Capital", img: p4 },
-  { name: "Amit Singhee, IBM", img: p5 },
-  { name: "Akshay Khanna, Avasant", img: p6 },
-  { name: "Ashutosh Sharma, Forrester", img: p7 },
-  { name: "Bhargavi Sunkara, Barclays India", img: p8 },
-  { name: "Ganesh Ramamoorthy, Gartner", img: p9 },
-  { name: "Kashyap Kompella, RPA2AI Research", img: p11 },
-  //{ name: "Dr. Krishna Ella, Bharat Biotech", img: p10 },
-  { name: "Krishna Sastry Pendyala, EY", img: p12 },
-  //{ name: "Laxmikanth V, Pavestone", img: p13 },
-  { name: "Lekshmi Nair, NTT Data", img: p14 },
-  { name: "Mohit Dhingra, Bristol Myers Squibb", img: p15 },
-  { name: "Narsimha Rao Mannepalli, Ex-Infosys", img: p16 },
-  { name: "Nitin Sethi, AON", img: p17 },
-  // { name: "Prasanna Kumar Arikala, Kore.AI", img: p18 },
-  { name: "Rajanna V., TCS", img: p19 },
-  { name: "Rajkumar Velagapudi, TAO Digital Solutions", img: p20 },
-  { name: "Rajesh Dhuddu, PwC", img: p21 },
-  { name: "Sailaja Josyula, Cognizant", img: p22 },
-  { name: "Sandhya Ramesh, Mastech Digital", img: p23 },
-  { name: "Sanjeev Jain, Wipro", img: p24 },
-  { name: "Smita Mohanty, Novartis", img: p25 },
-  { name: "Somnath Chatterjee, Prismforce", img: p26 },
-  { name: "Sravan Kumar Desikan, Yasmai AI", img: p27 },
-  { name: "Sridhar Sidhu, AT&T", img: p28 },
-  { name: "Dr. Subbarao Pavuluri, Ananth Technologies", img: p29 },
-  { name: "Valli Bollavaram, Swiss Re", img: p30 },
-  { name: "G T Venkateshwar Rao, Posidex", img: p31 },
-  { name: "Vekatesh Natarajan, Vanguard India", img: p32 },
-  { name: "Viraj Malhan, Deloitte", img: p33 },
-  { name: "Vishal Salvi, Cognizant", img: p34 },
-  { name: "Prashanth Nandella, President, HYSEA", img: p35 },
-];
+  ];
 
 export default function Speakers() {
   useSEO({
