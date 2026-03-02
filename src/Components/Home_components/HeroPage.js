@@ -62,7 +62,6 @@ const HeroPage = () => {
             <div
               className="
                 relative max-w-[60ch] md:max-w-none self-end
-                /* Reserve space so the absolute overlay never collides with the badge */
                 pt-18 sm:pt-20 md:pt-24 lg:pt-20 xl:pt-24 2xl:pt-28
               "
             >
@@ -81,11 +80,11 @@ const HeroPage = () => {
                   src={cognizant}
                   alt="Cognizant Logo"
                   className="
-                    w-36 h-auto          /* phones */
-                    sm:w-40              /* large phones / small tablets */
-                    md:w-48              /* tablets */
-                    lg:w-56              /* laptops */
-                    xl:w-64 2xl:w-72     /* large desktops */
+                    w-56 h-auto          /* phones */
+                    sm:w-64              /* large phones / small tablets */
+                    md:w-72              /* tablets */
+                    lg:w-64              /* laptops */
+                    xl:w-72 2xl:w-80     /* large desktops */
                   "
                 />
 
@@ -93,21 +92,27 @@ const HeroPage = () => {
                     use -mt-* / mt-* to move the label up/down only */}
                 <span
                   className="
-                    text-white font-dark
-                    text-[0.95rem] sm:text-base md:text-[1.05rem]
+                    uppercase text-white
                     leading-none
-                    /* Horizontal nudge (RIGHT = larger ml; LEFT = smaller ml) */
-                    ml-14 sm:ml-16 md:ml-20 lg:ml-24
-                    /* Vertical nudge ONLY for the label (UP = more negative; DOWN = positive) */
-                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:-mt-1.5 
+                    ml-0
+                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:-mt-1.5
                   "
+                  style={{
+                    fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "110%",
+                    letterSpacing: "-0.64px",
+                    paddingLeft: "clamp(3.2rem, 13vw, 4.5rem)",
+                  }}
                 >
-                  presents
+                  PRESENTS
                 </span>
               </div>
 
               {/* Badge in normal flow; margin keeps it clear of the overlay */}
-              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm  md:mt-0 mt-14 ">
+              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm  md:mt-0 mt-24 ">
                 33rd Edition | March 5, 2026 | Hyderabad
               </span>
 
