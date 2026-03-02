@@ -95,7 +95,7 @@ const HeroPage = () => {
                     uppercase text-white
                     leading-none
                     ml-0
-                    mt-[0.2rem]
+                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:-mt-1.5
                   "
                   style={{
                     fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
