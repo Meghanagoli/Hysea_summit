@@ -315,22 +315,15 @@ export default function Speakers() {
           <div
             className="
               relative z-10
-              -mt-[100px] px-5 pt-8 pb-12
+              -mt-[100px] px-5 pt-8 pb-20
             "
           >
-            <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
-            <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
-
+            <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36 ">
+            
+             
+                
               {/* LOGO + PRESENTS */}
-              <div className="absolute top-0 left-0 flex flex-col items-start pt-10">
-                <img
-                  src={cognizant}
-                  alt="Cognizant Logo"
-                  className="w-56 sm:w-64 md:w-72 h-auto"
-                  draggable="false"
-                />
-              {/* LOGO + PRESENTS */}
-              <div className="absolute top-0 left-0 flex flex-col items-start pt-10">
+              <div className="absolute top-0 left-0 flex flex-col items-start pt-10  ">
                 <img
                   src={cognizant}
                   alt="Cognizant Logo"
@@ -338,14 +331,11 @@ export default function Speakers() {
                   draggable="false"
                 />
 
-                {/* Now directly under logo */}
-                <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
-                  presents
-                </span>
+              
               </div>
                 {/* Now directly under logo */}
                 <span
-                  className="uppercase text-white mt-1 pl-[3.2rem]"
+                  className="uppercase text-white -mt-10 pl-[3.2rem] pb-5"
                   style={{
                     fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                     fontSize: "16px",
@@ -365,13 +355,7 @@ export default function Speakers() {
                   33rd Edition | March 5, 2026 | Hyderabad
                 </h3>
               </div>
-              {/* 33rd Edition */}
-              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 mt-0 sm:mt-0  md:-mt-10">
-                <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd Edition | March 5, 2026 | Hyderabad
-                </h3>
-              </div>
-
+             
               {/* Heading */}
               <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
                 Speakers
@@ -385,8 +369,8 @@ export default function Speakers() {
               </p>
             </div>
           </div>
-        </div>
-        </div>
+        
+        
       </main>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 bg-white mt-2">
