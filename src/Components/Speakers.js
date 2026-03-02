@@ -62,14 +62,14 @@ import p3 from "../assets/p3.png";
 import p4 from "../assets/p4.png";
 import p5 from "../assets/p5.png";
 import p6 from "../assets/p6.png";
-//import p7 from "../assets/p7.png";
+import p7 from "../assets/p7.png";
 import p8 from "../assets/p8.png";
 import p9 from "../assets/p9.png";
 import p10 from "../assets/p10.png";
 import p11 from "../assets/p11.png";
 import p12 from "../assets/p12.png";
 import p13 from "../assets/p13.png"
-//import p14 from "../assets/p14.png";
+import p14 from "../assets/p14.png";
 import p15 from "../assets/p15.png";
 import p16 from "../assets/p16.png";
 import p17 from "../assets/p17.png";
@@ -160,14 +160,14 @@ const distinguished_guests = [
   { name: "Dr. Krishna Ella, Founder & Executive Chairman, Bharat Biotech", img: p4 },
   { name: "Akshay Khanna, Managing Partner, Avasant", img: p5 },
   { name: "Amit Singhee, Director, IBM Research India", img: p6 },
- // { name: "Anand Kabra, Chief People & Transformation Officer, Apexon", img: p7 },
+  { name: "Anand Kabra, Chief People & Transformation Officer, Apexon", img: p7 },
   { name: "Ashutosh Sharma, VP, Research Director, Forrester", img: p8 },
   { name: "Bhargavi Sunkara, Barclays India CIO & CTO", img: p9 },
   { name: "Ganesh Ramamoorthy, Managing Vice President, Gartner", img: p10 },
   { name: "Kashyap Kompella, Founder & CEO, RPA2AI Research", img: p11 },
   { name: "Krishna Sastry Pendyala, Partner, Cyber Security, EY India", img: p12 },
   { name: "Krishna Srinivasan, PALGenie Technologies", img: p13 },
-  //{ name: "V. Laxmikanth, Founder & Managing Partner, Pavestone", img: p14 },
+  { name: "V. Laxmikanth, Founder & Managing Partner, Pavestone", img: p14 },
   { name: "Lekshmi Nair, Global Capability Head: Application & Offensive Security, NTT Data", img: p15 },
   { name: "Madhuri Raya, Optum", img: p16 },
   { name: "Mohit Dhingra, MD, Bristol Myers Squibb", img: p17 },
