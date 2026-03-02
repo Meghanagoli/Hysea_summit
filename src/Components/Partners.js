@@ -53,8 +53,8 @@ const Partners = () => {
             className={`
         grid ${cols}
         gap-y-6 md:gap-y-8 lg:gap-y-12
-        gap-x-2 sm:gap-x-4 md:gap-x-4 lg:gap-x-6
-        place-items-center
+                                        <span
+                                            className="uppercase text-white mt-1 pl-[3.2rem]"
       `}
         >
             {logos.map((logo, i) => {
@@ -109,8 +109,18 @@ const Partners = () => {
                                         className="w-64 xl:w-72 2xl:w-80 h-auto"
                                         draggable="false"
                                     />
-                                    <span className="text-white/90 text-lg font-dark tracking-wide mt-1 pl-[120px]">
-                                        presents
+                                    <span
+                                        className="uppercase text-white mt-1 pl-[4.5rem]"
+                                        style={{
+                                            fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
+                                            fontSize: "16px",
+                                            fontStyle: "normal",
+                                            fontWeight: 400,
+                                            lineHeight: "110%",
+                                            letterSpacing: "-0.64px",
+                                        }}
+                                    >
+                                        PRESENTS
                                     </span>
                                 </div>
 
@@ -125,12 +135,11 @@ const Partners = () => {
                                 <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
                                     Partners
                                 </h1>
-
-                                {/* Description */}
                                 <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px]">
                                     HYSEA's Annual Summit is India's premier technology leadership event,
                                     attracting over 1,000 delegates and 100+ speakers from industry.
                                 </p>
+            
                             </div>
                         </div>
                     </div>
@@ -187,8 +196,18 @@ const Partners = () => {
                                 />
 
                                 {/* Now directly under logo */}
-                                <span className="text-white text-base sm:text-lg font-dark opacity-90 mt-1 pl-[100px]">
-                                    presents
+                                <span
+                                    className="uppercase text-white mt-1 pl-[4.2rem]"
+                                    style={{
+                                        fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
+                                        fontSize: "16px",
+                                        fontStyle: "normal",
+                                        fontWeight: 400,
+                                        lineHeight: "110%",
+                                        letterSpacing: "-0.64px",
+                                    }}
+                                >
+                                    PRESENTS
                                 </span>
                             </div>
 
