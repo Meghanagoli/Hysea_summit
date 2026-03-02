@@ -54,7 +54,7 @@ const Partners = () => {
         grid ${cols}
         gap-y-6 md:gap-y-8 lg:gap-y-12
                                         <span
-                                            className="uppercase text-white mt-1 pl-[3.2rem]"
+                                            className="uppercase text-white mt-1 pl-[3.3rem]"
       `}
         >
             {logos.map((logo, i) => {
@@ -139,7 +139,7 @@ const Partners = () => {
                                     HYSEA's Annual Summit is India's premier technology leadership event,
                                     attracting over 1,000 delegates and 100+ speakers from industry.
                                 </p>
-            
+
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@ const Partners = () => {
 
                                 {/* Now directly under logo */}
                                 <span
-                                    className="uppercase text-white mt-1 pl-[4.2rem]"
+                                    className="uppercase text-white mt-1 pl-[4.7rem]"
                                     style={{
                                         fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                                         fontSize: "16px",
@@ -212,7 +212,7 @@ const Partners = () => {
                             </div>
 
                             {/* 33rd Edition */}
-                            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-19 sm:-mt-10 -mt-12">
+                            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-19 sm:-mt-10 -mt-8">
                                 <h3 className="text-[#0A2A73] text-sm font-semibold">
                                     33rd Edition | March 5, 2026 | Hyderabad
                                 </h3>

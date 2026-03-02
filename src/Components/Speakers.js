@@ -160,7 +160,7 @@ const distinguished_guests = [
   { name: "Dr. Krishna Ella, Founder & Executive Chairman, Bharat Biotech", img: p4 },
   { name: "Akshay Khanna, Managing Partner, Avasant", img: p5 },
   { name: "Amit Singhee, Director, IBM Research India", img: p6 },
- // { name: "Anand Kabra, Chief People & Transformation Officer, Apexon", img: p7 },
+  // { name: "Anand Kabra, Chief People & Transformation Officer, Apexon", img: p7 },
   { name: "Ashutosh Sharma, VP, Research Director, Forrester", img: p8 },
   { name: "Bhargavi Sunkara, Barclays India CIO & CTO", img: p9 },
   { name: "Ganesh Ramamoorthy, Managing Vice President, Gartner", img: p10 },
@@ -191,7 +191,7 @@ const distinguished_guests = [
   { name: "Viraj Malhan, Deloitte US India Office Management Director", img: p35 },
   { name: "Vishal Salvi, Global Head of Cyber Security Service Line, Cognizant", img: p36 },
   { name: "Prashanth Nandella, President, HYSEA", img: p37 },
-  ];
+];
 
 export default function Speakers() {
   useSEO({
@@ -239,7 +239,7 @@ export default function Speakers() {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-1 pl-[4.2rem]"
+                    className="uppercase text-white mt-1 pl-[4.7rem]"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -254,7 +254,7 @@ export default function Speakers() {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-8">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
@@ -319,9 +319,9 @@ export default function Speakers() {
             "
           >
             <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36 ">
-            
-             
-                
+
+
+
               {/* LOGO + PRESENTS */}
               <div className="absolute top-0 left-0 flex flex-col items-start pt-10  ">
                 <img
@@ -331,46 +331,46 @@ export default function Speakers() {
                   draggable="false"
                 />
 
-              
-              </div>
-                {/* Now directly under logo */}
-                <span
-                  className="uppercase text-white -mt-10 pl-[3.2rem] pb-5"
-                  style={{
-                    fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
-                    fontSize: "16px",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    lineHeight: "110%",
-                    letterSpacing: "-0.64px",
-                  }}
-                >
-                  PRESENTS
-                </span>
-              </div>
 
-              {/* 33rd Edition */}
-              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-2 sm:-mt-10 -mt-12">
-                <h3 className="text-[#0A2A73] text-sm font-semibold">
-                  33rd Edition | March 5, 2026 | Hyderabad
-                </h3>
               </div>
-             
-              {/* Heading */}
-              <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
-                Speakers
-              </h1>
-
-              {/* Description */}
-              <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-                Experience an exceptional lineup of distinguished experts and
-                dignitaries as they explore the trends, breakthroughs, and bold
-                ideas shaping the future.
-              </p>
+              {/* Now directly under logo */}
+              <span
+                className="uppercase text-white -mt-10 pl-[3.3rem] pb-5"
+                style={{
+                  fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
+                  fontSize: "16px",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  lineHeight: "110%",
+                  letterSpacing: "-0.64px",
+                }}
+              >
+                PRESENTS
+              </span>
             </div>
+
+            {/* 33rd Edition */}
+            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-2 sm:-mt-10 -mt-12">
+              <h3 className="text-[#0A2A73] text-sm font-semibold">
+                33rd Edition | March 5, 2026 | Hyderabad
+              </h3>
+            </div>
+
+            {/* Heading */}
+            <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+              Speakers
+            </h1>
+
+            {/* Description */}
+            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+              Experience an exceptional lineup of distinguished experts and
+              dignitaries as they explore the trends, breakthroughs, and bold
+              ideas shaping the future.
+            </p>
           </div>
-        
-        
+        </div>
+
+
       </main>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 bg-white mt-2">
@@ -468,7 +468,7 @@ export default function Speakers() {
           </div>
         </div>
       </div>
-     
+
       <Footer />
     </section>
   );

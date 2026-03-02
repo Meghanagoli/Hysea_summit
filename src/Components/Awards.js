@@ -58,7 +58,7 @@ const Awards = () => {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-1 pl-[4.2rem]"
+                    className="uppercase text-white mt-1 pl-[4.7rem]"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -73,7 +73,7 @@ const Awards = () => {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-8">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
@@ -111,88 +111,88 @@ const Awards = () => {
         </div>
 
         {/* ====================== MOBILE / TABLET ====================== */}
-       {/* ====================== MOBILE / TABLET (< lg) ====================== */}
-<div className="block lg:hidden relative w-full overflow-hidden mt-14">
+        {/* ====================== MOBILE / TABLET (< lg) ====================== */}
+        <div className="block lg:hidden relative w-full overflow-hidden mt-14">
 
-  {/* MOBILE TOP PHOTO */}
-  <div className="relative w-full h-[360px] sm:h-[580px]">
-    <img
-      src={rightImage}
-      alt="Awards"
-      className="h-full w-full object-cover object-center"
-    />
-  </div>
+          {/* MOBILE TOP PHOTO */}
+          <div className="relative w-full h-[360px] sm:h-[580px]">
+            <img
+              src={rightImage}
+              alt="Awards"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
 
-  {/* MOBILE BACKGROUND */}
-  <div
-    className="absolute inset-0 z-0 bg-no-repeat bg-cover bg-[position:center_220px] sm:bg-[position:center_430px]"
-    style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
-    aria-hidden="true"
-  />
+          {/* MOBILE BACKGROUND */}
+          <div
+            className="absolute inset-0 z-0 bg-no-repeat bg-cover bg-[position:center_220px] sm:bg-[position:center_430px]"
+            style={{ backgroundImage: `url(${heroLeftBgMobile})` }}
+            aria-hidden="true"
+          />
 
-  {/* CONTENT */}
-  <div className="relative z-10 -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]">
+          {/* CONTENT */}
+          <div className="relative z-10 -mt-[100px] px-5 pt-8 pb-12 sm:-mt-[50px]">
 
-    {/* Increased spacing to fit bigger logo */}
-    <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
+            {/* Increased spacing to fit bigger logo */}
+            <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
-      {/* LOGO + PRESENTS */}
-      <div className="absolute top-0 left-0 flex flex-col items-start">
-        <img
-          src={cognizant}
-          alt="Cognizant Logo"
-          className="w-56 sm:w-64 md:w-72 h-auto"
-          draggable="false"
-        />
+              {/* LOGO + PRESENTS */}
+              <div className="absolute top-0 left-0 flex flex-col items-start">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-56 sm:w-64 md:w-72 h-auto"
+                  draggable="false"
+                />
 
-        {/* Now directly under logo */}
-        <span
-          className="uppercase text-white mt-1 pl-[3.2rem]"
-          style={{
-            fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
-            fontSize: "16px",
-            fontStyle: "normal",
-            fontWeight: 400,
-            lineHeight: "110%",
-            letterSpacing: "-0.64px",
-          }}
-        >
-          PRESENTS
-        </span>
-      </div>
+                {/* Now directly under logo */}
+                <span
+                  className="uppercase text-white mt-1 pl-[3.3rem]"
+                  style={{
+                    fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "110%",
+                    letterSpacing: "-0.64px",
+                  }}
+                >
+                  PRESENTS
+                </span>
+              </div>
 
-      {/* 33rd Edition */}
-      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4  sm:-mt-10 -mt-12">
-        <h3 className="text-[#0A2A73] text-sm font-semibold">
-          33rd Edition | March 5, 2026 | Hyderabad
-        </h3>
-      </div>
+              {/* 33rd Edition */}
+              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4  sm:-mt-10 -mt-12">
+                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                  33rd Edition | March 5, 2026 | Hyderabad
+                </h3>
+              </div>
 
-      {/* Heading */}
-      <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
-        Awards
-      </h1>
+              {/* Heading */}
+              <h1 className="text-white text-[40px] sm:text-[44px] font-medium leading-[1.06] tracking-[-0.72px] mb-3">
+                Awards
+              </h1>
 
-      {/* Description */}
-      <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-        The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
-        celebrating excellence, innovation, leadership, and social impact
-        across the IT/ITES and technology ecosystem.
-      </p>
+              {/* Description */}
+              <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
+                The HYSEA Awards are a cornerstone of the HYSEA Annual Summit,
+                celebrating excellence, innovation, leadership, and social impact
+                across the IT/ITES and technology ecosystem.
+              </p>
 
-      {/* Button */}
-      <a
-        href="https://hysea.accubate.app/ext/form/12107/1/apply"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="border-[1.5px] border-white rounded-md bg-transparent text-white text-sm font-semibold px-4 md:px-5 py-2"
-      >
-        Apply Now
-      </a>
+              {/* Button */}
+              <a
+                href="https://hysea.accubate.app/ext/form/12107/1/apply"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-[1.5px] border-white rounded-md bg-transparent text-white text-sm font-semibold px-4 md:px-5 py-2"
+              >
+                Apply Now
+              </a>
 
-    </div>
-  </div>
-</div>
+            </div>
+          </div>
+        </div>
 
       </main>
       <div className="mx-auto  w-full">
