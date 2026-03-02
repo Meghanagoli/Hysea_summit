@@ -239,7 +239,7 @@ export default function Speakers() {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-1 pl-[4.7rem]"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem]"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",

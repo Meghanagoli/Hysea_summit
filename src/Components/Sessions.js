@@ -56,7 +56,7 @@ const Sessions = () => {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-1 pl-[4.7rem]"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem]"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -151,7 +151,7 @@ lg:bg-[position:left_center]"
 
                 {/* Now directly under logo */}
                 <span
-                  className="uppercase text-white mt-1 pl-[3.3rem]"
+                  className="uppercase text-white mt-[0.2rem] pl-[3.3rem]"
                   style={{
                     fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                     fontSize: "16px",
