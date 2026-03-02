@@ -52,7 +52,7 @@ const Expo = () => {
                 lg:pt-[144px] lg:pb-[144px] lg:px-[80px] lg:pr-[200px]
               "
             >
-                 {/* Increased padding-top for bigger logo */}
+              {/* Increased padding-top for bigger logo */}
               <div className="relative flex flex-col items-start pt-32">
 
                 {/* UPDATED LOGO SECTION */}
@@ -64,7 +64,7 @@ const Expo = () => {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-1 pl-[4.2rem]"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem]"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -79,13 +79,13 @@ const Expo = () => {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-8">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
                 </div>
 
-                
+
 
                 {/* Heading */}
                 <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
@@ -165,39 +165,39 @@ const Expo = () => {
               px-5 pt-8 pb-12
             "
           >
-             <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
+            <div className="relative flex flex-col items-start mt-10 pt-32 sm:pt-36">
 
-      {/* LOGO + PRESENTS */}
-      <div className="absolute top-0 left-0 flex flex-col items-start">
-        <img
-          src={cognizant}
-          alt="Cognizant Logo"
-          className="w-56 sm:w-64 md:w-72 h-auto"
-          draggable="false"
-        />
+              {/* LOGO + PRESENTS */}
+              <div className="absolute top-0 left-0 flex flex-col items-start">
+                <img
+                  src={cognizant}
+                  alt="Cognizant Logo"
+                  className="w-56 sm:w-64 md:w-72 h-auto"
+                  draggable="false"
+                />
 
-        {/* Now directly under logo */}
-        <span
-          className="uppercase text-white mt-1 pl-[3.2rem]"
-          style={{
-            fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
-            fontSize: "16px",
-            fontStyle: "normal",
-            fontWeight: 400,
-            lineHeight: "110%",
-            letterSpacing: "-0.64px",
-          }}
-        >
-          PRESENTS
-        </span>
-      </div>
+                {/* Now directly under logo */}
+                <span
+                  className="uppercase text-white mt-[0.2rem] pl-[3.3rem]"
+                  style={{
+                    fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "110%",
+                    letterSpacing: "-0.64px",
+                  }}
+                >
+                  PRESENTS
+                </span>
+              </div>
 
-      {/* 33rd Edition */}
-      <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-11 sm:-mt-10 ">
-        <h3 className="text-[#0A2A73] text-sm font-semibold">
-          33rd Edition | March 5, 2026 | Hyderabad
-        </h3>
-      </div>
+              {/* 33rd Edition */}
+              <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-11 sm:-mt-10 ">
+                <h3 className="text-[#0A2A73] text-sm font-semibold">
+                  33rd Edition | March 5, 2026 | Hyderabad
+                </h3>
+              </div>
 
               {/* Heading */}
               <h1 className="text-white text-[36px] sm:text-[40px] md:text-[48px] font-medium leading-[1.1] tracking-[-0.5px] mb-3">

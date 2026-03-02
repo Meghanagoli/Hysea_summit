@@ -104,7 +104,7 @@ const HeroPage = () => {
                     fontWeight: 400,
                     lineHeight: "110%",
                     letterSpacing: "-0.64px",
-                    paddingLeft: "clamp(3.2rem, 13vw, 4.5rem)",
+                    paddingLeft: "clamp(3.3rem, 13vw, 4.7rem)",
                   }}
                 >
                   PRESENTS
