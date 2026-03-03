@@ -95,7 +95,7 @@ const HeroPage = () => {
                     uppercase text-white
                     leading-none
                     lg:-ml-3 ml-0
-                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:mt-0
+                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:mt-0 mt-1 md:-ml-1 md:mt-0
                   "
                   style={{
                     fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
@@ -119,7 +119,7 @@ const HeroPage = () => {
                 33rd Edition | March 5, 2026 | Hyderabad
               </span>
 
-              <h1 className="font-semibold mt-4 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight lg:translate-y-5 ">
+              <h1 className="font-semibold mt-4 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight lg:translate-y-5 md:mt-12 ">
                 HYSEA ANNUAL <br />
                 SUMMIT &amp; AWARDS 2026
               </h1>
@@ -133,7 +133,7 @@ const HeroPage = () => {
             {/* =========================
                 RIGHT COLUMN (unchanged)
                ========================= */}
-            <div className="text-base leading-relaxed sm:text-lg md:mt-1 lg:mt-auto max-w-[70ch] md:max-w-none ml-0 self-end">
+            <div className="text-base leading-relaxed sm:text-lg md:mt-1 lg:mt-auto max-w-[70ch] md:max-w-none ml-0 self-end md:-mt-6 ">
               <p>
                 HYSEA’s Annual Summit is India’s premier technology leadership
                 event, bringing together over 1,200+ delegates and 75+ speakers

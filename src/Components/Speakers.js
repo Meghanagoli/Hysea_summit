@@ -239,7 +239,7 @@ export default function Speakers() {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-4 translate-y-2"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 translate-y-2"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -265,12 +265,20 @@ export default function Speakers() {
                 </h1>
 
                 {/* Description */}
-                <p className="text-white mt-5 text-[18px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                <p className="text-white mt-1 text-[18px] font-normal leading-[1.6] max-w-[640px] -mb-8">
                   Experience an exceptional lineup of distinguished experts and
                   dignitaries as they explore the trends, breakthroughs, and bold
                   ideas shaping the future.
-                  </p>
-                
+                </p>
+
+                <p className="
+  text-white text-[18px] font-normal leading-[1.6] max-w-[640px]
+  transform translate-y-10 
+">
+                  HYSEA proudly welcomes Shri D. Sridhar Babu, Hon’ble Minister for ITE&C
+                  and I&C, Government of Telangana to HYSEA Annual Summit & Awards 2026
+                </p>
+
               </div>
             </div>
           </div>
@@ -363,11 +371,28 @@ export default function Speakers() {
             </h1>
 
             {/* Description */}
-            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] mb-6">
-              Experience an exceptional lineup of distinguished experts and
-              dignitaries as they explore the trends, breakthroughs, and bold
-              ideas shaping the future.
-            </p>
+            {/* First paragraph — keep your exact classes */}
+<p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] md:-mb-10 md:mt-10">
+  Experience an exceptional lineup of distinguished experts and
+  dignitaries as they explore the trends, breakthroughs, and bold
+  ideas shaping the future.
+</p>
+
+{/* Second paragraph — use translate so layout height doesn't change (BG stays stable) */}
+<p
+  className="
+    text-white text-[15px] sm:text-[16px] font-normal leading-[1.6]
+    max-w-[95%] sm:max-w-[92%]
+    transform
+    translate-y-2       /* mobile: tiny visual nudge */
+    sm:translate-y-3    /* small tablets */
+    md:translate-y-11    /* tablet: a bit more spacing below the first para */
+  "
+>
+  HYSEA proudly welcomes Shri D. Sridhar Babu, Hon’ble Minister for ITE&amp;C
+  and I&amp;C, Government of Telangana to HYSEA Annual Summit &amp; Awards 2026
+</p>
+
           </div>
         </div>
 
