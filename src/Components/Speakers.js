@@ -93,7 +93,7 @@ import p34 from "../assets/p34.png";
 import p35 from "../assets/p35.png";
 import p36 from "../assets/p36.png";
 import p37 from "../assets/p37.png";
-//import p38 from "../assets/p38.png";
+import p38 from "../assets/p38.png";
 import Footer from "./Footer";
 
 const speakers = [
@@ -175,6 +175,7 @@ const distinguished_guests = [
   { name: "Nitin Sethi, CEO - AON Consulting in India and South Asia", img: p19 },
   { name: "Prasanna Arikala, Kore.Ai", img: p20 },
   { name: "Prashant Kashyap, Senior Director Data and Analytics, KPMG", img: p21 },
+   {name: "V. Rajanna, TCS", img: p38 },
   { name: "Rajesh Varrier, Cognizant", img: p22 },
   { name: "Rajkumar Velagapudi, Founder & CEO, TAO Digital Solutions", img: p23 },
   { name: "Rajesh Dhuddu, President, Global Operations & CMD Cognizant India", img: p24 },
