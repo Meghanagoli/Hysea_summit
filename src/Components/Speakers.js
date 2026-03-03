@@ -176,7 +176,7 @@ const distinguished_guests = [
   { name: "Nitin Sethi, CEO - AON Consulting in India and South Asia", img: p19 },
   { name: "Prasanna Arikala, CTO + Head of Product, Kore.Ai", img: p20 },
   { name: "Prashant Kashyap, Senior Director Data and Analytics, KPMG", img: p21 },
-  { name: "V. Rajanna, TCS", img: p38 },
+  { name: "V. Rajanna, President, Technology Software and Services, TCS", img: p38 },
   { name: "Rajesh Varrier,  President, Global Operations & CMD Cognizant India, Cognizant", img: p22 },
   { name: "Rajkumar Velagapudi, Founder & CEO, TAO Digital Solutions", img: p23 },
   { name: "Rajesh Dhuddu, President, Global Operations & CMD Cognizant India", img: p24 },
