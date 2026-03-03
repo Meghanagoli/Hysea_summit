@@ -89,11 +89,12 @@ import p30 from "../assets/p30.png";
 import p31 from "../assets/p31.png";
 import p32 from "../assets/p32.png";
 import p33 from "../assets/p33.png";
-import p34 from "../assets/p34.png";
 import p35 from "../assets/p35.png";
 import p36 from "../assets/p36.png";
 import p37 from "../assets/p37.png";
 import p38 from "../assets/p38.png";
+import p39 from "../assets/p39.png";
+
 import Footer from "./Footer";
 
 const speakers = [
@@ -175,11 +176,12 @@ const distinguished_guests = [
   { name: "Nitin Sethi, CEO - AON Consulting in India and South Asia", img: p19 },
   { name: "Prasanna Arikala, Kore.Ai", img: p20 },
   { name: "Prashant Kashyap, Senior Director Data and Analytics, KPMG", img: p21 },
-   {name: "V. Rajanna, TCS", img: p38 },
+  { name: "V. Rajanna, TCS", img: p38 },
   { name: "Rajesh Varrier, Cognizant", img: p22 },
   { name: "Rajkumar Velagapudi, Founder & CEO, TAO Digital Solutions", img: p23 },
   { name: "Rajesh Dhuddu, President, Global Operations & CMD Cognizant India", img: p24 },
   { name: "Sailaja Josyula, Global Head - Global Capability Centres Service Line, Cognizant", img: p25 },
+  { name: "Sampath Kumar, Chief Data and Analytics Officer, Vanguard India", img: p39 },
   { name: "Sandhya Ramesh, Chief People Officer, Mastech Digital", img: p26 },
   { name: "Smita Mohanty, PhD, Director Data Science AICS NIBR, Novartis", img: p27 },
   { name: "Somnath Chatterjee, Founder & CEO, Prismforce", img: p28 },
@@ -188,7 +190,6 @@ const distinguished_guests = [
   { name: "Dr. Subbarao Pavuluri, Chairman & Founder, Ananth Technologies", img: p31 },
   { name: "Valli Bollavaram, CTO, Swiss Re", img: p32 },
   { name: "G T Venkateshwar Rao, MD, Posidex", img: p33 },
-  { name: "Vekatesh Natarajan, Head of Vanguard India", img: p34 },
   { name: "Viraj Malhan, Deloitte US India Office Management Director", img: p35 },
   { name: "Vishal Salvi, Global Head of Cyber Security Service Line, Cognizant", img: p36 },
   { name: "Prashanth Nandella, President, HYSEA", img: p37 },
@@ -373,15 +374,15 @@ export default function Speakers() {
 
             {/* Description */}
             {/* First paragraph — keep your exact classes */}
-<p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] md:-mb-10 md:mt-10">
-  Experience an exceptional lineup of distinguished experts and
-  dignitaries as they explore the trends, breakthroughs, and bold
-  ideas shaping the future.
-</p>
+            <p className="text-white mt-5 text-[15px] sm:text-[16px] font-normal leading-[1.6] max-w-[95%] sm:max-w-[92%] md:-mb-10 md:mt-10">
+              Experience an exceptional lineup of distinguished experts and
+              dignitaries as they explore the trends, breakthroughs, and bold
+              ideas shaping the future.
+            </p>
 
-{/* Second paragraph — use translate so layout height doesn't change (BG stays stable) */}
-<p
-  className="
+            {/* Second paragraph — use translate so layout height doesn't change (BG stays stable) */}
+            <p
+              className="
     text-white text-[15px] sm:text-[16px] font-normal leading-[1.6]
     max-w-[95%] sm:max-w-[92%]
     transform
@@ -389,10 +390,10 @@ export default function Speakers() {
     sm:translate-y-3    /* small tablets */
     md:translate-y-11    /* tablet: a bit more spacing below the first para */
   "
->
-  HYSEA proudly welcomes Shri D. Sridhar Babu, Hon’ble Minister for ITE&amp;C
-  and I&amp;C, Government of Telangana to HYSEA Annual Summit &amp; Awards 2026
-</p>
+            >
+              HYSEA proudly welcomes Shri D. Sridhar Babu, Hon’ble Minister for ITE&amp;C
+              and I&amp;C, Government of Telangana to HYSEA Annual Summit &amp; Awards 2026
+            </p>
 
           </div>
         </div>
