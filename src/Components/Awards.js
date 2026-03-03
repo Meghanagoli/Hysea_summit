@@ -58,7 +58,7 @@ const Awards = () => {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem]"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 translate-y-2"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -73,7 +73,7 @@ const Awards = () => {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-8">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-9">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
@@ -147,7 +147,7 @@ const Awards = () => {
 
                 {/* Now directly under logo */}
                 <span
-                  className="uppercase text-white mt-[0.2rem] pl-[3.3rem]"
+                  className="uppercase text-white mt-[0.2rem] pl-[3.3rem] translate-y-2 md:ml-4"
                   style={{
                     fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                     fontSize: "16px",

@@ -94,8 +94,8 @@ const HeroPage = () => {
                   className="
                     uppercase text-white
                     leading-none
-                    ml-0
-                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:-mt-1.5
+                    lg:-ml-3 ml-0
+                    -mt-1 sm:-mt-1 md:-mt-0.5 lg:mt-0
                   "
                   style={{
                     fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
@@ -112,11 +112,14 @@ const HeroPage = () => {
               </div>
 
               {/* Badge in normal flow; margin keeps it clear of the overlay */}
-              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm  md:mt-0 mt-24 ">
+              <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm  md:mt-0 mt-24 
+                transform
+                 mt-20 md:translate-y-4 lg:translate-y-5
+              ">
                 33rd Edition | March 5, 2026 | Hyderabad
               </span>
 
-              <h1 className="font-semibold mt-4 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight">
+              <h1 className="font-semibold mt-4 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight lg:translate-y-5 ">
                 HYSEA ANNUAL <br />
                 SUMMIT &amp; AWARDS 2026
               </h1>

@@ -32,47 +32,70 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import cognizant from "..//assets/cognizant.svg";
 
-const Partners = () => {
-    useSEO({
-        title: "Partners | HYSEA Annual Summit & Awards 2026",
-        description:
-            "As a HYSEA partner, you'll engage with a high-caliber audience of CEOs, tech founders, and government dignitaries. With over 1,000 delegates in attendance, the 33rd Annual Summit is your platform to build meaningful connections and showcase leadership in the tech space.",
-    });
 
-    const industryPatrons = [broadbridge, servicenow, dbs, realpage, vanguard];
-    const ecosystemPatrons = [mindspace, icici, cyient];
-    const outreachPartners = [tHub, tie, ce, wehub, t10x, endiya, scsc, iacc, ftcci, bai, amcham];
-    const titleSponsor = [cognizant_logo];
-    const govtPartners = [govt2, govt1];
-    const goldSponsor = [tao];
-    const featuredPartners = [technogen, qapilot];
+const Partners = () => {
+  useSEO({
+    title: "Partners | HYSEA Annual Summit & Awards 2026",
+    description:
+      "As a HYSEA partner, you'll engage with a high-caliber audience of CEOs, tech founders, and government dignitaries. With over 1,000 delegates in attendance, the 33rd Annual Summit is your platform to build meaningful connections and showcase leadership in the tech space.",
+  });
+
+   
+const industryPatrons = [broadbridge, servicenow, dbs, realpage, vanguard];
+  const ecosystemPatrons = [mindspace, icici, cyient];
+  const outreachPartners = [
+    tHub,
+    tie,
+    ce,
+    wehub,
+    t10x,
+    endiya,
+    scsc,
+    iacc,
+    ftcci,
+    bai,
+    
+amcham,
+  ];
+
+const titleSponsor = [cognizant_logo];
+  const govtPartners = [govt2, govt1];
+  const goldSponsor = [tao];
+  const featuredPartners = [technogen, qapilot];
     const partner = [stpi];
 
-    const LogoGridPlain = ({ logos, cols, centerLastOnMobile = false }) => (
-        <div
-            className={`
+
+    
+const LogoGridPlain = ({ logos, cols, centerLastOnMobile = false }) => (
+    <div
+      className={`
         grid ${cols}
         gap-y-6 md:gap-y-8 lg:gap-y-12
-                                        <span
-                                            className="uppercase text-white mt-1 pl-[3.3rem]"
+        gap-x-2 sm:gap-x-4 md:gap-x-4 lg:gap-x-6
+        place-items-center
       `}
+
         >
-            {logos.map((logo, i) => {
-                const isLast = centerLastOnMobile && i === logos.length - 1;
-                return (
-                    <div
-                        key={i}
-                        className={`
+            
+{logos.map((logo, i) => {
+        const isLast = centerLastOnMobile && i === logos.length - 1;
+        return (
+          <div
+            key={i}
+            className={`
               w-40 sm:w-44 md:w-48 lg:w-44
               aspect-square
               flex items-center justify-center
               logo-shadow
-              ${isLast ? "col-span-2 sm:col-span-1 justify-self-center" : ""}
+
+             
+ ${isLast ? "col-span-2 sm:col-span-1 justify-self-center" : ""}
             `}
-                    >
-                        <img src={logo} alt="partner logo" className="w-full h-full object-contain" />
-                    </div>
-                );
+          >
+            <img src={logo} alt="partner logo" className="w-full h-full object-contain" />
+          </div>
+        );
+
             })}
         </div>
     );
@@ -110,7 +133,7 @@ const Partners = () => {
                                         draggable="false"
                                     />
                                     <span
-                                        className="uppercase text-white mt-[0.2rem] pl-[4.7rem]"
+                                        className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 lg:mt-2" 
                                         style={{
                                             fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                                             fontSize: "16px",
@@ -125,7 +148,7 @@ const Partners = () => {
                                 </div>
 
                                 {/* 33rd Edition */}
-                                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-7">
+                                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-10">
                                     <h3 className="text-[#0A2A73] text-sm font-semibold">
                                         33rd Edition | March 5, 2026 | Hyderabad
                                     </h3>
@@ -197,7 +220,7 @@ const Partners = () => {
 
                                 {/* Now directly under logo */}
                                 <span
-                                    className="uppercase text-white mt-[0.2rem] pl-[3.3rem]"
+                                    className="uppercase text-white mt-[0.2rem] pl-[3.3rem] ml-0 md:ml-4 translate-y-2"
                                     style={{
                                         fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                                         fontSize: "16px",
@@ -358,3 +381,6 @@ const Partners = () => {
 };
 
 export default Partners;
+
+
+    

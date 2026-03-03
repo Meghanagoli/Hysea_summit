@@ -93,7 +93,7 @@ import p34 from "../assets/p34.png";
 import p35 from "../assets/p35.png";
 import p36 from "../assets/p36.png";
 import p37 from "../assets/p37.png";
-import p38 from "../assets/p38.png";
+//import p38 from "../assets/p38.png";
 import Footer from "./Footer";
 
 const speakers = [
@@ -153,7 +153,7 @@ const chief_guests = [
 ];
 
 const distinguished_guests = [
-  { name: "Shri D. Sridhar Babu, IT Minister", img: p38 },
+  //{ name: "Shri D. Sridhar Babu, IT Minister", img: p38 },
   { name: "Laura Williams, US Consul General", img: p1 },
   { name: "Dr. BVR Mohan Reddy, Founder Chairman, Cyient", img: p2 },
   { name: "Srinivasa Raju C, Founder Chairman, iLabs Capital", img: p3 },
@@ -239,7 +239,7 @@ export default function Speakers() {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem]"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-4 translate-y-2"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -254,7 +254,7 @@ export default function Speakers() {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-8">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-10">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
@@ -269,7 +269,8 @@ export default function Speakers() {
                   Experience an exceptional lineup of distinguished experts and
                   dignitaries as they explore the trends, breakthroughs, and bold
                   ideas shaping the future.
-                </p>
+                  </p>
+                
               </div>
             </div>
           </div>
