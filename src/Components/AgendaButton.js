@@ -3,7 +3,7 @@ import agendaImg from '../assets/agenda-wrapper.svg';
 export default function AgendaButton() {
     return (
         <a
-            href="/2026/agenda.pdf"
+            href="/2026/agenda_final.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Open agenda"
