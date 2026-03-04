@@ -192,6 +192,8 @@ const distinguished_guests = [
   { name: "Vishal Salvi, Global Head of Cyber Security Service Line, Cognizant", img: p36 },
   { name: "Prashanth Nandella, President, HYSEA", img: p37 },
 ];
+const firstFourGuests = distinguished_guests.slice(0, 4);
+const remainingGuests = distinguished_guests.slice(4);
 
 export default function Speakers() {
   useSEO({
@@ -361,7 +363,7 @@ export default function Speakers() {
             </div>
 
             {/* 33rd Edition */}
-            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-2 sm:-mt-10 -mt-12">
+            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4  sm:-mt-10 -mt-10">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
                 33rd Edition | March 5, 2026 | Hyderabad
               </h3>
@@ -407,32 +409,47 @@ export default function Speakers() {
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           DISTINGUISHED GUESTS
         </h2>
-        <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
-          {distinguished_guests.map((guest, idx) => (
-            <div key={idx} className="flex flex-col items-center self-start">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg  overflow-hidden shadow-sm">
-                <img
-                  src={guest.img}
-                  alt={guest.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <p className="
-                mt-3
-                text-center
-                text-sm md:text-base
-                text-gray-700 font-medium
-                min-h-[2.5rem]
-                leading-snug
-              ">
-                {guest.name}
-              </p>
-            </div>
-          ))}
-        </div>
+        {/* FIRST ROW — 4 CENTERED */}
+<div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 mb-10">
+  {firstFourGuests.map((guest, idx) => (
+    <div key={idx} className="flex flex-col items-center self-start">
+      <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg overflow-hidden shadow-sm">
+        <img
+          src={guest.img}
+          alt={guest.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
       </div>
+
+      <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium min-h-[2.5rem] leading-snug">
+        {guest.name}
+      </p>
+    </div>
+  ))}
+</div>
+
+{/* REMAINING GUESTS — 5 PER ROW */}
+<div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
+  {remainingGuests.map((guest, idx) => (
+    <div key={idx} className="flex flex-col items-center self-start">
+      <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg overflow-hidden shadow-sm">
+        <img
+          src={guest.img}
+          alt={guest.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium min-h-[2.5rem] leading-snug">
+        {guest.name}
+      </p>
+    </div>
+  ))}
+</div>
+        </div>
+
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white ">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
