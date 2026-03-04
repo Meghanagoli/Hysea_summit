@@ -94,7 +94,7 @@ const HeroPage = () => {
                   className="
                     uppercase text-white
                     leading-none
-                    lg:ml-1 ml-0
+                    lg:-ml-3 ml-0
                     -mt-1 sm:-mt-1 md:-mt-0.5 lg:mt-2 mt-1 md:-ml-1 md:mt-0
                   "
                   style={{
@@ -114,7 +114,7 @@ const HeroPage = () => {
               {/* Badge in normal flow; margin keeps it clear of the overlay */}
               <span className="inline-block bg-[#FFC400] text-[#1c2a4d] font-bold px-4 py-1 rounded-full text-xs md:text-sm  md:mt-0 mt-24 
                 transform
-                 mt-20 md:translate-y-4 lg:translate-y-5
+                 mt-20 md:translate-y-4 lg:translate-y-8
               ">
                 33rd Edition | March 5, 2026 | Hyderabad
               </span>

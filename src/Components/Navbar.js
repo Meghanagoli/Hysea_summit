@@ -54,7 +54,7 @@ const Navbar = () => {
               <NavLink to="/2026/partners" className={navLinkClass}>
                 Partners
               </NavLink>
-              <a href="/2026/agenda.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <a href="/2026/agenda_final.pdf?v=20260304" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 Agenda
               </a>
             </nav>
@@ -151,14 +151,14 @@ const Navbar = () => {
                 Partners
               </NavLink>
               <a
-                href="/2026/agenda.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
-                className="py-2 hover:underline"
-              >
-                Agenda
-              </a>
+  href="/2026/agenda_final.pdf?v=20260304"   // bump v whenever you upload a new PDF
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setOpen(false)}
+  className="py-2 hover:underline"
+>
+  Agenda
+</a>
 
               <div className="pt-2">
                 <a

@@ -244,7 +244,7 @@ export default function Speakers() {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 lg:mt-3 lg:ml-1"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 lg:mt-3 lg:-ml-3.5"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -259,7 +259,7 @@ export default function Speakers() {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-10 lg:translate-y-5">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-10 lg:translate-y-3">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
