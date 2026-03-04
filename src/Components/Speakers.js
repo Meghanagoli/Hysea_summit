@@ -93,7 +93,8 @@ import p34 from "../assets/p34.png";
 import p35 from "../assets/p35.png";
 import p36 from "../assets/p36.png";
 import p37 from "../assets/p37.png";
-//import p38 from "../assets/p38.png";
+import p38 from "../assets/p38.png";
+import p39 from "../assets/p39.png";
 import Footer from "./Footer";
 
 const speakers = [
@@ -166,19 +167,21 @@ const distinguished_guests = [
   { name: "Ganesh Ramamoorthy, Managing Vice President, Gartner", img: p10 },
   { name: "Kashyap Kompella, Founder & CEO, RPA2AI Research", img: p11 },
   { name: "Krishna Sastry Pendyala, Partner, Cyber Security, EY India", img: p12 },
-  { name: "Krishna Srinivasan, PALGenie Technologies", img: p13 },
+  { name: "Krishna Srinivasan, Founder Chairman, PALGenie Technologies", img: p13 },
   { name: "V. Laxmikanth, Founder & Managing Partner, Pavestone", img: p14 },
   { name: "Lekshmi Nair, Global Capability Head: Application & Offensive Security, NTT Data", img: p15 },
-  { name: "Madhuri Raya, Optum", img: p16 },
+  { name: "Madhuri Raya, VP Software Engineering, Optum", img: p16 },
   { name: "Mohit Dhingra, MD, Bristol Myers Squibb", img: p17 },
   { name: "Narsimha Rao Mannepalli, Industry Leader (Ex-Infosys)", img: p18 },
   { name: "Nitin Sethi, CEO - AON Consulting in India and South Asia", img: p19 },
-  { name: "Prasanna Arikala, Kore.Ai", img: p20 },
+  { name: "Prasanna Arikala, CTO + Head of Product, Kore.Ai", img: p20 },
   { name: "Prashant Kashyap, Senior Director Data and Analytics, KPMG", img: p21 },
-  { name: "Rajesh Varrier, Cognizant", img: p22 },
+  { name: "V. Rajanna, President, Technology Software and Services, TCS", img:p38},
+  { name: "Rajesh Varrier, President, Global Operations & CMD Cognizant India, Cognizant", img: p22 },
   { name: "Rajkumar Velagapudi, Founder & CEO, TAO Digital Solutions", img: p23 },
   { name: "Rajesh Dhuddu, President, Global Operations & CMD Cognizant India", img: p24 },
   { name: "Sailaja Josyula, Global Head - Global Capability Centres Service Line, Cognizant", img: p25 },
+  {name : "Sampath Kumar, Chief Data and Analytics Officer, Vanguard India", img:p39},
   { name: "Sandhya Ramesh, Chief People Officer, Mastech Digital", img: p26 },
   { name: "Smita Mohanty, PhD, Director Data Science AICS NIBR, Novartis", img: p27 },
   { name: "Somnath Chatterjee, Founder & CEO, Prismforce", img: p28 },
@@ -192,6 +195,8 @@ const distinguished_guests = [
   { name: "Vishal Salvi, Global Head of Cyber Security Service Line, Cognizant", img: p36 },
   { name: "Prashanth Nandella, President, HYSEA", img: p37 },
 ];
+const firstFourGuests = distinguished_guests.slice(0, 4);
+const remainingGuests = distinguished_guests.slice(4);
 
 export default function Speakers() {
   useSEO({
@@ -361,7 +366,7 @@ export default function Speakers() {
             </div>
 
             {/* 33rd Edition */}
-            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-2 sm:-mt-10 -mt-12">
+            <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4  sm:-mt-10 -mt-10">
               <h3 className="text-[#0A2A73] text-sm font-semibold">
                 33rd Edition | March 5, 2026 | Hyderabad
               </h3>
@@ -407,32 +412,47 @@ export default function Speakers() {
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
           DISTINGUISHED GUESTS
         </h2>
-        <div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
-          {distinguished_guests.map((guest, idx) => (
-            <div key={idx} className="flex flex-col items-center self-start">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg  overflow-hidden shadow-sm">
-                <img
-                  src={guest.img}
-                  alt={guest.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <p className="
-                mt-3
-                text-center
-                text-sm md:text-base
-                text-gray-700 font-medium
-                min-h-[2.5rem]
-                leading-snug
-              ">
-                {guest.name}
-              </p>
-            </div>
-          ))}
-        </div>
+        {/* FIRST ROW — 4 CENTERED */}
+<div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 mb-10">
+  {firstFourGuests.map((guest, idx) => (
+    <div key={idx} className="flex flex-col items-center self-start">
+      <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg overflow-hidden shadow-sm">
+        <img
+          src={guest.img}
+          alt={guest.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
       </div>
+
+      <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium min-h-[2.5rem] leading-snug">
+        {guest.name}
+      </p>
+    </div>
+  ))}
+</div>
+
+{/* REMAINING GUESTS — 5 PER ROW */}
+<div className="grid place-items-center justify-center gap-x-6 gap-y-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[repeat(5,auto)]">
+  {remainingGuests.map((guest, idx) => (
+    <div key={idx} className="flex flex-col items-center self-start">
+      <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-lg overflow-hidden shadow-sm">
+        <img
+          src={guest.img}
+          alt={guest.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <p className="mt-3 text-center text-sm md:text-base text-gray-700 font-medium min-h-[2.5rem] leading-snug">
+        {guest.name}
+      </p>
+    </div>
+  ))}
+</div>
+        </div>
+
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 bg-white ">
         <h2 className="text-center text-4xl md:text-6xl font-semibold text-[#0530A8] mb-10 sm:mb-10 md:mb-14 max-w-[900px] mx-auto">
