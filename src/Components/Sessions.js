@@ -56,7 +56,7 @@ const Sessions = () => {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3 lg:mt-2 "
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3 lg:mt-2 lg:ml-1 lg:mt-3 "
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -71,19 +71,19 @@ const Sessions = () => {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-10 ">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-10 lg:translate-y-5 ">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
                 </div>
 
                 {/* Heading */}
-                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3 lg:translate-y-5">
                   Sessions
                 </h1>
 
                 {/* Description */}
-                <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6 lg:translate-y-5">
                   Discover how AI and emerging technologies are transforming industries
                   through responsible innovation, secure digital transformation, and
                   human–AI collaboration, equipping leaders with insights to stay

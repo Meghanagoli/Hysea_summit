@@ -58,7 +58,7 @@ const Awards = () => {
                     draggable="false"
                   />
                   <span
-                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 translate-y-2"
+                    className="uppercase text-white mt-[0.2rem] pl-[4.7rem] -ml-3.5 translate-y-2 lg:ml-1"
                     style={{
                       fontFamily: '"SF Pro Text", "SF Pro", "Segoe UI", system-ui, -apple-system, sans-serif',
                       fontSize: "16px",
@@ -73,17 +73,17 @@ const Awards = () => {
                 </div>
 
                 {/* 33rd Edition */}
-                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-9">
+                <div className="inline-flex items-center gap-2 rounded-[30px] bg-[#FFBB00] px-4 py-[6px] mb-4 -mt-9 lg:translate-y-3.5">
                   <h3 className="text-[#0A2A73] text-sm font-semibold">
                     33rd Edition | March 5, 2026 | Hyderabad
                   </h3>
                 </div>
 
-                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3">
+                <h1 className="text-white text-[72px] font-medium leading-[0.92] tracking-[-0.72px] mb-3 lg:translate-y-5">
                   Awards
                 </h1>
 
-                <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6">
+                <p className="text-white mt-5 text-[17px] font-normal leading-[1.6] max-w-[640px] mb-6 lg:translate-y-4">
                   The HYSEA Awards are a cornerstone of the Summit, celebrating
                   excellence, innovation, leadership, and social impact across the
                   technology ecosystem.
@@ -93,7 +93,7 @@ const Awards = () => {
                   href="https://hysea.accubate.app/ext/form/12107/1/apply"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-[1.5px] border-white rounded-[4px] min-w-40 bg-transparent text-white font-medium text-[16px] flex items-center justify-center px-[20px] py-[6px]"
+                  className="border-[1.5px] border-white rounded-[4px] min-w-40 bg-transparent text-white font-medium text-[16px] flex items-center justify-center px-[20px] py-[6px] lg:translate-y-5"
                 >
                   Apply Now
                 </a>
