@@ -93,7 +93,8 @@ import p34 from "../assets/p34.png";
 import p35 from "../assets/p35.png";
 import p36 from "../assets/p36.png";
 import p37 from "../assets/p37.png";
-//import p38 from "../assets/p38.png";
+import p38 from "../assets/p38.png";
+import p39 from "../assets/p39.png";
 import Footer from "./Footer";
 
 const speakers = [
@@ -166,19 +167,21 @@ const distinguished_guests = [
   { name: "Ganesh Ramamoorthy, Managing Vice President, Gartner", img: p10 },
   { name: "Kashyap Kompella, Founder & CEO, RPA2AI Research", img: p11 },
   { name: "Krishna Sastry Pendyala, Partner, Cyber Security, EY India", img: p12 },
-  { name: "Krishna Srinivasan, PALGenie Technologies", img: p13 },
+  { name: "Krishna Srinivasan, Founder Chairman, PALGenie Technologies", img: p13 },
   { name: "V. Laxmikanth, Founder & Managing Partner, Pavestone", img: p14 },
   { name: "Lekshmi Nair, Global Capability Head: Application & Offensive Security, NTT Data", img: p15 },
-  { name: "Madhuri Raya, Optum", img: p16 },
+  { name: "Madhuri Raya, VP Software Engineering, Optum", img: p16 },
   { name: "Mohit Dhingra, MD, Bristol Myers Squibb", img: p17 },
   { name: "Narsimha Rao Mannepalli, Industry Leader (Ex-Infosys)", img: p18 },
   { name: "Nitin Sethi, CEO - AON Consulting in India and South Asia", img: p19 },
-  { name: "Prasanna Arikala, Kore.Ai", img: p20 },
+  { name: "Prasanna Arikala, CTO + Head of Product, Kore.Ai", img: p20 },
   { name: "Prashant Kashyap, Senior Director Data and Analytics, KPMG", img: p21 },
-  { name: "Rajesh Varrier, Cognizant", img: p22 },
+  { name: "V. Rajanna, President, Technology Software and Services, TCS", img:p38},
+  { name: "Rajesh Varrier, President, Global Operations & CMD Cognizant India, Cognizant", img: p22 },
   { name: "Rajkumar Velagapudi, Founder & CEO, TAO Digital Solutions", img: p23 },
   { name: "Rajesh Dhuddu, President, Global Operations & CMD Cognizant India", img: p24 },
   { name: "Sailaja Josyula, Global Head - Global Capability Centres Service Line, Cognizant", img: p25 },
+  {name : "Sampath Kumar, Chief Data and Analytics Officer, Vanguard India", img:p39},
   { name: "Sandhya Ramesh, Chief People Officer, Mastech Digital", img: p26 },
   { name: "Smita Mohanty, PhD, Director Data Science AICS NIBR, Novartis", img: p27 },
   { name: "Somnath Chatterjee, Founder & CEO, Prismforce", img: p28 },
