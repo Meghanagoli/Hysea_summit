@@ -330,7 +330,7 @@ lg:bg-[position:left_center]"
 
           <div className="mt-8 text-center">
             <a
-              href="/2026/agenda.pdf"
+              href="/2026/agenda_final.pdf?v=20260304"
               target="_blank"
               rel="noopener noreferrer"
               className="
