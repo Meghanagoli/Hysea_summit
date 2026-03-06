@@ -152,13 +152,7 @@ const Navbar = () => {
 </a>
 
               <div className="pt-2">
-                <a
-                  href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block rounded-md bg-white px-4 md:px-5 py-2 text-sm font-semibold text-[#002F76] shadow-sm hover:bg-gray-100"
-                >
-                  Register Now
+               
                 </a>
               </div>
             </nav>
