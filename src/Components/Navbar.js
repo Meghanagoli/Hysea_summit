@@ -142,13 +142,13 @@ const Navbar = () => {
                 Partners
               </NavLink>
               <a
-  href="/2026/agenda_final.pdf?v=20260304"   // bump v whenever you upload a new PDF
-  target="_blank"
-  rel="noopener noreferrer"
-  onClick={() => setOpen(false)}
-  className="py-2 hover:underline"
->
-  Agenda
+              href="/2026/agenda_final.pdf?v=20260304"   // bump v whenever you upload a new PDF
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="py-2 hover:underline"
+            >
+              Agenda
 </a>
 
               
