@@ -29,30 +29,16 @@ const Pricing = () => {
                 EVENT SIGNUP
               </h3>
 
-              <div className="flex justify-end mb-1">
-                <span
-                  style={{
-                    fontWeight: 200,
-                    fontStyle: "italic",
-                    fontSize: "16px",
-                    lineHeight: "160%",
-                    color: "#202020",
-                  }}
-                >
-                  Early bird offer
-                </span>
-              </div>
+
 
               <div className="flex justify-between items-baseline mb-3">
                 <span className="font-medium text-[#0530A8] text-sm sm:text-base">
                   Delegate Fee:
                 </span>
                 <div className="flex items-center gap-2">
-                  <span className="line-through text-[#202020] text-xs sm:text-sm">
-                    ₹8,499
-                  </span>
+
                   <span className="font-medium text-lg sm:text-xl text-[#0530A8]">
-                    ₹6,499
+                    ₹9,999
                   </span>
                 </div>
               </div>
