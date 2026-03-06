@@ -89,15 +89,7 @@ const Awards = () => {
                   technology ecosystem.
                 </p>
 
-                <a
-                  href="https://hysea.accubate.app/ext/form/12107/1/apply"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border-[1.5px] border-white rounded-[4px] min-w-40 bg-transparent text-white font-medium text-[16px] flex items-center justify-center px-[20px] py-[6px] lg:translate-y-5"
-                >
-                  Apply Now
-                </a>
-
+               
               </div>
             </div>
           </div>
@@ -181,14 +173,7 @@ const Awards = () => {
               </p>
 
               {/* Button */}
-              <a
-                href="https://hysea.accubate.app/ext/form/12107/1/apply"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-[1.5px] border-white rounded-md bg-transparent text-white text-sm font-semibold px-4 md:px-5 py-2"
-              >
-                Apply Now
-              </a>
+             
 
             </div>
           </div>

@@ -100,22 +100,7 @@ const Expo = () => {
                 </p>
 
                 {/* Button */}
-                <a
-                  href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    border-[1.5px] border-white
-                    rounded-[4px]
-                    bg-transparent
-                    text-white
-                    font-medium text-[16px]
-                    flex items-center justify-center
-                    px-[20px] py-[6px]  translate-y-5
-                  "
-                >
-                  Reserve your Space
-                </a>
+               
               </div>
             </div>
           </div>
@@ -212,23 +197,7 @@ const Expo = () => {
               </p>
 
               {/* Button */}
-              <a
-                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  inline-flex
-                  max-w-[220px]
-                  border-[1.5px] border-white
-                  rounded-[4px]
-                  bg-transparent
-                  text-white
-                  text-sm font-semibold
-                  px-4 md:px-5 py-2
-                "
-              >
-                Reserve your Space
-              </a>
+              
             </div>
           </div>
         </div>
@@ -299,14 +268,7 @@ const Expo = () => {
                 </div>
               </div>
 
-              <a
-                href="https://hyseaevents.zohobackstage.in/hyseaannualsummit2026#/buyTickets/selectTickets"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#0530A8]  text-white px-4 md:px-5 py-2 rounded-md text-sm md:text-base font-semibold"
-              >
-                Reserve Your Space
-              </a>
+              
             </div>
           </div>
         </div>
