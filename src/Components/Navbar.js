@@ -152,8 +152,7 @@ const Navbar = () => {
 </a>
 
               <div className="pt-2">
-               
-                </a>
+                
               </div>
             </nav>
           </div>
