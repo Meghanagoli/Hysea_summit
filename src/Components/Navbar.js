@@ -151,9 +151,7 @@ const Navbar = () => {
   Agenda
 </a>
 
-              <div className="pt-2">
-                
-              </div>
+              
             </nav>
           </div>
         )}
