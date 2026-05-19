@@ -179,7 +179,7 @@ const distinguished_guests = [
   { name: "V. Rajanna, TCS", img:p38},
   { name: "Rajesh Varrier, Cognizant", img: p22 },
   { name: "Rajkumar Velagapudi, TAO Digital Solutions", img: p23 },
-  { name: "Rajesh Dhuddu, Cognizant", img: p24 },
+  { name: "Rajesh Dhuddu, PwC", img: p24 },
   { name: "Sailaja Josyula, Cognizant", img: p25 },
   {name : "Sampath Kumar, Vanguard India", img:p39},
   { name: "Sandhya Ramesh, Mastech Digital", img: p26 },
